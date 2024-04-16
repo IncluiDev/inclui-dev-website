@@ -13,7 +13,7 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/" title="Github Henry">
+      <a href="https://github.com/HenryModesto" title="Github Henry">
         <img src="" width="150px;" alt="Foto de Henry Oliveira Modesto De Jesus"/><br>
         <sub>
           <b>Henry Oliveira Modesto De Jesus</b>
@@ -21,7 +21,7 @@
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/" title="Github Igor">
+      <a href="https://github.com/IgorOdSilva" title="Github Igor">
         <img src="" width="150px;" alt="Foto de Igor Oliveira Da Silva"/><br>
         <sub>
           <b>Igor Oliveira Da Silva</b>
@@ -29,7 +29,7 @@
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/" title="Github Aline">
+      <a href="https://github.com/eulineaguiar" title="Github Aline">
         <img src="" width="150px;" alt="Foto de Aline Aguiar Da Silva"/><br>
         <sub>
           <b>Aline Aguiar Da Silva</b>
@@ -37,7 +37,7 @@
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/" title="Github Leonardo">
+      <a href="https://github.com/leoduarte14" title="Github Leonardo">
         <img src="" width="150px;" alt="Foto de Leonardo Duarte Pereira"/><br>
         <sub>
           <b>Leonardo Duarte Pereira</b>
