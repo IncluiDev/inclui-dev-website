@@ -24,7 +24,7 @@
       <a href="https://github.com/HenryModesto" title="Github Henry">
         <img src="pictures/HENRY.jpeg" width="150px;" heigth="200px;" alt="Foto de Henry Oliveira Modesto De Jesus"/><br>
         <sub>
-          <b>Henry Oliveira Modesto De Jesus</b>
+          <b>Henry Modesto De Jesus</b>
         </sub>
       </a>
     </td>
