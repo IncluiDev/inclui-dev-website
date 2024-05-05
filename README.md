@@ -10,7 +10,7 @@
 #
 ### EQUIPE
 
-<table>
+<table align="center">
   <tr>
   <td align="center">
       <a href="https://github.com/kaiquesouzasantos" title="Github Kaique">
