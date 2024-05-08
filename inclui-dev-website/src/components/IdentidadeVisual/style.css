@@ -1,0 +1,15 @@
+.IdentidadeVisual {
+    display: flex;
+    justify-content: space-around; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    background-color: #f5f5f5;
+    width: 100%;
+  }
+  
+  .imgIncluiDev {
+    width: 80%;
+    position: relative;
+    margin-top: 8rem;
+    left: 22%;
+  }

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.title {
+  color: #392E2E;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.strong {
+  color: #CA1BB4;
+  font-family: 'Poppins',sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+
+
+@media (max-width: 1200px) {
+  .title {
+      font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .title {
+      font-size: 1.9rem;
+  }
+}

@@ -1,0 +1,182 @@
+
+.add {
+    display: flex;
+    gap: 2rem;
+  
+
+    width: 100%;
+  
+    max-width: 1200px;
+    
+}
+
+
+#paragrafo{
+    top: -2.5rem;
+    position: relative;
+}
+
+#imgAbout{
+    width: 100%;
+    position: relative ;
+    max-width: 1100px;
+    margin-top: -50rem;
+    left: 65%;
+}
+
+.add div{
+    margin-top: 10rem;
+    left: 15rem;
+    position: relative;
+}
+
+
+.add img {
+    max-width: 1200px;
+    width: 100%;
+
+    position: relative;
+} 
+
+
+
+.addImg{
+    position: absolute;
+    width: 100%;
+}
+
+.add p {
+    color: #736969;
+    margin: 1rem 0 5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: justify;
+    width: 700px; 
+    display: flex;
+ 
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #CA1BB4;
+
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    
+    z-index: 1;
+    position: relative;
+    width: 25%;
+    display: flex;
+    left: 49%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5em;
+}
+
+
+
+@media (max-width: 1200px) {
+    .add {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        right: 11.5rem;
+        margin-top: 20rem;
+    }
+
+    .add h1 {
+        font-size: 2rem;
+    }
+
+    .add p {
+        margin-bottom: 3rem;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        position: relative;
+    }
+
+    .add img {
+        width: 100%;
+
+    }
+
+    #imgAbout {
+        max-width: 1000px;
+        margin-top: -40rem; 
+        margin-right: 5rem; 
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+      
+    }
+
+    .btn{
+        width: 40%;
+        left: 20%;
+       
+    }
+}
+
+@media (max-width: 900px) {
+    .add img {
+        
+        order: 0;
+
+    }
+
+    #imgAbout {
+        max-width: 1000px;
+        margin-top: -40rem; 
+        margin-right: 5rem; 
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+      
+    }
+
+    .btn{
+        width: 40%;
+        left: 20%;
+       
+    }
+}
+
+@media (max-width: 500px) {
+    .add h1 {
+        font-size: 1.9rem;
+    }
+
+    .add p {
+        width: 100%;
+    }
+
+    .add img {
+        width: 100%;
+
+    }
+
+    #imgAbout {
+        max-width: 1000px;
+        margin-top: -40rem; 
+        margin-right: 5rem; 
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+      
+    }
+
+    .btn{
+        width: 40%;
+        left: 20%;
+       
+    }
+}
+
+
