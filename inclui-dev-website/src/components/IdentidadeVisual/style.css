@@ -1,15 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Javanese&display=swap');
+
 .IdentidadeVisual {
-    display: flex;
-    justify-content: space-around; 
-    margin: 0 auto; 
-    padding: 0 20px; 
-    background-color: #f5f5f5;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #f5f5f5;
+  width: 100%;
+  position: relative;
+
+  }
+
+
+  .imgIncluiDev {
+    width: 65%;
+    margin-top: 8rem;
+    margin-bottom: 10px;
+    position: relative;
+    left: 10rem;
   }
   
-  .imgIncluiDev {
-    width: 80%;
+  .imgIncluiDev2 {
+    width: 38%;
+    align-self: flex-start;
     position: relative;
-    margin-top: 8rem;
-    left: 22%;
   }
+  
+  .logoMarca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center; /* Alinha a segunda imagem da esquerda para a direita */
+    
+  }
+  
+  .logoGridMarca h2 {
+    font-size: 34px;
+    color: #392E2E;
+    z-index: 99;
+    position: relative;
+    top: 2rem;
+    left: 15%;
+  }
+
+
+  .logoGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: -53.5%;
+    margin-left: 40%;
+  }
+  
+  .logoGrid h3 {
+    font-size: 32px;
+    color: #392E2E;
+  }
+
+  
+  .imgGrid, .gridLogo {
+    width: 63%;
+    position: relative;
+    top: 5rem;
+    z-index: 99;
+  }
+
+  .gridLogo {
+    top: 12rem;
+    position: relative;
+    left: 1rem;
+    width: 70%;
+  }
+
+  .imgGrid{
+    position: relative;
+    top: 0.5rem;
+  }
+
+  .line1{
+    height: 3px;
+    width: 44%;
+    top: 4rem;
+    position: relative;
+    z-index: 99;
+  }
+
+  .line2{
+    width: 70%;
+    height: 3px;
+    z-index: 99;
+    position: relative;
+    top: 2.6rem;
+    left: 1rem;
+  }
+
+  .line3{
+    width: 76%;
+    position: relative;
+    margin-top: 3rem;
+    right: 2rem;
+  }
+
+  .paneOrange1{
+    width: 33%;
+    position: relative;
+    top: -63rem;
+    right: 47%;
+  }
+
+  .paneOrange2{
+    width: 30%;
+    position: relative;
+    top: -112rem;
+    left: 45%;
+    z-index: 99;
+  }
+  
+  .tipoName{
+    font-size: 36px;
+    color: #392E2E;
+    position: relative;
+    margin-top: -40%;
+  }
+
+  .tipografias{
+    position: relative;
+    margin-left: 12%;
+  }
+
+  .tipografias h3{
+    font-size: 78px;
+    font-family: 'Anybody', sans-serif;
+    color: #392E2E;
+    margin-top: 7rem;
+    font-weight: bolder;
+    position: relative;
+    display: flex;
+    margin-right: 75rem;
+  }
+
+  .tipografias h6{
+    font-size: 40px;
+    font-family: 'Javanese', cursive;
+    font-weight: 50;
+    margin-top: 2rem;
+  }
+
+  .tipografias p{
+    font-size: 24px;
+    font-family: 'Javanese', cursive;
+    font-weight: 100;
+    margin-top: 2rem;
+    width: 42%;
+    color: #4D8F9A;
+    text-transform: capitalize;
+    text-align: justify;
+    letter-spacing: 2px;
+  }
+ 
+
+  .tipografiaB{
+    font-family: 'Anybody', sans-serif;
+    position: relative;
+    display: flex;
+    width: 33%;
+    letter-spacing: 1px;
+    margin-left: 40%;
+  }
+
+  .tipografiaB p{
+    font-size: 30px;
+    font-weight: bolder;
+    position: absolute;
+    text-align: justify;
+    top: -18rem;
+  }
+
+  .tipografiaB h5{
+    font-size: 28px;
+    font-family: 'Anybody', sans-serif;
+    font-weight: bolder;
+    position: relative;
+    display: flex;
+    top: -8rem;
+    text-align: justify;
+   
+  }
+
+#fontAnybody{
+  position: absolute;
+  top: -3rem;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+@media (max-width: 1200px) {
+  .IdentidadeVisual {
+    padding: 0 10px;
+  }
+  .imgIncluiDev {
+    width: 60%;
+    margin-top: 6rem;
+    left: 5rem;
+  }
+  .logoGridMarca h2 {
+    left: 10%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .imgIncluiDev {
+    width: 55%;
+    margin-top: 5rem;
+    left: 2rem;
+  }
+  .logoGridMarca h2 {
+    left: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .imgIncluiDev {
+    width: 100%;
+    margin-top: 4rem;
+    left: 7rem;
+  }
+
+  .paneOrange1{
+    width: 60%;
+    position: relative;
+    margin-top: 3rem;;
+    right: 60%;
+  }
+
+  .line1{
+    width: 100%;
+  }
+
+  .logoGridMarca{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    right: 10rem;
+  }
+
+  .paneOrange2{
+    position: relative;
+    width: 60%;
+    margin-top: 60%;
+    left: 60%;
+  }
+
+  .logoGridMarca h2 {
+    left: 2%;
+  }
+}
+
+@media (max-width: 600px) {
+  .imgIncluiDev {
+    width: 45%;
+    margin-top: 3rem;
+    left: 0.5rem;
+  }
+  .logoGridMarca h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .imgIncluiDev {
+    width: 40%;
+    margin-top: 2rem;
+    left: 0rem;
+  }
+  .logoGridMarca h2 {
+    font-size: 24px;
+  }
+}

@@ -1,35 +1,15 @@
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-// COMPONENTS
+import HomePage from './pages/HomePage'
+import CatalogoPage from './pages/CatalogoPage'
 
-import Home from './components/Home'
-import Header from './components/Header'
-import About from './components/About'
-import Add from './components/Add'
-import Newsletter from './components/Newsletter'
-import Footer from './components/Footer'
-import PaletaCard from './components/PaletaCard'
-import IdentidadeVisual from './components/IdentidadeVisual'
-
-function App() {
-  
+export default function App() {
   return (
-    <>
-      <Header />
-
-      <main>
-        <Home />
-        <About />
-        <Add />
-        <PaletaCard/>
-        <IdentidadeVisual />
-        <Newsletter />
-   
-      </main>
-
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage/>}></Route>
+        <Route path="/catalogo" element={<CatalogoPage/>}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
-
-export default App

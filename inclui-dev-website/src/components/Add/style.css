@@ -1,71 +1,59 @@
-
 .add {
     display: flex;
     gap: 2rem;
-  
-
     width: 100%;
-  
     max-width: 1200px;
-    
 }
 
-
-#paragrafo{
+#paragrafo {
     top: -2.5rem;
     position: relative;
 }
 
-#imgAbout{
+#imgAbout {
     width: 100%;
-    position: relative ;
+    position: relative;
     max-width: 1100px;
     margin-top: -50rem;
     left: 65%;
+    top: -5rem;
 }
 
-.add div{
+.add div {
     margin-top: 10rem;
     left: 15rem;
     position: relative;
 }
 
-
 .add img {
-    max-width: 1200px;
+    max-width: 100px;
     width: 100%;
-
     position: relative;
-} 
+}
 
-
-
-.addImg{
+.addImg {
     position: absolute;
     width: 100%;
 }
 
 .add p {
-    color: #736969;
+    color: #392E2E;
     margin: 1rem 0 5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
     letter-spacing: 2px;
     text-align: justify;
-    width: 700px; 
+    width: 700px;
     display: flex;
- 
 }
 
-.btn{
+.btn {
     text-decoration: none;
     color: white;
     background-color: #CA1BB4;
-
     padding: 1rem;
     border-radius: 10px;
     font-weight: 600;
-    
     z-index: 1;
     position: relative;
     width: 25%;
@@ -76,8 +64,6 @@
     justify-content: center;
     margin-top: -5em;
 }
-
-
 
 @media (max-width: 1200px) {
     .add {
@@ -109,42 +95,38 @@
 
     #imgAbout {
         max-width: 1000px;
-        margin-top: -40rem; 
-        margin-right: 5rem; 
+        margin-top: -40rem;
+        margin-right: 5rem;
         position: absolute;
         width: 100%;
         z-index: 99;
-      
+
     }
 
-    .btn{
+    .btn {
         width: 40%;
         left: 20%;
-       
+
     }
 }
 
 @media (max-width: 900px) {
     .add img {
-        
         order: 0;
-
     }
 
     #imgAbout {
         max-width: 1000px;
-        margin-top: -40rem; 
-        margin-right: 5rem; 
+        margin-top: -40rem;
+        margin-right: 5rem;
         position: absolute;
         width: 100%;
         z-index: 99;
-      
     }
 
-    .btn{
+    .btn {
         width: 40%;
         left: 20%;
-       
     }
 }
 
@@ -159,24 +141,19 @@
 
     .add img {
         width: 100%;
-
     }
 
     #imgAbout {
         max-width: 1000px;
-        margin-top: -40rem; 
-        margin-right: 5rem; 
+        margin-top: -40rem;
+        margin-right: 5rem;
         position: absolute;
         width: 100%;
         z-index: 99;
-      
     }
 
-    .btn{
+    .btn {
         width: 40%;
         left: 20%;
-       
     }
 }
-
-

@@ -1,0 +1,119 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+.main {
+    background-color: #F9F8F8;
+    position: relative;
+    top: 22rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cursos > h1 {
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+
+.blocos1 > img{
+    position: relative;
+    top: 50px;
+}
+
+.itemAtivo {
+    font-weight: bold;
+}
+
+.menuCurso {
+    margin-top: 5%;
+    font-size: 30px;
+}
+
+.menuCurso ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuCurso li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 50px; /* Define o espaçamento entre os itens */
+}
+
+.menuCurso li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Ajusta a posição da linha */
+    width: 100%;
+    height: 4px; /* Espessura da linha */
+    background-color: transparent;
+    transition: background-color 0.3s ease-in; /* Adiciona uma transição suave */
+}
+
+.menuCurso li:hover::after,
+.menuCurso li.itemAtivo::after {
+    background-color: black; /* Cor da linha */
+    cursor: pointer;
+}
+
+
+
+.lateralImg {
+    width: 25%;
+    height: max-content;
+    border: 5px solid #F9A3A4;
+    background-color: #eeafb4a4;
+    border-radius: 15px;
+}
+
+.lateralImg img {
+    width: 100%;
+    height: max-content;
+}
+
+
+.containerCard {
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.containerSecundarioCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.containerPrincipal {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+
+.containerPrincipal img {
+    width: 80%;
+    transition: 1s;
+}
+
+.containerPrincipal img:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
