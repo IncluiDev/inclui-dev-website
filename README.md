@@ -1,4 +1,4 @@
-<h1 align=center>INCLUIDEV EMAIL API</h1>
+<h1 align=center>INCLUIDEV WEBSITE</h1>
 
 <p align="center">
   <img src="pictures/banner.png" style="border-radius: 15px;">
