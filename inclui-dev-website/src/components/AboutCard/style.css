@@ -1,13 +1,14 @@
 .card {
- 
-
     color: #929292;
-    font-size: 1rem;
+    font-size: 30px;
     text-align: center;
     font-weight: 700;
     margin-top: 3.2em;
     transition: transform 0.3s ease; 
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card:hover{
@@ -22,7 +23,18 @@
 }
 
 .card p {
-    margin: -5.5em;
     color: #fff;
-    font-size: 30px;
+    position: absolute;    
+    padding-top: 8rem;
+}
+
+
+
+.card .centerCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 120px;
+    
 }

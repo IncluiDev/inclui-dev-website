@@ -6,7 +6,12 @@ export default function AboutCard(props) {
 
         <div className='card'>
             <img src={props.image} alt="Representação do app" />
-            <p> { props.description } </p>
+            <div className='centerCard'>
+                <img src={props.icons} className='icons'/>
+                <p> { props.description } </p>
+            </div>
+            
+           
         </div>
     )
 }

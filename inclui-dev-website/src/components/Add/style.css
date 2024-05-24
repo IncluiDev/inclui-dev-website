@@ -93,15 +93,6 @@
 
     }
 
-    #imgAbout {
-        max-width: 1000px;
-        margin-top: -40rem;
-        margin-right: 5rem;
-        position: absolute;
-        width: 100%;
-        z-index: 99;
-
-    }
 
     .btn {
         width: 40%;
@@ -115,14 +106,6 @@
         order: 0;
     }
 
-    #imgAbout {
-        max-width: 1000px;
-        margin-top: -40rem;
-        margin-right: 5rem;
-        position: absolute;
-        width: 100%;
-        z-index: 99;
-    }
 
     .btn {
         width: 40%;
@@ -143,14 +126,6 @@
         width: 100%;
     }
 
-    #imgAbout {
-        max-width: 1000px;
-        margin-top: -40rem;
-        margin-right: 5rem;
-        position: absolute;
-        width: 100%;
-        z-index: 99;
-    }
 
     .btn {
         width: 40%;

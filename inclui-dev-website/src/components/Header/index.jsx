@@ -31,7 +31,7 @@ export default function Header() {
           <nav className='nav-bar'>
               <ul>
                   <li>
-                      <a href="#" className={selectedItem === 0 ? 'selected' : ''} onClick={() => handleItemClick(0)}> Ínicio </a>
+                      <a href="#" className={selectedItem === 0 ? 'selected' : ''} onClick={() => handleItemClick(0)}> Inicio </a>
                   </li>
                   <li>
                       <a href="#about" className={selectedItem === 1 ? 'selected' : ''} onClick={() => handleItemClick(1)}> Sobre </a>
@@ -61,7 +61,7 @@ export default function Header() {
           {isOpen &&
               <nav className='nav-bar-mobile' onClick={closeMenu}>
                   <ul>
-                      <li><a href="#" onClick={() => handleItemClick(0)}>Ínicio</a></li>
+                      <li><a href="#" onClick={() => handleItemClick(0)}>Inicio</a></li>
                       <li><a href="#about" onClick={() => handleItemClick(1)}>Sobre</a></li>
                       <li><a href="#feedback" onClick={() => handleItemClick(2)}>Participantes</a></li>
                       <li><a href="#preco" onClick={() => handleItemClick(3)}>Planos</a></li>

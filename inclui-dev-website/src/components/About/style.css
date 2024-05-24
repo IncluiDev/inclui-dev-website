@@ -61,10 +61,98 @@
     border-radius: 12px;
 }
 
-@media (max-width: 1100px) and (min-width: 1500px){
+@media (max-width: 1500px){
     .about {
         width: 100%;
-        height: 1000px;
+        height: 100%;
+        
+    }
+
+    .grid-content {
+        display: grid;
+        width: 100%;
+        right: 11.5rem;
+        gap: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        position: relative;
+        justify-content: space-between;
+        margin-top: -8rem ;
+        border-radius: 12px;
+    }
+  
+
+    .dash {
+        width: 150%;
+        position: absolute;
+        right: -30rem;
+        top: 13em;
+    }
+
+    .cardImage {
+        width: 100%;
+      
+        grid-template-columns: 1fr;
+    }
+
+    .about h1 {
+        margin-top: 3.5rem;
+        font-size: 2rem;
+    }
+
+    .about .title-border-content {
+        margin-bottom: 3.5rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .about {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .grid-content {
+        display: grid;
+        width: 100%;
+        right: 11.5rem;
+        gap: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        position: relative;
+        justify-content: space-between;
+        margin-top: -8rem ;
+        border-radius: 12px;
+    }
+  
+
+    .dash {
+        width: 150%;
+        position: absolute;
+        right: -30rem;
+        top: 13em;
+    }
+
+    .cardImage {
+        width: 100%;
+      
+        grid-template-columns: 1fr;
+    }
+
+    .about h1 {
+        margin-top: 3.5rem;
+        font-size: 2rem;
+    }
+
+    .about .title-border-content {
+        margin-bottom: 3.5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about {
+        width: 100%;
+        height: 100%;
     }
 
     .grid-content {
@@ -72,9 +160,9 @@
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
-        gap: 17rem;
+        gap: 0;
         width: 70vw;
-        right: 11.5rem;
+        
     }
 
     .dash {
@@ -98,13 +186,14 @@
     .about .title-border-content {
         margin-bottom: 3.5rem;
     }
+
 }
 
 @media (max-width: 900px) {
 
     .about {
         width: 100%;
-        height: 1000px;
+        height: 100%;
     }
 
     .grid-content {
@@ -112,7 +201,7 @@
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
-        gap: 17rem;
+        gap: 0;
         width: 70vw;
         right: 11.5rem;
     }
