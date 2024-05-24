@@ -9,9 +9,10 @@ header {
     font-weight: 700;
     font-size: 1rem;
     position: fixed;
-    width: 100vw;
+    width: 110%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
  
+    height: 5rem;
 }
 
 header img {
@@ -21,12 +22,13 @@ header img {
 .InLogo {
     position: relative;
     right: 7em;
+  
 }
 
 .blocos {
     position: relative;
-    left: 11em;
-    top: -20px;
+    left: 10%;
+    top: -1.5rem;
 }
 
 .ajustedHeight {
@@ -128,11 +130,39 @@ header nav ul li a.selected::after {
     display: none;
 }
 
+
+
+@media (max-width: 1500px)  {
+    header nav ul {
+        gap: 3rem;
+        font-size: 15px; 
+    
+    }
+    
+    header {
+        justify-content: center;
+        padding-right: 12rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+        width: 250px;
+    }
+
+    .InLogo{
+        position: relative;
+        padding-left: 2px;
+        
+    }
+
+}
+
+
 @media (max-width: 1100px) {
     header nav ul {
         gap: 3rem;
-        margin-right: 5rem;
-        left: 10rem;
+        
+    
     }
     
     header {
@@ -140,31 +170,33 @@ header nav ul li a.selected::after {
         padding-right: 12rem;
         padding-left: 12rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     }
 
     header img {
-        width: 200px;
+        width: 300px;
     }
 
-    .nav-bar{
+     .nav-bar{
         display: none;
     }
     .nav {
         display: block;
         position: absolute;
-        top: 25px;
+        top: 3rem;
         left: 80vw;
     }
 
     .nav-bar-mobile{
-          width: 100vw;
-          height: 100vw;
-          display: grid;
-          place-items: flex-start;
-          position: relative;
-          align-items: center;
-          justify-content: flex-start;
-          left: -5em;
+        width: 100vw;
+        height: 100vw;
+        display: grid;
+        place-items: flex-start;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+        left: 1em;
+        top: -3em;
     }
 
     .InLogo{
@@ -197,7 +229,7 @@ header nav ul li a.selected::after {
     .nav {
         display: block;
         position: absolute;
-        top: 25px;
+        top: 3rem;
         left: 80vw;
     }
 
@@ -219,7 +251,6 @@ header nav ul li a.selected::after {
         top: 4%;
         left: 5%;
     }
-
     .nav-bar-mobile ul {
         gap: 5rem;
         font-size: 1.5rem;
@@ -261,7 +292,7 @@ header nav ul li a.selected::after {
     .InLogo{
         position: fixed;
         display: block;
-        top: 4%;
+        top: 10px;
         left: 5%;
     }
 

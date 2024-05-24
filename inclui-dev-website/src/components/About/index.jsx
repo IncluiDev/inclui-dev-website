@@ -25,7 +25,6 @@ export default function About() {
                     description="JOGOS"
                     image={CardGames} />
 
-
             </div> 
         </section>
     )
