@@ -35,7 +35,7 @@
 }
 
 .fundo-container {
-    background-image: url(../../../assets/nossosCursos.png);
+    background-image: url(../../assets/cursos.png);
     width: 450px;
     height: 367px;
     display: flex;

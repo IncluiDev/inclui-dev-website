@@ -1,6 +1,6 @@
 import './style.css';
-import { useState, useEffect } from 'react';
-import incluiLogo from '../../assets/incluiLogo2.jpg';
+import { useState } from 'react';
+import incluiLogo from '../../assets/inclui-dev-logo.png';
 import blocos from '../../assets/blocos.png';
 
 export default function Header() {
@@ -31,19 +31,19 @@ export default function Header() {
           <nav className='nav-bar'>
               <ul>
                   <li>
-                      <a href="#" className={selectedItem === 0 ? 'selected' : ''} onClick={() => handleItemClick(0)}> Inicio </a>
+                      <a href="/" className={selectedItem === 0 ? 'selected' : ''} onClick={() => handleItemClick(0)}> Inicio </a>
                   </li>
                   <li>
-                      <a href="#about" className={selectedItem === 1 ? 'selected' : ''} onClick={() => handleItemClick(1)}> Sobre </a>
+                      <a href="/#about" className={selectedItem === 1 ? 'selected' : ''} onClick={() => handleItemClick(1)}> Sobre </a>
                   </li>
                   <li>
-                      <a href="#feedback" className={selectedItem === 2 ? 'selected' : ''} onClick={() => handleItemClick(2)}> Participantes </a>
+                      <a href="/#feedback" className={selectedItem === 2 ? 'selected' : ''} onClick={() => handleItemClick(2)}> Participantes </a>
                   </li>
                   <li>
-                      <a href="#preco" className={selectedItem === 3 ? 'selected' : ''} onClick={() => handleItemClick(3)}> Planos</a>
+                      <a href="/#preco" className={selectedItem === 3 ? 'selected' : ''} onClick={() => handleItemClick(3)}> Planos</a>
                   </li>
                   <li>
-                      <a href="#newsletter" className={selectedItem === 4 ? 'selected' : ''} onClick={() => handleItemClick(4)}> Newsletter </a>
+                      <a href="/#newsletter" className={selectedItem === 4 ? 'selected' : ''} onClick={() => handleItemClick(4)}> Newsletter </a>
                   </li>
                   <li>
                       <a href="/" className={selectedItem === 5 ? 'selected' : ''} onClick={() => handleItemClick(5)}> Contato </a>

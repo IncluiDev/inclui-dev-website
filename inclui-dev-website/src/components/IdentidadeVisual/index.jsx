@@ -1,16 +1,15 @@
 import './style.css'
 import incluiLogoDev from '../../assets/incluiDevLogo.png';
-import incluiLogoDev2 from '../../assets/incluiDevLogo2.png';
-import incluiDevGrid from '../../assets/incluiDevGrid.png';
+import incluiLogoDev2 from '../../assets/inclui-dev-logo.png';
+import incluiDevGrid from '../../assets/logo-grid.png';
 import Line1 from '../../assets/line.png';
 import Line2 from '../../assets/line2.png';
-import imgApoio from '../../assets/imgApoio.png';
+import imgApoio from '../../assets/identidade-logo-01.png';
 import imgInclusao from '../../assets/imgInclusao.png';
 import imgProgramacao from '../../assets/imgProgramacao.png';
 import IdentidadeLogo from '../IdentidadeLogo';
-import gridLogo from '../../assets/gridLogo.png';
-import paneOrange1 from '../../assets/paneOrange.png';
-import paneOrange2 from '../../assets/paneOrange2.png';
+import gridLogo from '../../assets/logo-grid.png';
+import paneOrange1 from '../../assets/avioes-laranja.png';
 import line3 from '../../assets/line3.png';
 
 export default function IdentidadeVisual() {
@@ -62,7 +61,7 @@ export default function IdentidadeVisual() {
             <img src={gridLogo} className='gridLogo'/>
         </div>
             <img src={paneOrange1} className='paneOrange1' />
-            <img src={paneOrange2} className='paneOrange2' />
+            <img src={paneOrange1} className='paneOrange2' />
 
             <h3 className='tipoName'>TIPOGRAFIA DA LOGO</h3>
             <img src={line3} className='line3'/>

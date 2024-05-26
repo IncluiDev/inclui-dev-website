@@ -1,10 +1,10 @@
 import './style.css'
 
-import ImageHome from '../../assets/homeImage.png'
+import ImageHome from '../../assets/home-usuarios.png'
 import Details1 from '../../assets/Details1.png'
 import Details2 from '../../assets/Details2.png'
-import blocosCenter from '../../assets/blocosCentro.png'
-import blocoMais from '../../assets/blocoMais.png'
+import blocosCenter from '../../assets/chao-blocos.png'
+import blocoMais from '../../assets/mais-roxo.png'
 import { CircleChevronDown } from 'lucide-react';
 
 

@@ -1,5 +1,5 @@
 import './style.css';
-import blocosCentro from '../../assets/blocosCentro.png';
+import blocosCentro from '../../assets/chao-blocos.png';
 import lateralCard from '../../assets/lateralCard.png';
 import card1 from '../../assets/card1.png';
 import card2 from '../../assets/card2.png';

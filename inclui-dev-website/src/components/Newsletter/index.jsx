@@ -7,7 +7,6 @@ import { EnvelopeSimple, WarningCircle } from 'phosphor-react'
 export default function Newsletter() {
 
     async function newsletterAPI() {
-        
        event.preventDefault()
     
     const inputEmail = document.querySelector('#email')
@@ -39,15 +38,18 @@ export default function Newsletter() {
 
             console.log("erro na api")
         }
-
     }
 
     return(
         <section className="newsletter">
             <form onSubmit={newsletterAPI} className="newsletter-flex">
                 <div>
-                    <h1 className="title"> Se inscreva em <br /><span> Nosso <span className="strong">Newsletter!</span></span> </h1>
+                    <h1 className="title">
+                        Se inscreva em nosso <br/><span className="strong">newsletter!</span>
+                    </h1>
+                    
                     <p>Assine nosso newsletter e fique atualizado</p>
+
                     <div className="flex-input">
                         <EnvelopeSimple size={32} color="#CA1BB4" className="position-input-icon" weight="bold" /> <input id="email" name="" type="email" placeholder="Digite seu email" required /> <br />
                          <input type="submit" value="ENVIAR"/>

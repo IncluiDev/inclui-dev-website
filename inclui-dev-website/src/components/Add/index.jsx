@@ -1,6 +1,6 @@
 import './style.css'
-import add from '../../assets/imgAbout.png'
-import rectangles from '../../assets/rectangles.png'
+import add from '../../assets/aplicativo.png'
+import rectangles from '../../assets/retangulos.png'
 import { CircleChevronDown } from 'lucide-react';
 
 

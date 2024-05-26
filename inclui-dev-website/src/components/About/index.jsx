@@ -1,12 +1,12 @@
 import './style.css';
 import AboutCard from '../AboutCard';
-import CardUser from '../../assets/CardUser.png';
-import CardClass from '../../assets/ClassCard.png';
-import CardGames from '../../assets/CardGames.png';
+import CardUser from '../../assets/card-comunidade.png';
+import CardClass from '../../assets/card-estudo.png';
+import CardGames from '../../assets/card-jogos.png';
 import Dash2 from '../../assets/Dash2.png';
-import Users from '../../assets/fa-users.png'
-import Books from '../../assets/fa-books.png'
-import Games from '../../assets/fa-games.png'
+import Users from '../../assets/comunidade.png'
+import Books from '../../assets/livros.png'
+import Games from '../../assets/jogos.png'
 
 export default function About() {
 

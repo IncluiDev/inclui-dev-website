@@ -1,5 +1,5 @@
 import './style.css';
-import blocosCentro from '../../assets/blocosCentro.png';
+import blocosCentro from '../../assets/chao-blocos.png';
 
 export default function Superior() {
     return (
