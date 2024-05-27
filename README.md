@@ -5,7 +5,9 @@
 </p>
 
 #
-### DESCRICAO
+### FUNCIONALIDADES
+
+- [VLibras](https://vlibras.gov.br/doc/widget/introduction/presentation.html) como recurso de tradução de texto no formato de sinais.
 
 #
 ### REQUISITOS
@@ -43,7 +45,7 @@ Após a instalação:
 #
 ### INSTALAÇÃO
 
-- Instale as dependências contidas no projeto, com a execução do comando:
+Instale as dependências contidas no projeto, com a execução do comando:
 
 ```bash
 npm install

@@ -1,7 +1,7 @@
 import './style.css'
 import incluiLogoDev from '../../assets/incluiDevLogo.png';
 import incluiLogoDev2 from '../../assets/inclui-dev-logo.png';
-import incluiDevGrid from '../../assets/logo-grid.png';
+import incluiDevGrid from '../../assets/logo-grid-elementos.png';
 import Line1 from '../../assets/line.png';
 import Line2 from '../../assets/line2.png';
 import imgApoio from '../../assets/identidade-logo-01.png';
@@ -15,8 +15,6 @@ import line3 from '../../assets/line3.png';
 export default function IdentidadeVisual() {
 
     return(
-
-
         <section className="IdentidadeVisual">
           <div className='logoMarca'>
             <img src={incluiLogoDev} className='imgIncluiDev'/>
