@@ -7,6 +7,7 @@
 #
 ### FUNCIONALIDADES
 
+- [i18n](https://react.i18next.com) como recurso de tradução de texto para diferentes linguas.
 - [VLibras](https://vlibras.gov.br/doc/widget/introduction/presentation.html) como recurso de tradução de texto no formato de sinais.
 
 #
