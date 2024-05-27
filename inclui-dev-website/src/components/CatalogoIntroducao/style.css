@@ -1,11 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
 .container-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-    position: relative;
-    top: 08rem;
     width: 100%;
 }
 
@@ -16,10 +21,6 @@
     justify-content: center;
 }
 
-.foto img {
-    width: 450px;
-    height: 400px;
-}
 
 .container-foto {
     display: flex;
@@ -29,9 +30,9 @@
 }
 
 .fundo-container {
-    background-image: url(../../assets/cursos.png);
-    width: 450px;
-    height: 367px;
+    background: url(../../assets/cursos.png) ;
+    width: 800px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,6 +106,6 @@ button:hover{
 
   .blocos > img{
     position: relative;
-    top: 170px;
+    top: 300px;
   }
 

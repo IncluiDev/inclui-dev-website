@@ -7,6 +7,7 @@ import CatalogoPage from './pages/CatalogoPage'
 import LoginPage from './pages/LoginPage'
 import RecuperacaoPage from './pages/RecuperacaoPage'
 import CadastroPage from './pages/CadastroPage'
+import DetalhamentoPage from './pages/DetalhamentoPage'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/login" element={<LoginPage/>}></Route>
         <Route path="/cadastro" element={<CadastroPage/>}></Route>
         <Route path="/recuperacao" element={<RecuperacaoPage/>}></Route>
+        <Route path="/detalhamento" element={<DetalhamentoPage/>}></Route>
       </Routes>
     </BrowserRouter>
   )
