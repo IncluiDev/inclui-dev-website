@@ -8,6 +8,70 @@
 ### DESCRICAO
 
 #
+### REQUISITOS
+
+Para executar nossa plataforma localmente, é necessário ter em seu dispositivo computacional:
+
+  1. Certifique-se que instalou a versão mais recente do Node.js.  [Baixe aqui](https://nodejs.org/en)
+
+  2. Certifique-se de que instalou algum um editor de código em sua máquina. [Baixe aqui](https://code.visualstudio.com/)
+
+#
+### DOWNLOAD DO PROJETO
+
+Baixe o projeto em seu computador através do comando:
+
+```bash
+git clone https://github.com/IncluiDev/inclui-dev-website.git
+```
+
+**ou**
+
+1. Clique em `<> Code`.
+2. Faça o download do arquivo ZIP.
+3. Abra o seu explorador de arquivos na localização da instalação.
+4. Extraia o arquivo ZIP.
+
+#
+### ACESSO PELO TERMINAL 
+
+Após a instalação:
+
+1. Clique com o botão direito do mouse na pasta `inclui-dev-website/inclui-dev-website`.
+2. Selecione "Abrir no Terminal".
+
+#
+### INSTALAÇÃO
+
+- Instale as dependências contidas no projeto, com a execução do comando:
+
+```bash
+npm install
+```
+
+E aperte a tecla `Enter`
+
+#
+### EXECUÇÃO
+
+Execute o projeto com o seguinte comando:
+
+```bash
+npm run dev
+```
+
+E aperte a tecla `Enter`
+
+#
+### VISUALIZAÇÃO
+
+Abra a janela do seu navegador web padrão e acesse o seguinte endereço pela barra de pesquisa:
+
+```bash
+http://localhost:5123
+```
+
+#
 ### EQUIPE
 
 <table align="center">
