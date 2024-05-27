@@ -8,7 +8,6 @@ import LoginPage from './pages/LoginPage'
 import RecuperacaoPage from './pages/RecuperacaoPage'
 import CadastroPage from './pages/CadastroPage'
 
-
 export default function App() {
   return (
     <BrowserRouter>

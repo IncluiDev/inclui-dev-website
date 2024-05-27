@@ -2,6 +2,7 @@ import './style.css';
 import { useState } from 'react';
 import incluiLogo from '../../assets/inclui-dev-logo.png';
 import blocos from '../../assets/blocos.png';
+import SwitchLanguage from '../../components/SwitchLanguage'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +48,9 @@ export default function Header() {
                   </li>
                   <li>
                       <a href="/" className={selectedItem === 5 ? 'selected' : ''} onClick={() => handleItemClick(5)}> Contato </a>
+                  </li>
+                  <li>
+                    <SwitchLanguage/>
                   </li>
                   <img src={blocos} className='blocos' alt='Blocos' />
               </ul>

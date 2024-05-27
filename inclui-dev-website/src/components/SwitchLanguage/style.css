@@ -1,0 +1,47 @@
+.switch-language {
+    position: relative;
+    top: -10px;
+}
+
+.selected-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.selected-option img {
+    width: 40px;
+    height: 40px;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 100%;
+    z-index: 1;
+}
+
+.custom-select:hover .options {
+    display: block;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option img {
+    width: 40px;
+    height: 40px;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
