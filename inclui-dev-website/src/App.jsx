@@ -7,6 +7,11 @@ import CatalogoPage from './pages/CatalogoPage'
 import LoginPage from './pages/LoginPage'
 import RecuperacaoPage from './pages/RecuperacaoPage'
 import CadastroPage from './pages/CadastroPage'
+<<<<<<< Updated upstream
+=======
+import DetalhamentoPage from './pages/DetalhamentoPage'
+import TelaPreferencia from './pages/TelaPreferencia'
+>>>>>>> Stashed changes
 
 export default function App() {
   return (
@@ -17,6 +22,11 @@ export default function App() {
         <Route path="/login" element={<LoginPage/>}></Route>
         <Route path="/cadastro" element={<CadastroPage/>}></Route>
         <Route path="/recuperacao" element={<RecuperacaoPage/>}></Route>
+<<<<<<< Updated upstream
+=======
+        <Route path="/detalhamento" element={<DetalhamentoPage/>}></Route>
+        <Route path="/preferencias" element={<TelaPreferencia/>}></Route>
+>>>>>>> Stashed changes
       </Routes>
     </BrowserRouter>
   )

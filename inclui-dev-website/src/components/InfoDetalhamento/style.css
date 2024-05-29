@@ -1,0 +1,149 @@
+.infoDetalhamentoContainer {
+    margin-left: 0.5%;
+    position: relative;
+    top: 1rem;
+    color: black;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.titulo-desc-detalhamento {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-desc-detalhamento h3 {
+    font-size: 36px;
+}
+
+.titulo-desc-detalhamento p {
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.468);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.tutor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.tutor-titulo, .tutor-nome {
+    display: flex;
+    align-items: center;
+}
+
+.tutorIcon img {
+    width: 250px;
+    position: relative;
+    left: 40px;
+}
+
+.tutor h2 {
+    border-radius: 50px;
+    width: 400px;
+    text-align: center;
+    background-color: #CCE4E6;
+    height: max-content;
+    padding: 50px;
+    font-size: 40px;
+}
+
+.tutor-nome h4 {
+    width: 400px;
+    text-align: center;
+    padding: 25px;
+    height: max-content;
+    font-size: 25px;
+    background-color: #7bd2fa39;
+    border-radius: 50px;
+}
+
+.tutor-nome img {
+    width: 150px;
+    position: relative;
+    left: 50px;
+}
+
+.container-titulo-desc-detalhamento {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imgPessoaPC img {
+    width: 550px;
+}
+
+.aulasCurso {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px solid #b57edc59;
+    box-shadow: -1px -1px 80px -19px #b57edc59;
+}
+
+.aulasCurso h3 {
+    font-size: 35px;
+}
+
+.listaAulas {
+    text-align: left;
+}
+
+.listaAulas li {
+    padding: 20px;
+    border: 2px solid #b57edc59;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.listaAulas li:last-child {
+    border: none;
+}
+
+.aulasIcon img {
+    position: relative;
+    width: 150px;
+    left: -50px;
+    top: 90px;
+}
+
+.li-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listaAulas button {
+    background-color: white;
+    color: #b57edc59;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.description {
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+

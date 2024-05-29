@@ -1,0 +1,64 @@
+.aside {
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    border-right: 8px solid #242424;
+    position: fixed;
+  }
+  
+  @media (max-width: 700px) {
+    .aside {
+      width: 60px;
+      align-items: center;
+      padding: 2px;
+    }
+  }
+  
+  .header {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+  
+  .headerTitle {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 700px) {
+    .headerTitle {
+      display: none;
+    }
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .navLink {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  }
+  
+  .navText {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+    .navText {
+      display: none;
+    }
+  }
+  
+  .logoutLink {
+    color: white;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  }
