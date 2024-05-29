@@ -16,7 +16,6 @@ const DetalhamentoIntroducao = () => {
       </div>
       <span className='pessoaComCelular'><img src={pessoaComCelular} alt="" /></span>
       <div className='detalhesCurso'>
-        
         <ul className='listaInfoCurso'>
           <li>
             <p>Carga Horária</p>

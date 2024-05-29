@@ -1,7 +1,6 @@
-import React from 'react'
 import './style.css'
 
-const CabecalhoCurso = () => {
+export default function CabecalhoCurso() {
   return (
     <div className='cabecalhoCursoMain'>
         <div className='containerCabecalhoCurso'>
@@ -11,5 +10,3 @@ const CabecalhoCurso = () => {
     </div>
   )
 }
-
-export default CabecalhoCurso
