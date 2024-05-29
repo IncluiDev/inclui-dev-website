@@ -10,8 +10,6 @@ export default function AboutCard(props) {
                 <img src={props.icons} className='icons'/>
                 <p> { props.description } </p>
             </div>
-            
-           
         </div>
     )
 }

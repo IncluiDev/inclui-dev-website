@@ -1,7 +1,7 @@
 import './style.css';
 import blocosCentro from '../../assets/chao-blocos.png';
 
-export default function CatalogoIntroducao() {
+export default function Superior() {
     return (
         <div className="container">
             <div className='container-info'>
@@ -15,9 +15,10 @@ export default function CatalogoIntroducao() {
 
                 <section className="texto">
                     <div className="container-texto">
-                        <h1>Tecnologia que <span id='spanI'> I</span><span id='spanN'>n</span><span id='spanC'>c</span><span id='spanI'>l</span><span id='spanN'>u</span><span id='spanC'>i</span><span id='spanM'>+</span></h1>
+                        <h1>Tecnologia que 
+                            <span id='spanI'>I</span><span id='spanN'>n</span><span id='spanC'>c</span><span id='spanI'>l</span><span id='spanN'>u</span><span id='spanC'>i</span><span id='spanM'>+</span></h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nemo! Est error voluptatum eos asperiores perferendis vel, dignissimos vero delectus accusantium fugiat? Quis quisquam saepe excepturi assumenda atque quae eius.</p>
-                        <button className='button-catalogo'>Saiba mais</button>
+                        <button>Saiba mais</button>
                     </div>
 
                     <div className='blocos'>

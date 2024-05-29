@@ -1,6 +1,6 @@
 import Header from "../../components/Header"
 import Cursos from '../../components/Cursos'
-import CatalogoIntroducao from "../../components/CatalogoIntroducao"
+import Superior from "../../components/Superior"
 
 export default function CatalogoPage() {
     return (
@@ -8,7 +8,7 @@ export default function CatalogoPage() {
         <Header/>
 
         <main>
-          <CatalogoIntroducao/>
+          <Superior/>
           <Cursos/>
         </main>
       </>

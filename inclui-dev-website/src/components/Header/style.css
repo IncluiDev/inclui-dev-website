@@ -1,46 +1,84 @@
 header {
     background-color: #FFF;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; 
     align-items: center;
-    z-index: 10000;
-    padding: 1.5rem 1rem;
-    margin-bottom: 5rem;
+    z-index: 1000;
+    padding: 20px 2px;
     font-weight: 700;
     font-size: 1rem;
-    position: fixed;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 header img {
-    width: 300px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
 }
 
 .InLogo {
-    position: relative;
-    right: 7em;
-  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    padding: 1rem;
 }
 
 .blocos {
-    position: relative;
-    left: 10%;
-    top: -1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
 }
 
 .ajustedHeight {
     height: 100vh;
+    overflow: hidden;
+}
+
+.icon-navigator {
+    display: block;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 header nav ul {
     display: flex;
     gap: 5rem;
     list-style: none;
-    top: 2em;
-    position: relative;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+header nav ul li {
+    display: flex;
+    align-items: center;
+    
 }
 
 header nav ul li a {
@@ -49,7 +87,8 @@ header nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
-    position: relative;
+    text-align: center;
+    
 }
 
 header nav ul li a::after {
@@ -68,232 +107,119 @@ header nav ul li a.selected::after {
 
 .nav {
     display: none;
-    position: relative;
-    top: -7px;
-    left: 70px;
-}
-
-.nav.open .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.nav.open .line:nth-child(2) {
-    opacity: 0;
-}
-
-.nav.open .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    top: -10px;
-    position: relative;
+    cursor: pointer;
 }
 
 .nav-bar-mobile {
     width: 100vw;
     height: 100vh;
     display: grid;
-    place-items: flex-start;
-    position: relative;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow-y: auto;
 }
 
 .nav-bar-mobile ul {
-    gap: 5rem;
+    gap: 1rem;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 .line {
     background-color: rgb(0, 0, 0);
-    width: 50px;
-    height: 5px;
-    margin: .5rem 0;
-    cursor: pointer;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
 }
 
-
-.close-menu-right {
-    transform: rotate(45deg);
-    position: relative;
-    top: 10px;
-}
-
-.close-menu-left {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -2px;
-}
-
-.display-none {
-    display: none;
-}
-
-
-
-@media (max-width: 1500px)  {
+@media (max-width: 1500px) {
     header nav ul {
         gap: 3rem;
-        font-size: 15px; 
-    
-    }
-    
-    header {
-        justify-content: center;
-        padding-right: 12rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 15px;
     }
 
     header img {
-        width: 250px;
+        max-width: 250px;
     }
-
-    .InLogo{
-        position: relative;
-        padding-left: 2px;
-        
-    }
-
 }
 
-
-@media (max-width: 1100px) {
-    header nav ul {
-        gap: 3rem;
-        
-    
-    }
-    
+@media (max-width: 1300px) {
     header {
-        justify-content: space-between;
-        padding-right: 12rem;
-        padding-left: 12rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+        padding: 1rem;
     }
 
     header img {
-        width: 300px;
+        max-width: 200px;
     }
 
-     .nav-bar{
-        display: none;
-    }
     .nav {
         display: block;
-        position: absolute;
-        top: 3rem;
-        left: 80vw;
     }
-
-    .nav-bar-mobile{
-        width: 100vw;
-        height: 100vw;
-        display: grid;
-        place-items: flex-start;
-        position: relative;
-        align-items: center;
-        justify-content: flex-start;
-        left: 1em;
-        top: -3em;
-    }
-
-    .InLogo{
-        position: fixed;
-        display: block;
-        top: 4%;
-        left: 5%;
-    }
-
-}
-
-@media (max-width: 800px) {
-
-    header {
-        height: 60px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-    }
-    header nav ul {
-        display: flex;
-        gap: 5rem;
-        list-style: none;
-        top: 2em;
-        position: relative;
-    }
-
-    .nav-bar{
-        display: none;
-    }
-    .nav {
-        display: block;
-        position: absolute;
-        top: 3rem;
-        left: 80vw;
-    }
-
-    .nav-bar-mobile{
-        width: 100vw;
-        height: 100vw;
-        display: grid;
-        place-items: flex-start;
-        position: relative;
-        align-items: center;
-        justify-content: flex-start;
-        left: 1em;
-        top: -3em;
-    }
-
-    .InLogo{
-        position: fixed;
-        display: block;
-        top: 4%;
-        left: 5%;
-    }
-    .nav-bar-mobile ul {
-        gap: 5rem;
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        left: 3em;
-    }
-
-   
-}
-
-@media (max-width: 600px) {
-    header {
-        height: 60px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-    }
-
-    header img {
-        position: absolute;
-        top: 10px;
-    }
-
-    
 
     .nav-bar {
         display: none;
     }
 
+    .nav-bar-mobile {
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width: 1100px) {
+    header {
+        padding: 1rem;
+    }
+
+    header img {
+        max-width: 200px;
+    }
+
     .nav {
         display: block;
-        position: absolute;
-        top: 25px;
-        left: 80vw;
     }
 
-    .InLogo{
-        position: fixed;
-        display: block;
-        top: 10px;
-        left: 5%;
+    .nav-bar {
+        display: none;
     }
 
+    .nav-bar-mobile {
+        display: grid;
+        place-items: center;
+    }
+}
 
+@media (max-width: 800px) {
+    header {
+        height: 60px;
+    }
+
+    .nav-bar-mobile {
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 60px;
+    }
+
+    header img {
+        max-width: 150px;
+    }
+
+    .nav-bar-mobile {
+        display: grid;
+        place-items: center;
+    }
 }

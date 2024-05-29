@@ -7,6 +7,7 @@
   align-items: center;
   display: flex;
   transition: .5s;
+  margin-top: -3.5rem;
 }
 
 .home img:nth-child(1) {
@@ -91,25 +92,22 @@
   color: #63AB72;
 }
 
-.saibaMais{
-    text-decoration: none;
-    color: white;
-    background-color: #FF725E;
-
-    padding: 1rem;
-    border-radius: 10px;
-    font-weight: 700;
-    
-    z-index: 1;
-    position: relative;
-    width: 20%;
-    display: flex;
-
-    left: 39%;
-    top: -2em;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
+.saibaMais {
+  text-decoration: none;
+  color: white;
+  background-color: #FF725E;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  z-index: 1;
+  position: relative;
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 39%;
+  height: 5rem;
+  margin-top: -2rem;
 }
 
 .saibaMais:hover {
@@ -134,8 +132,7 @@
   object-fit: cover;
   position: absolute;
   right: -46%;
-  margin-top: 28%;
-
+  margin-top: 27.5%;
 
 }
 
@@ -179,6 +176,32 @@
   left: 45%;
   top: 155px;
 }
+
+
+@media (max-width: 1700px) {
+  .home {
+    padding: 5rem 2rem 10rem;
+  }
+
+  .home img:nth-child(1) {
+    max-width: 350px;
+    width: 100%;
+}
+
+.home img:nth-child(2) {
+    width: 300px;
+    position: absolute;
+    top: -40px;
+    right: -230px;
+}
+  .position-image {
+    position: absolute;
+    top: 200px;
+    right: 230px;
+    z-index: 10;    
+}
+}
+
 
 @media (max-width: 1500px) {
 

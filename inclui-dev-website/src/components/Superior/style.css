@@ -1,16 +1,11 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-}
-
 .container-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
+    position: relative;
+    top: 08rem;
     width: 100%;
 }
 
@@ -21,6 +16,10 @@
     justify-content: center;
 }
 
+.foto img {
+    width: 450px;
+    height: 400px;
+}
 
 .container-foto {
     display: flex;
@@ -30,9 +29,9 @@
 }
 
 .fundo-container {
-    background: url(../../assets/cursos.png) ;
-    width: 800px;
-    height: 450px;
+    background-image: url(../../assets/cursos.png);
+    width: 450px;
+    height: 367px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +67,7 @@
     font-size: 22px;
 }
 
-.button-catalogo {
+button {
     padding: 20px 40px;
     background-color: #CA1BB4;
     border-radius: 10px;
@@ -83,7 +82,7 @@
     transition: 1s;
 }
 
-.button-catalogo:hover{
+button:hover{
     transform: scale(1.08);
 }
 
@@ -106,6 +105,6 @@
 
   .blocos > img{
     position: relative;
-    top: 300px;
+    top: 170px;
   }
 

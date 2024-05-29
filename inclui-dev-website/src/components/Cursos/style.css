@@ -6,7 +6,7 @@
 .main {
     background-color: #F9F8F8;
     position: relative;
-    top: 2rem;
+    top: 22rem;
     justify-content: center;
     align-items: center;
 }
@@ -92,10 +92,28 @@
     width: 100%;
 }
 
+.containerSecundarioCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
 .containerPrincipal {
     display: flex;
     flex-direction: column;
     gap: 100px;
     align-items: center;
-    width: 90%;
+}
+
+.containerPrincipal img {
+    width: 80%;
+    transition: 1s;
+}
+
+.containerPrincipal img:hover{
+    cursor: pointer;
+    transform: scale(1.03);
 }
