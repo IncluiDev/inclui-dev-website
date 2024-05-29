@@ -56,9 +56,10 @@ export default function Header() {
           <li>
             <SwitchLanguage />
           </li>
-          <img src={blocos} className='blocos' alt='Blocos' />
         </ul>
       </nav>
+
+      <img src={blocos} className='blocos' alt='Blocos' />
 
       <FontAwesomeIcon 
         icon={faBars}

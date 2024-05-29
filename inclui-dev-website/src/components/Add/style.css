@@ -1,44 +1,30 @@
 .add {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-wrap: no-wrap;
     width: 100%;
     max-width: 100vw;
-    margin: 0 auto; 
-    justify-content: end;
-    align-items: flex-end; 
-    padding-top: 5vw;
-    overflow-x: hidden;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
 }
 
-.add-content{
-    display: flex;
-    flex-direction: column;
+.add-content {
+    margin-left: 11rem;
     width: 100%;
-
 }
 
 #paragrafo {
     align-self: flex-start;
     position: relative;
-    margin-top: -2rem;
 }
 
 #imgAbout {
-    width: 100%;
-   height: 100%;
-    order: 2; 
+    width: 700px;
+    height: 100%;
+    position: relative;
+    right: 0;
 }
-
-.add div {
-    order: 1; 
-    align-self: flex-start;
-    display: flex;
-    width: 90%;
-  
-}
-
-
 
 .add p {
     color: #392E2E;
@@ -49,7 +35,7 @@
     text-align: justify;
     width: 90%;
     display: flex;
-    align-self: flex-start; 
+    align-self: flex-start;
 }
 
 .btn {
@@ -65,10 +51,8 @@
     align-items: center;
     justify-content: center;
     margin-top: -5em;
-    align-self: center; 
+    align-self: center;
 }
-
-
 
 @media (max-width: 1200px) {
     .add {
@@ -76,34 +60,37 @@
         text-align: center;
     }
 
-
     .add div {
         flex-direction: column;
-     
     }
 
     .add h1 {
-        order: 1; 
         margin-top: -2rem;
         padding: 2rem;
     }
 
     .add p {
-        order: 2; 
         margin-top: -2rem;
         width: 100%;
-        max-width: 100%;
+    }
+
+    .add img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .add {
+        flex-wrap: wrap;
+    }
+
+    .add-content {
+        margin: 0 3rem;
     }
 
     #imgAbout {
-        width: 100%;
-        height: 100%;
-        
-    }
-}
-@media (max-width: 900px) {
-    .add img {
-        order: 0;
+        position: relative;
+        right: -80px;
     }
 
     .btn {
@@ -111,7 +98,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .add h1 {
         font-size: 1.9rem;
     }

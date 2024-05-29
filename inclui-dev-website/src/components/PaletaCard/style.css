@@ -1,10 +1,9 @@
 
 .grid-card{
-    display: grid;
+    display: flex;
     width: 100%;
     max-width: 80vw;
     gap: 0;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
     position: relative;  
     justify-content: space-between;

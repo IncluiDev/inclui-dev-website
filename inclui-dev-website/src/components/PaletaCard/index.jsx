@@ -35,11 +35,7 @@ export default function PaletaCard() {
           image = {AzulCor}
           hexadecimal = "#4D8F9A"
           name = "CONFIANÇA" />
-
       </div>
-    
-
     </section>
-
   )
 }
