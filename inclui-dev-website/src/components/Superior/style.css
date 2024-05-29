@@ -1,12 +1,19 @@
+.container-catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-    position: relative;
-    top: 08rem;
+    /* position: relative;
+    top: 08rem; */
     width: 100%;
+    height: 92vh;
 }
 
 .foto {
@@ -29,9 +36,9 @@
 }
 
 .fundo-container {
-    background-image: url(../../assets/cursos.png);
-    width: 450px;
-    height: 367px;
+    background-image: url(../../assets/nossosCursos.png);
+    width: 800px;
+    height: 601px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +55,7 @@
     text-align: center;
     margin-right: 9%;
     margin-top: 2%;
+    background-color: white;
 }
 
 .container-texto {
@@ -60,19 +68,29 @@
 
 .container-texto > h1 {
     margin: 2% 0;
-    font-size: 36px;
+    font-size: 48px;
 }
 
 .container-texto > p {
-    font-size: 22px;
+    font-size: 36px;
+    margin-bottom: 20px; 
 }
 
-button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.saiba {
     padding: 20px 40px;
     background-color: #CA1BB4;
     border-radius: 10px;
     color: white;
+    border: none;
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Poppins, 'sans serif';
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 30px;
+    cursor: pointer;
 }
+

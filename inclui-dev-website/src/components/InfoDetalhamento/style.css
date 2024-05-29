@@ -5,25 +5,25 @@
     color: black;
     padding: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
 }
 
 .titulo-desc-detalhamento {
-    width: 500px;
+    width: 700px;
     display: flex;
     flex-direction: column;
 }
 
 .titulo-desc-detalhamento h3 {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .titulo-desc-detalhamento p {
     font-weight: lighter;
     color: rgba(0, 0, 0, 0.468);
     text-align: justify;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .tutor {
@@ -84,7 +84,7 @@
 .aulasCurso {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 700px;
     padding-top: 20px;
     text-align: center;
     border-radius: 20px;
@@ -93,7 +93,7 @@
 }
 
 .aulasCurso h3 {
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .listaAulas {
@@ -105,7 +105,7 @@
     border: 2px solid #b57edc59;
     border-left: none;
     border-right: none;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     display: flex;
     flex-direction: column;

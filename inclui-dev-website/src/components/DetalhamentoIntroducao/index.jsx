@@ -1,6 +1,6 @@
-import './style.css'
-import javaIcon from '../../assets/javaIcon.png'
-import pessoaComCelular from '../../assets/pessoaComCelular.png'
+import './style.css';
+import javaIcon from '../../assets/javaIcon.png';
+import pessoaComCelular from '../../assets/pessoaComCelular.png';
 import { MdOutlineWatchLater } from "react-icons/md";
 import { IoCalendar } from "react-icons/io5";
 import { BiSolidLike } from "react-icons/bi";
@@ -20,7 +20,6 @@ const DetalhamentoIntroducao = () => {
       </div>
       <span className='pessoaComCelular'><img src={pessoaComCelular} alt="" /></span>
       <div className='detalhesCurso'>
-        
         <ul className='listaInfoCurso'>
           <li>
             <p><MdOutlineWatchLater /> Carga Horária</p>
@@ -33,14 +32,15 @@ const DetalhamentoIntroducao = () => {
         </ul>
         <ul className='listaInfoCurso'>
           <li>
-              <p><IoCalendar /> Publicado dia</p>
-              <p>05/11/2023</p>
-            </li>
-            <li>
-              <p><FaUserAlt /> Alunos</p>
-              <p>500</p>
-            </li>
+            <p><IoCalendar /> Publicado dia</p>
+            <p>05/11/2023</p>
+          </li>
+          <li>
+            <p><FaUserAlt /> Alunos</p>
+            <p>500</p>
+          </li>
         </ul>
+        
       </div>
     </div>
   )
