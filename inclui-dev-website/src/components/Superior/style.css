@@ -74,40 +74,5 @@ button {
     padding: 20px 40px;
     background-color: #CA1BB4;
     border-radius: 10px;
-    border: none;
-    margin-top: 40px;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: 1s;
+    color: white;
 }
-
-button:hover{
-    transform: scale(1.08);
-}
-
-#spanI{
-    color: #4D8F9A;
-  }
-  
-  #spanN{
-    color: #CA1BB4;
-  }
-  
-  #spanC{
-    color: #F76456;
-  }
-  
-  
-  #spanM{
-    color: #63AB72;
-  }
-
-  .blocos > img{
-    position: relative;
-    top: 170px;
-  }
-

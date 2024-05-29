@@ -1,7 +1,6 @@
 import React from 'react'
 import PCDpessoa from '../../assets/PCDs icon.png'
 import headerPreferencia from '../../assets/header-preferencias.png'
-import blocosCentro from '../../assets/blocosCentro.png'
 import './style.css'
 import { FaEye } from "react-icons/fa";
 import { FaBrain } from "react-icons/fa";
