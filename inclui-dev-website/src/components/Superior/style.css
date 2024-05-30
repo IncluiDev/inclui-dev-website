@@ -67,7 +67,7 @@
     font-size: 22px;
 }
 
-button {
+.button-saiba-mais {
     padding: 20px 40px;
     background-color: #CA1BB4;
     border-radius: 10px;
@@ -82,7 +82,7 @@ button {
     transition: 1s;
 }
 
-button:hover{
+.button-saiba-mais:hover{
     transform: scale(1.08);
 }
 
