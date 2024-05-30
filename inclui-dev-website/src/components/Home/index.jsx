@@ -28,12 +28,9 @@ export default function Home() {
                     
                     <a className='saibaMais' href="/">  <span id='saiba'>SAIBA MAIS <CircleChevronDown id='circleDown' size={45} color="white" weight="bold"/> </span> 
                     
-               
-
+    
                     </a>
             </div>
-           
-            
  
         </section> 
       

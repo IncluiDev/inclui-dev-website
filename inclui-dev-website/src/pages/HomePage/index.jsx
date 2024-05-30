@@ -9,6 +9,7 @@ import Footer from '../../components/Footer'
 import PaletaCard from '../../components/PaletaCard'
 import IdentidadeVisual from '../../components/IdentidadeVisual'
 import { useTranslation } from 'react-i18next'
+import Equipe from '../../components/Equipe'
 
 import { useEffect } from 'react'
 
@@ -38,6 +39,7 @@ export default function HomePage() {
         <Add />
         <PaletaCard/>
         <IdentidadeVisual />
+        <Equipe />
         <Newsletter />
       </main>
 

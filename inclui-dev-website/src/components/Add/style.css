@@ -28,7 +28,7 @@
 
 .add p {
     color: #392E2E;
-    margin: 1rem 0 5rem;
+    margin: 1.5rem 0rem;
     font-size: 22px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -52,6 +52,24 @@
     justify-content: center;
     margin-top: -5em;
     align-self: center;
+}
+
+@media (max-width: 1500px) {
+    .add {
+        align-items: center;
+        text-align: center;
+    }
+
+    .add div {
+        flex-direction: column;
+    }
+
+   #imgAbout {
+    width: 70%;
+
+   }
+
+   
 }
 
 @media (max-width: 1200px) {

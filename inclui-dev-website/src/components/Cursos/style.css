@@ -5,6 +5,8 @@
 
 .main {
     background-color: #F9F8F8;
+    position: relative;
+    top: 22rem;
     justify-content: center;
     align-items: center;
 }

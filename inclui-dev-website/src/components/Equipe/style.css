@@ -1,0 +1,15 @@
+.Equipe{
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: -1rem;
+}
+
+.members-one, .members-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ 
+}

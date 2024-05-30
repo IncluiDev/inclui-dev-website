@@ -18,22 +18,22 @@ export default function PaletaCard() {
         
         <Paleta 
           image = {LaranjaCor} 
-          hexadecimal = "#F76456"
+          hexadecimal = "LARANJA"
           name = "ALEGRIA" />
 
         <Paleta 
           image = {RosaCor}
-          hexadecimal = "#CA1BB4"
+          hexadecimal = "ROSA"
           name = "CRIATIVIDADE" />
 
         <Paleta 
           image = {VerdeCor}
-          hexadecimal = "#63AB72"
+          hexadecimal = "VERDE"
           name = "CORAGEM" />
 
         <Paleta 
           image = {AzulCor}
-          hexadecimal = "#4D8F9A"
+          hexadecimal = "AZUL"
           name = "CONFIANÇA" />
       </div>
     </section>
