@@ -4,18 +4,54 @@ import { useTranslation } from 'react-i18next';
 
 import imgEn from '../../assets/bandeiras/bandeira-en.png';
 import imgPtBR from '../../assets/bandeiras/bandeira-ptBR.png';
+import imgEs from '../../assets/bandeiras/bandeira-es.png';
+import imgJa from '../../assets/bandeiras/bandeira-ja.png';
+import imgFr from '../../assets/bandeiras/bandeira-fr.png';
+import imgKo from '../../assets/bandeiras/bandeira-ko.png';
+import imgRu from '../../assets/bandeiras/bandeira-ru.png';
+import imgDe from '../../assets/bandeiras/bandeira-de.png';
 
 const options = [
   {
-    name: "Portugues",
+    name: "Português",
     value: "pt",
     flag: imgPtBR
   },
   {
-    name: "Ingles",
+    name: "Inglês",
     value: "en",
     flag: imgEn
-  }
+  },
+  {
+    name: "Espanhol",
+    value: "es",
+    flag: imgEs
+  },
+  {
+    name: "Japonês",
+    value: "ja",
+    flag: imgJa
+  },
+  {
+    name: "Francês",
+    value: "fr",
+    flag: imgFr
+  },
+  {
+    name: "Russo",
+    value: "ru",
+    flag: imgRu
+  },
+  {
+    name: "Alemão",
+    value: "de",
+    flag: imgDe
+  },
+  {
+    name: "Coreano",
+    value: "ko",
+    flag: imgKo
+  },
 ];
 
 export default function SwitchLanguage() {
@@ -41,7 +77,10 @@ export default function SwitchLanguage() {
               onClick={() => handleLanguageChange(language)}
               className='option'
             >
-              <img src={language.flag} alt={language.name} /> {language.name}
+              <div className='option-container'>
+                <img src={language.flag} alt={language.name} />
+                {language.name}
+              </div>
             </li>
           ))}
         </ul>
