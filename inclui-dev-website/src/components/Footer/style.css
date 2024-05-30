@@ -1,11 +1,11 @@
-footer {
+.footer-container {
     padding: 6rem 2rem 2rem 3rem;
     background-color: #ffffff;
     color: #392E2E;
     position: relative;
 }
 
-footer p {
+.footer-container p {
     text-align: center;
     margin-top: 2rem;
     color: rgba(255, 255, 255, 0.36);
@@ -20,11 +20,11 @@ footer p {
 }
 
 
-footer h3 {
+.footer-container h3 {
     font-size: 2rem;
 }
 
-footer li {
+.footer-container li {
     margin: 1rem 0;
     
     position: relative;
@@ -36,24 +36,22 @@ footer li {
 }
 
 
-footer a, footer ul {
+.footer-container a, .footer-container ul {
     color: #392E2E;
     text-decoration: none;
     list-style: none;
     font-weight: 500;
 }
 
-footer a {
+.footer-container a {
     transition: .5s;
 }
 
-footer a:hover:not(.not-animation) {
+.footer-container a:hover:not(.not-animation) {
     display: flex;
     margin-left: 20px;
     transition: .5s;
 }
-
-
 
 .custom-shape-divider-bottom-1693432336 {
     position: absolute;

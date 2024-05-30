@@ -1,35 +1,42 @@
-import './style.css'
+import './style.css';
 import descricaoBlocos from '../../assets/descricao-linha-blocos.png';
 import rodapeCurso from '../../assets/rodape-curso.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 export default function CursoExibicaoPage() {
-    return(
+    return (
         <div className='curso-container'>
-            <section className='header-curso'>
+            <header className='header-curso'>
                 <h2>
                     <span className='enumeracao-curso'>01.</span>
                     Aula
                 </h2>
 
-                <button className='button-proxima-aula'>
-                    Próxima Aula
-                    <FontAwesomeIcon icon={faArrowRight} className='icon-curso' />
-                </button>
-            </section>
+                <nav className='navigation-curso'>
+                    <button className='button-proxima-aula'>
+                        Próxima Aula
+                        <FontAwesomeIcon icon={faArrowRight} className='icon-curso' />
+                    </button>
+
+                    <button className='button-sair'>
+                        Sair
+                        <FontAwesomeIcon icon={faRightFromBracket} className='icon-curso' />
+                    </button>
+                </nav>
+            </header>
 
             <main>
                 <section>
-                    <iframe className='curso-video' src="https://www.youtube.com/embed/VKjFuX91G5Q?si=E2i2ozs23wnMIusf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe className='curso-video' src="https://www.youtube.com/embed/VKjFuX91G5Q?si=E2i2ozs23wnMIusf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </section>
 
-                <section>
+                <article>
                     <div className='descricao-imagem'>
                         <div className='curso-subtitulos'>
                             <h3>Descrição de Imagem</h3>
-                            <img src={descricaoBlocos} alt="" />
+                            <img src={descricaoBlocos} alt="Descrição de blocos" />
                         </div>
 
                         <p>
@@ -40,18 +47,18 @@ export default function CursoExibicaoPage() {
                     <div className='transcricao-descricao'>
                         <div className='curso-subtitulos'>
                             <h3>Transcrição</h3>
-                            <img src={descricaoBlocos} alt="" />
+                            <img src={descricaoBlocos} alt="Transcrição de blocos" />
                         </div>
 
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida congue eros eu tincidunt. In hac habitasse platea dictumst. Aliquam eget dapibus augue. Praesent porta justo eu leo hendrerit, ut laoreet massa fermentum. Sed augue lorem, imperdiet sit amet dictum et, vestibulum eget mi. Etiam quam magna, imperdiet eget eros.
                         </p>                   
                     </div>
-                </section>
+                </article>
 
-                <section>
-                    <img className='rodape-curso' src={rodapeCurso}/>
-                </section>
+                <footer>
+                    <img className='rodape-curso' src={rodapeCurso} alt="Rodapé do curso"/>
+                </footer>
             </main>
         </div>
     );

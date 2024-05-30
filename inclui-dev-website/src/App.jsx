@@ -1,4 +1,5 @@
 import './style.css'
+import './acessibilidade.css'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 

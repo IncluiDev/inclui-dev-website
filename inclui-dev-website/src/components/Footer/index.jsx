@@ -4,7 +4,7 @@ import { ArrowRight, NavigationArrow, EnvelopeSimple, InstagramLogo, GithubLogo,
 
 export default function Footer() {
     return(
-        <footer id='newsletter'>
+        <footer className='footer-container'>
 
                 <div className="custom-shape-divider-bottom-1693432336">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
