@@ -3,7 +3,7 @@ import './style.css';
 
 const CursosCard = (props) => {
     return (
-        <div className="containerCardCursoPrincipal">        
+        <div className="containerCardCursoPrincipal">
             <img src={props.imgSrc} alt="" />
             <div className="infoCursoCard">
                 <div className="tituloCurso">

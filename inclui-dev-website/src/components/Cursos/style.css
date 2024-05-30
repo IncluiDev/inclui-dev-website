@@ -5,8 +5,6 @@
 
 .main {
     background-color: #F9F8F8;
-    position: relative;
-    top: 22rem;
     justify-content: center;
     align-items: center;
 }
@@ -41,14 +39,14 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .menuCurso li {
     display: inline-block;
-    margin-right: 10px;
     position: relative;
     cursor: pointer;
-    margin-right: 50px; /* Define o espaçamento entre os itens */
+    margin-right: 30px; 
 }
 
 .menuCurso li::after {
@@ -68,8 +66,6 @@
     cursor: pointer;
 }
 
-
-
 .lateralImg {
     width: 25%;
     height: max-content;
@@ -82,7 +78,6 @@
     width: 100%;
     height: max-content;
 }
-
 
 .containerCard {
     display: flex;
@@ -116,4 +111,112 @@
 .containerPrincipal img:hover{
     cursor: pointer;
     transform: scale(1.03);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1200px) {
+    .menuCurso {
+        font-size: 25px;
+    }
+
+    .menuCurso li {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .menuCurso {
+        font-size: 20px;
+    }
+
+    .menuCurso li {
+        margin-right: 15px;
+    }
+
+    .containerPrincipal img {
+        width: 90%;
+    }
+
+    .lateralCard {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container-cursos h1 {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    .menuCurso {
+        font-size: 18px;
+    }
+
+    .menuCurso ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+    .menuCurso li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .containerCard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerPrincipal img {
+        width: 100%;
+    }
+
+    .lateralImg {
+        width: 50%;
+    }
+
+    .lateralCard {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
+        position: relative;
+        top: 0;
+        overflow-x: hidden;
+    }
+
+    .container-cursos h1 {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    .menuCurso ul {
+        font-size: 14px;
+    }
+
+    .menuCurso li {
+        margin-right: 5px;
+    }
+
+    .lateralImg {
+        width: 75%;
+    }
+
+    .containerPrincipal {
+        gap: 50px;
+    }
+
+    .containerPrincipal img {
+        width: 100%;
+    }
+
+    .lateralCard {
+        display: none;
+    }
 }

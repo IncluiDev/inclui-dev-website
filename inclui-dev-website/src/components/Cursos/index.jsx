@@ -1,9 +1,8 @@
 import './style.css';
 import blocosCentro from '../../assets/chao-blocos.png';
 import lateralCard from '../../assets/lateralCard.png';
-import card1 from '../../assets/card1.png';
-import card2 from '../../assets/card2.png';
-import card3 from '../../assets/card3.png';
+import imgCurso1 from '../../assets/imgCursoAzul.png'
+import CursosCard from '../CursosCard';
 
 export default function Cursos() {
     return(
@@ -25,9 +24,28 @@ export default function Cursos() {
                         <img src={lateralCard} alt="Lateral Card"/>
                     </div>
                     <div className='containerPrincipal'>
-                        <img src={card1} alt="" />
-                        <img src={card2} alt="" />
-                        <img src={card3} alt="" />
+                        <CursosCard
+                            imgSrc={imgCurso1}
+                            courseName="Crie sua primeira aplicação web Java"
+                            courseTag="#Java"
+                            descricaoCurso=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor dolorem id? Illum aliquid magnam ducimus possimus delectus exercitationem iste illo nemo rerum consequuntur, repellendus quos! Facilis provident eos perspiciatis."
+                            progress="80"
+
+                        />
+                         <CursosCard
+                            imgSrc={imgCurso1}
+                            courseName="Crie sua primeira aplicação web Java"
+                            courseTag="#Java"
+                            descricaoCurso=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor dolorem id? Illum aliquid magnam ducimus possimus delectus exercitationem iste illo nemo rerum consequuntur, repellendus quos! Facilis provident eos perspiciatis."
+                            progress="80"
+                        />
+                         <CursosCard
+                            imgSrc={imgCurso1}
+                            courseName="Crie sua primeira aplicação web Java"
+                            courseTag="#Java"
+                            descricaoCurso=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor dolorem id? Illum aliquid magnam ducimus possimus delectus exercitationem iste illo nemo rerum consequuntur, repellendus quos! Facilis provident eos perspiciatis."
+                            progress="80"
+                        />
                     </div>
                     <div className='lateralCard'>
                         <img src={lateralCard} alt="Lateral Card"/>

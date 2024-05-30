@@ -20,11 +20,12 @@ export default function Superior() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nemo! Est error voluptatum eos asperiores perferendis vel, dignissimos vero delectus accusantium fugiat? Quis quisquam saepe excepturi assumenda atque quae eius.</p>
                         <button className='button-saiba-mais'>Saiba mais</button>
                     </div>
-
-                    <div className='blocos'>
-                        <img src={blocosCentro} alt="blocosCentro"/>
-                    </div>
                 </section>
+                
+            </div>
+            
+            <div className='blocos'>
+                <img src={blocosCentro} alt="blocosCentro"/>
             </div>
         </div>
     )
