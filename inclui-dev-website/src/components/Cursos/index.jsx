@@ -13,10 +13,7 @@ export default function Cursos() {
                     <ul>
                         <li className="itemAtivo">Java</li>
                         <li>Python</li>
-                        <li>C++</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Kotlin</li>
+                        <li className='jogos-select'>Jogos</li>
                     </ul>
                 </nav>
                 <div className='containerCard'>

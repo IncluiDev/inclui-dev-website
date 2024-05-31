@@ -66,6 +66,13 @@
     cursor: pointer;
 }
 
+.jogos-select {
+    padding: 5px 8px;
+    background-color: #CA1BB4;
+    color: #fff;
+    border-radius: 8px;
+}
+
 .lateralImg {
     width: 25%;
     height: max-content;
