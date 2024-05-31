@@ -3,7 +3,7 @@ import './style.css'
 import Home from '../../components/Home'
 import Header from '../../components/Header'
 import About from '../../components/About'
-import Add from '../../components/Add'
+import AboutProject from '../../components/AboutProject'
 import Newsletter from '../../components/Newsletter'
 import Footer from '../../components/Footer'
 import PaletaCard from '../../components/PaletaCard'
@@ -23,8 +23,8 @@ export default function HomePage() {
         
         <Home />
         <About />
-        <Add />
-        <PaletaCard/>
+        <AboutProject />
+        <PaletaCard />
         <IdentidadeVisual />
         <Equipe />
         <Newsletter />

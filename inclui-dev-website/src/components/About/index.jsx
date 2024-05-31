@@ -24,8 +24,7 @@ export default function About() {
                     icons={Books}
                     description="AULAS"
                     image={CardClass} />
-
-        
+    
                 <AboutCard
                     icons={Games}
                     description="JOGOS"

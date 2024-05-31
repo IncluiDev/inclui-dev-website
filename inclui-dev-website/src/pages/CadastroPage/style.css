@@ -42,7 +42,7 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  left: 75%;
+  left: 70%;
   width: 50%;
   transition: 1s 0.7s ease-in-out;
   display: grid;
@@ -166,4 +166,10 @@ form {
   margin: 10px 0;
   cursor: pointer;
   transition: 0.5s;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }

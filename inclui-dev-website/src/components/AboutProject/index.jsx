@@ -2,7 +2,7 @@ import './style.css'
 import rectangles from '../../assets/retangulos-aplicativo.png'
 
 
-export default function Add() {
+export default function AboutProject() {
     return(
         <section className="add">
             <div className='add-content'>
