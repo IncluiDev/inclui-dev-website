@@ -17,10 +17,12 @@
 #paragrafo {
     align-self: flex-start;
     position: relative;
+    line-height: 1.7;
 }
 
+
 #imgAbout {
-    width: 700px;
+    width: 1000px;
     height: 100%;
     position: relative;
     right: 0;

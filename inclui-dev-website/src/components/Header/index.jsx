@@ -34,7 +34,7 @@ export default function Header() {
       </div>
 
       <nav className='nav-bar'>
-        <ul>
+        <ul className='nav-desktop'>
           <li>
             <a href="/home" className={selectedItem === 0 ? 'selected' : ''} onClick={() => handleItemClick(0)}>Inicio</a>
           </li>
