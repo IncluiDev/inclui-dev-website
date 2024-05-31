@@ -10,13 +10,17 @@ const CursosCard = (props) => {
 
     return (
         <div className="containerCardCursoPrincipal" onClick={handleClick}>
-            <img src={props.imgSrc} alt="" />
+            <img src={props.imgSrc} alt={props.courseName} />
 
             <div className="infoCursoCard">
                 <div className="tituloCurso">
                     <h1>{props.courseName}</h1>
-                    <div className="tagCurso">
-                        <h2><span>#</span>{props.courseTag}</h2>
+                    <div className="tagsCurso">
+                        {
+                            Array.isArray(props.courseTag) && props.courseTag.map((tag, index) => (
+                                <h2 key={index} className='tagCurso'><span>#</span>{tag}</h2>
+                            ))
+                        }
                     </div>
                 </div>
                 <div className='descricaoCurso'>
