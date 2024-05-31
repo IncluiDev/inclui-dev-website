@@ -58,8 +58,9 @@
     font-size: 30px;
     color: #392E2E;;
     font-weight: bold;
-    border: 4px solid #CA1BB4;
+    border: 4px solid #392E2E;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .option-preferencia {
@@ -67,10 +68,19 @@
     align-items: center;
     padding: 10px;
     margin: 0;
-    color: #CA1BB4;
+    color: #392E2E;
     border: none;
     background-color: white;
     cursor: pointer;
+}
+
+.item-preferencia.active {
+    color: #CA1BB4;
+    border: 4px solid #CA1BB4;
+}
+
+.item-preferencia.active svg {
+    color: #CA1BB4;
 }
 
 .button-preferencias {

@@ -48,39 +48,54 @@ const PreferenciasPage = () => {
             <div className='container-main-preferencias'>
                 <div className='container-texto-preferencias'>
                     <ul className='listaPreferencias'>
-                        <li className='item-preferencia'>
+                        <li 
+                            className={`item-preferencia ${isToggledCega ? 'active' : ''}`}
+                            onClick={handleToggleCega}
+                        >
                             <FaEye />
                             Pessoa Cega
-                            <button onClick={handleToggleCega} className='option-preferencia'>
-                                {isToggledCega ? <BsToggleOff  size={40}/> : <BsToggleOn size={40}/>}
+                            <button className='option-preferencia'>
+                                {isToggledCega ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
                         </li>
-                        <li className='item-preferencia'>
+                        <li 
+                            className={`item-preferencia ${isToggledDaltonismo ? 'active' : ''}`}
+                            onClick={handleToggleDaltonismo}
+                        >
                             <FaEye />
                             Daltonismo
-                            <button onClick={handleToggleDaltonismo} className='option-preferencia'>
-                                {isToggledDaltonismo ? <BsToggleOff  size={40}/> : <BsToggleOn size={40}/>}
+                            <button className='option-preferencia'>
+                                {isToggledDaltonismo ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
                         </li>
-                        <li className='item-preferencia'>
+                        <li 
+                            className={`item-preferencia ${isToggledBaixaVisao ? 'active' : ''}`}
+                            onClick={handleToggleBaixaVisao}
+                        >
                             <FaEye />
                             Baixa Visão
-                            <button onClick={handleToggleBaixaVisao} className='option-preferencia'>
-                                {isToggledBaixaVisao ? <BsToggleOff  size={40}/> : <BsToggleOn size={40}/>}
+                            <button className='option-preferencia'>
+                                {isToggledBaixaVisao ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
                         </li>
-                        <li className='item-preferencia'>
+                        <li 
+                            className={`item-preferencia ${isToggledDislexia ? 'active' : ''}`}
+                            onClick={handleToggleDislexia}
+                        >
                             <FaBrain />
                             Dislexia
-                            <button onClick={handleToggleDislexia} className='option-preferencia'>
-                                {isToggledDislexia ? <BsToggleOff  size={40}/> : <BsToggleOn size={40}/>}
+                            <button className='option-preferencia'>
+                                {isToggledDislexia ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
                         </li>
-                        <li className='item-preferencia'>
+                        <li 
+                            className={`item-preferencia ${isToggledEpilepsia ? 'active' : ''}`}
+                            onClick={handleToggleEpilepsia}
+                        >
                             <FaBrain />
                             Epilepsia
-                            <button onClick={handleToggleEpilepsia} className='option-preferencia'>
-                                {isToggledEpilepsia ? <BsToggleOff  size={40}/> : <BsToggleOn size={40}/>}
+                            <button className='option-preferencia'>
+                                {isToggledEpilepsia ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
                         </li>
                         
