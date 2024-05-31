@@ -28,7 +28,7 @@ export default function Header() {
   };
 
   return (
-    <header className={isOpen ? 'ajustedHeight' : ''}>
+    <header className={`header ${isOpen ? 'ajustedHeight' : ''}`}>
       <div className='InLogo'>
         <img src={incluiLogo} alt="Logo" />
       </div>
@@ -48,10 +48,10 @@ export default function Header() {
             <a href="/#preco" className={selectedItem === 3 ? 'selected' : ''} onClick={() => handleItemClick(3)}>Planos</a>
           </li>
           <li>
-            <a href="/#newsletter" className={selectedItem === 4 ? 'selected' : ''} onClick={() => handleItemClick(4)}>Newsletter</a>
+            <a href="/catalogo" className={selectedItem === 4 ? 'selected' : ''} onClick={() => handleItemClick(4)}>Cursos</a>
           </li>
           <li>
-            <a href="/" className={selectedItem === 5 ? 'selected' : ''} onClick={() => handleItemClick(5)}>Contato</a>
+            <a href="/login" className={selectedItem === 5 ? 'selected' : ''} onClick={() => handleItemClick(4)}>Acessar</a>
           </li>
           <li>
             <SwitchLanguage />

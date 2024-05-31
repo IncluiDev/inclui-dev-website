@@ -1,4 +1,4 @@
-header {
+.header {
     background-color: #FFF;
     display: flex;
     justify-content: space-between; 
@@ -13,7 +13,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .container {
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ header .container {
     margin: 0 auto; 
 }
 
-header img {
+.header img {
     width: 100%;
     max-width: 250px;
     height: auto;
@@ -50,14 +50,14 @@ header img {
     margin-right: 20px;
 }
 
-header nav {
+.header nav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
 
-header nav ul {
+.header nav ul {
     display: flex;
     gap: 5rem;
     list-style: none;
@@ -68,13 +68,13 @@ header nav ul {
     
 }
 
-header nav ul li {
+.header nav ul li {
     display: flex;
     align-items: center;
     
 }
 
-header nav ul li a {
+.header nav ul li a {
     color: #392E2E;
     font-weight: 550;
     text-decoration: none;
@@ -84,7 +84,7 @@ header nav ul li a {
     
 }
 
-header nav ul li a::after {
+.header nav ul li a::after {
     content: '';
     display: block;
     width: 0;
@@ -93,8 +93,8 @@ header nav ul li a::after {
     transition: width 0.3s;
 }
 
-header nav ul li a:hover::after,
-header nav ul li a.selected::after {
+.header nav ul li a:hover::after,
+.header nav ul li a.selected::after {
     width: 100%;
 }
 
@@ -135,22 +135,22 @@ header nav ul li a.selected::after {
 }
 
 @media (max-width: 1500px) {
-    header nav ul {
+    .header nav ul {
         gap: 3rem;
         font-size: 15px;
     }
 
-    header img {
+    .header img {
         max-width: 250px;
     }
 }
 
 @media (max-width: 1300px) {
-    header {
+    .header {
         padding: 1rem;
     }
 
-    header img {
+    .header img {
         max-width: 200px;
     }
 
@@ -173,11 +173,11 @@ header nav ul li a.selected::after {
 }
 
 @media (max-width: 1100px) {
-    header {
+    .header {
         padding: 1rem;
     }
 
-    header img {
+    .header img {
         max-width: 200px;
     }
 
@@ -199,7 +199,7 @@ header nav ul li a.selected::after {
 }
 
 @media (max-width: 800px) {
-    header {
+    .header {
         height: 60px;
     }
 
@@ -213,7 +213,7 @@ header nav ul li a.selected::after {
 }
 
 @media (max-width: 600px) {
-    header {
+    .header {
         height: 60px;
     }
 

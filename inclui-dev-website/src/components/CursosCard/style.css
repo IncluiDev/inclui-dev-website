@@ -62,7 +62,7 @@
 }
 
 #progress-bar {
-    width: 80%; /* Initial width set to 80% */
+    width: 80%; 
     height: 100%;
     background-color: #CA1BB4;
     text-align: center;

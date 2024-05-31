@@ -27,7 +27,7 @@ export default function Cursos() {
                         <CursosCard
                             imgSrc={imgCurso1}
                             courseName="Crie sua primeira aplicação web Java"
-                            courseTag="#Java"
+                            courseTag="Java"
                             descricaoCurso=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor dolorem id? Illum aliquid magnam ducimus possimus delectus exercitationem iste illo nemo rerum consequuntur, repellendus quos! Facilis provident eos perspiciatis."
                             progress="80"
 
@@ -35,7 +35,7 @@ export default function Cursos() {
                          <CursosCard
                             imgSrc={imgCurso1}
                             courseName="Crie sua primeira aplicação web Java"
-                            courseTag="#Java"
+                            courseTag="Java"
                             descricaoCurso=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor dolorem id? Illum aliquid magnam ducimus possimus delectus exercitationem iste illo nemo rerum consequuntur, repellendus quos! Facilis provident eos perspiciatis."
                             progress="80"
                         />

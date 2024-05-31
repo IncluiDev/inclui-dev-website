@@ -10,12 +10,14 @@ import RecuperacaoPage from './pages/RecuperacaoPage'
 import CadastroPage from './pages/CadastroPage'
 import DetalhamentoPage from './pages/DetalhamentoPage'
 import CursoExibicaoPage from './pages/CursoExibicaoPage'
+import PreferenciasPage from './pages/PreferenciasPage'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage/>}></Route>
+        <Route path="/" element={<PreferenciasPage/>}></Route>
+        <Route path="/home" element={<HomePage/>}></Route>
         <Route path="/login" element={<LoginPage/>}></Route>
         <Route path="/cadastro" element={<CadastroPage/>}></Route>
         <Route path="/recuperacao" element={<RecuperacaoPage/>}></Route>
