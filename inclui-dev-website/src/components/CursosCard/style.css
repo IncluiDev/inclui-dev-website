@@ -17,7 +17,8 @@
 .infoCursoCard { 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
     width: 100%;
     padding: 20px;
 }
@@ -34,7 +35,7 @@
 }
 
 .tagCurso {
-    font-size: 10px;
+    font-size: 15px;
     padding: 5px 15px;
     background-color: #CA1BB4;
     color: white;
@@ -49,7 +50,6 @@
     justify-content: flex-start;
     margin-top: auto; 
     width: 100%;
-    margin-right: 20px;
 }
 
 #progress-container {
@@ -81,8 +81,6 @@
     align-items: center;
     justify-content: center;
     width: 90%;
-    margin-bottom: 25px;
-    margin-top: 20px;
 }
 
 .containerCardCursoPrincipal:hover {

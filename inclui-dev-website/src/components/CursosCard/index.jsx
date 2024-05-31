@@ -15,13 +15,14 @@ const CursosCard = (props) => {
             <div className="infoCursoCard">
                 <div className="tituloCurso">
                     <h1>{props.courseName}</h1>
-                    <div className="tagsCurso">
+                </div>
+                
+                <div className="tagsCurso">
                         {
                             Array.isArray(props.courseTag) && props.courseTag.map((tag, index) => (
                                 <h2 key={index} className='tagCurso'><span>#</span>{tag}</h2>
                             ))
                         }
-                    </div>
                 </div>
                 <div className='descricaoCurso'>
                     <h4>Descrição Curso</h4>
