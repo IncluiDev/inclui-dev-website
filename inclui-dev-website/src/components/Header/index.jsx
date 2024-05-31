@@ -76,6 +76,9 @@ export default function Header() {
             <li><a href="#preco" onClick={() => handleItemClick(3)}>Planos</a></li>
             <li><a href="#newsletter" onClick={() => handleItemClick(4)}>Newsletter</a></li>
             <li><a href="/" onClick={() => handleItemClick(5)}>Contato</a></li>
+            <li>
+              <SwitchLanguage />
+            </li>
           </ul>
 
           <FontAwesomeIcon 
