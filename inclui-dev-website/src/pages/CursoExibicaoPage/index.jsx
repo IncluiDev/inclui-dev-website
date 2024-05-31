@@ -1,4 +1,7 @@
 import './style.css';
+
+import { useNavigate } from 'react-router-dom';
+
 import descricaoBlocos from '../../assets/descricao-linha-blocos.png';
 import rodapeCurso from '../../assets/rodape-curso.png';
 
@@ -6,6 +9,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 export default function CursoExibicaoPage() {
+    const navigate = useNavigate();
+
+    function handleClick(root) {
+        navigate(root); 
+    }
+
     return (
         <div className='curso-container'>
             <header className='header-curso'>
@@ -20,7 +29,7 @@ export default function CursoExibicaoPage() {
                         <FontAwesomeIcon icon={faArrowRight} className='icon-curso' />
                     </button>
 
-                    <button className='button-sair'>
+                    <button className='button-sair' onClick={() => handleClick("/detalhamento")}>
                         Sair
                         <FontAwesomeIcon icon={faRightFromBracket} className='icon-curso' />
                     </button>

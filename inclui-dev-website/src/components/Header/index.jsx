@@ -36,16 +36,16 @@ export default function Header() {
       <nav className='nav-bar'>
         <ul>
           <li>
-            <a href="/" className={selectedItem === 0 ? 'selected' : ''} onClick={() => handleItemClick(0)}>Inicio</a>
+            <a href="/home" className={selectedItem === 0 ? 'selected' : ''} onClick={() => handleItemClick(0)}>Inicio</a>
           </li>
           <li>
-            <a href="/#about" className={selectedItem === 1 ? 'selected' : ''} onClick={() => handleItemClick(1)}>Sobre</a>
+            <a href="/home#about" className={selectedItem === 1 ? 'selected' : ''} onClick={() => handleItemClick(1)}>Sobre</a>
           </li>
           <li>
-            <a href="/#feedback" className={selectedItem === 2 ? 'selected' : ''} onClick={() => handleItemClick(2)}>Participantes</a>
+            <a href="/home" className={selectedItem === 2 ? 'selected' : ''} onClick={() => handleItemClick(2)}>Participantes</a>
           </li>
           <li>
-            <a href="/#preco" className={selectedItem === 3 ? 'selected' : ''} onClick={() => handleItemClick(3)}>Planos</a>
+            <a href="/home#preco" className={selectedItem === 3 ? 'selected' : ''} onClick={() => handleItemClick(3)}>Planos</a>
           </li>
           <li>
             <a href="/catalogo" className={selectedItem === 4 ? 'selected' : ''} onClick={() => handleItemClick(4)}>Cursos</a>

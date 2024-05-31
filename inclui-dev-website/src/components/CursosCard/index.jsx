@@ -1,8 +1,15 @@
 import './style.css';
+import { useNavigate } from 'react-router-dom';
 
 const CursosCard = (props) => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate(`/curso`); 
+    };
+
     return (
-        <div className="containerCardCursoPrincipal">
+        <div className="containerCardCursoPrincipal" onClick={handleClick}>
             <img src={props.imgSrc} alt="" />
 
             <div className="infoCursoCard">

@@ -1,7 +1,7 @@
 import './style.css';
 import blocosCentro from '../../assets/chao-blocos.png';
 import lateralCard from '../../assets/lateralCard.png';
-import imgCurso1 from '../../assets/imgCursoAzul.png'
+import imgCurso1 from '../../assets/cursos/curso-java.png'
 import CursosCard from '../CursosCard';
 
 export default function Cursos() {
