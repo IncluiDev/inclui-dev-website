@@ -51,7 +51,7 @@ export default function Header() {
             <a href="/catalogo" className={selectedItem === 4 ? 'selected' : ''} onClick={() => handleItemClick(4)}>Cursos</a>
           </li>
           <li>
-            <a href="/login" className={selectedItem === 5 ? 'selected' : ''} onClick={() => handleItemClick(4)}>Acessar</a>
+            <a href="/login" className={selectedItem === 5 ? 'selected' : ''} onClick={() => handleItemClick(4)}>Dashboard</a>
           </li>
           <li>
             <SwitchLanguage />
