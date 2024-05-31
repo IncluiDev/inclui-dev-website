@@ -1,32 +1,32 @@
 import './style.css'
-import incluiLogoDev from '../../assets/incluiDevLogo.png';
-import incluiLogoDev2 from '../../assets/inclui-dev-logo.png';
+import incluiLogoDev2 from '../../assets/incluiDevLogo2.png';
 import incluiDevGrid from '../../assets/logo-grid-elementos.png';
-import Line2 from '../../assets/line2.png';
-import imgApoio from '../../assets/identidade-logo-01.png';
+import imgApoio from '../../assets/imgApoio.png';
 import imgInclusao from '../../assets/imgInclusao.png';
 import imgProgramacao from '../../assets/imgProgramacao.png';
 import IdentidadeLogo from '../IdentidadeLogo';
 import gridLogo from '../../assets/logo-grid.png';
-import line3 from '../../assets/line3.png';
 
 export default function IdentidadeVisual() {
 
     return(
         <section className="IdentidadeVisual">
-          <div className='logoMarca'>
-            <img src={incluiLogoDev} className='imgIncluiDev'/>
-          </div>
-
           <article className='identidade-caracteristicas'>
+          <h3 className='title-identidade'>COMPOSICAO DE LOGO</h3>
+
             <div className='logoGridMarca'>
-              <div className='header-identidade'>
-                <img src={incluiLogoDev2} className='imgIncluiDev2'/>
-                <h3>LOGO MARCA</h3>
-                <img src={Line2} className='line2'  />
+              <div className='identidade-grid'>
+                <img src={gridLogo} className='gridLogo'/>
+
+                <div className='identidade-grid-sub'>
+                  <img src={incluiLogoDev2} className='logo-01'/>
+                  <img src={incluiDevGrid} className='logo-02'/>
+                </div>
               </div>
 
-              <div>
+              <h3 className='title-identidade'>LOGO MARCA</h3>
+
+              <div className='identidade-row'>
                 <IdentidadeLogo 
                   images = {imgApoio}
                   meaning = 'APOIO'
@@ -35,7 +35,7 @@ export default function IdentidadeVisual() {
                 <IdentidadeLogo 
                   images = {imgInclusao}
                   meaning = 'INCLUSÃO SOCIAL'
-                  text = 'simbolizando a união e o apoio mútuo entre as pessoas, independentemente de suas diferenças.'
+                  text = 'Simbolizando a união e o apoio mútuo entre as pessoas, independentemente de suas diferenças.'
                   id='inclusaoLogo' />
 
                 <IdentidadeLogo 
@@ -46,35 +46,24 @@ export default function IdentidadeVisual() {
                   mineText = 'textMinu'/>
               </div>
             </div>
-
-            <div className='logoGrid'>
-                <div className='header-identidade'>
-                  <img src={incluiDevGrid} className='imgGrid'/> 
-                  <h3>LOGO GRID SYSTEM</h3>
-                  <img src={Line2} className='line2'  />
-                </div>
-
-                <img src={gridLogo} className='gridLogo'/>
-            </div>
           </article>
         
         <article className='article-tipografia'>
-          <div className='header-identidade'>
-              <h3 className='tipoName'>TIPOGRAFIA DA LOGO</h3>
-              <img src={line3} className='line3'/>
-          </div>
+        <h3 className='title-identidade'>TIPOGRAFIA DA LOGO</h3>
 
-          <div>
-            <div className='tipografia'>
-              <h3>Anybody</h3>
-              <h6>Jasmin Regular</h6>
-              <p>A Jazmin Regular é uma fonte moderna e elegante, com formas arredondadas e suaves, ideal para transmitir uma imagem amigável.</p>
+          <div className='section-tipografia'>
+            <div className='tipografia' id='fontAnybody'>
+              <h3>Anybody</h3>  
+              <p>0 01 02 03 04 05 06 07 08 09 10</p>
+              <p>Ab Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+              <p>A AnyBody é uma fonte moderna e versátil, com um estilo amigável e contemporâneo.</p>
             </div>
 
-            <div className='tipografia'>
+            <div className='tipografia' id='fontJasmin'>
+              <h3>Jasmin Regular</h3>
+              <p>0 01 02 03 04 05 06 07 08 09 10</p>
               <p>Ab Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
-              <h5>0 01 02 03 04 05 06 07 08 09 10</h5>
-              <p id='fontAnybody'>A AnyBody é uma fonte moderna e versátil, com um estilo amigável e contemporâneo.</p>
+              <p>A Jazmin Regular é uma fonte moderna e elegante, com formas arredondadas e suaves, ideal para transmitir uma imagem amigável.</p>
             </div>
           </div>
         </article>
