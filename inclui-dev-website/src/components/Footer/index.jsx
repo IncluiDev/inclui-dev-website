@@ -1,6 +1,6 @@
 import './style.css'
-import { ArrowRight, NavigationArrow, EnvelopeSimple, InstagramLogo, GithubLogo, LinkedinLogo   } from 'phosphor-react'
-
+import { ArrowRight, NavigationArrow, EnvelopeSimple, InstagramLogo, GithubLogo, LinkedinLogo  } from 'phosphor-react'
+import {  LinktreeLogo  } from "@phosphor-icons/react"
 
 export default function Footer() {
     return(
@@ -19,12 +19,12 @@ export default function Footer() {
 
                    <nav>
                         <ul>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#">Inicio</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#about">Sobre</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#feedback">Participantes</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#newsletter">Planos</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#newsletter">Newsletter</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#newsletter">Contato</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/home">Inicio</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/home#about">Sobre</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#">Participantes</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#">Planos</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/catalogo">Cursos</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/login">Dashboard</a></li>
                         </ul>
                     </nav> 
                 </div>
@@ -35,7 +35,7 @@ export default function Footer() {
                    <nav>
                     <ul>
                         <li><NavigationArrow className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#" target='_blank'>SENAC Lapa Tito</a></li>
-                        <li><EnvelopeSimple  className='footer-icon not-animation' size={20} color="#392E2E" weight="bold" /><a className='/'>incluidev.org@gmail.com</a></li>
+                        <li><EnvelopeSimple  className='footer-icon' size={20} color="#392E2E" weight="bold" /><a className='/'>incluidev.org@gmail.com</a></li>
                     </ul>
                     </nav> 
                 </div>
@@ -45,9 +45,25 @@ export default function Footer() {
 
                    <nav>
                         <ul>
-                            <li><InstagramLogo  className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#" target='_blank'>Instagram</a></li>
-                            <li><GithubLogo  className='footer-icon' size={20} color="#392E2E" weight="bold"/><a href="#" target='_blank'>Github</a></li>
-                            <li><LinkedinLogo className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#">LinkedIn</a></li>
+                            <li>
+                                <LinktreeLogo className='footer-icon' size={20} color="#392E2E" weight="bold" />
+                                <a href="https://linktr.ee/incluidev">LinkTree</a>
+                            </li>
+
+                            <li>
+                                <InstagramLogo  className='footer-icon' size={20} color="#392E2E" weight="bold" />
+                                <a href="https://www.instagram.com/incluidev" target='_blank'>Instagram</a>
+                            </li>
+
+                            <li>
+                                <GithubLogo  className='footer-icon' size={20} color="#392E2E" weight="bold"/>
+                                <a href="https://github.com/IncluiDev" target='_blank'>Github</a>
+                            </li>
+                            
+                            <li>
+                                <LinkedinLogo className='footer-icon' size={20} color="#392E2E" weight="bold" />
+                                <a href="https://www.linkedin.com/company/inclui-dev">LinkedIn</a>
+                            </li>
                         </ul>
                     </nav> 
                 </div>

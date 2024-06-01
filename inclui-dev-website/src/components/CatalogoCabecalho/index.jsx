@@ -1,7 +1,7 @@
 import './style.css';
 import blocosCentro from '../../assets/chao-blocos.png';
 
-export default function Superior() {
+export default function CatalogoCabecalho() {
     return (
         <div className="container">
             <div className='container-info'>

@@ -5,7 +5,7 @@ const CursosCard = (props) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/curso`); 
+        navigate(`/detalhamento`); 
     };
 
     return (

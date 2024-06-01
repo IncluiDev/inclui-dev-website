@@ -10,7 +10,7 @@ import blocosCenter from '../../assets/chao-blocos.png'
 
 import "./style.css"
 
-export default function Equipe(props) {
+export default function Equipe() {
     return (
         <section id='Equipe' className='Equipe'>
             <div className='blocos-Equipe'><img className='CenterBlocos' src={blocosCenter} /></div>
@@ -88,7 +88,6 @@ export default function Equipe(props) {
                 foto = {KaiqueFoto}
                 nome = "Edson Fernandez"
                 funcao = "Mentor - Gerente de TI - PAM" 
-                github = "https://github.com/HenryModesto"
                 linkedin = "https://www.linkedin.com/in/edsonfmarques/"
                 instagram = "https://www.instagram.com/edsonfernandesmarques/" />
 
