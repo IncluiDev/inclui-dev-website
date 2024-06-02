@@ -16,7 +16,7 @@ export default function AboutProject() {
                 </p>
             </div>
 
-            <img src={rectangles} id="imgAbout" alt="" />
+            <img src={rectangles} id="img-about" alt="" />
         </section>
     )
 }

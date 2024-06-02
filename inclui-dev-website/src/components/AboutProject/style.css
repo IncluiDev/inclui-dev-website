@@ -21,7 +21,7 @@
 }
 
 
-#imgAbout {
+#img-about {
     width: 1000px;
     height: 100%;
     position: relative;
@@ -66,12 +66,9 @@
         flex-direction: column;
     }
 
-   #imgAbout {
+   #img-about {
     width: 70%;
-
    }
-
-   
 }
 
 @media (max-width: 1200px) {
@@ -108,7 +105,7 @@
         margin: 0 3rem;
     }
 
-    #imgAbout {
+    #img-about {
         position: relative;
         right: -80px;
     }

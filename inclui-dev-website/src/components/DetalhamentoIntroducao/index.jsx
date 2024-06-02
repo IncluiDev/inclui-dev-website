@@ -8,19 +8,19 @@ import { FaUserAlt } from "react-icons/fa";
 
 const DetalhamentoIntroducao = () => {
   return (
-    <div className='containerDetalhamento'>
-      <span className='iconCurso'><img src={javaIcon} alt="" /></span>
-      <div className='tituloCursoDetalhamento'>
+    <div className='container-detalhamento'>
+      <span className='icon-curso'><img src={javaIcon} alt="Java Icon" /></span>
+      <div className='titulo-curso-detalhamento'>
         <h2>Categoria Curso</h2>
         <h1>Titulo Curso</h1>
-        <div className='containerTag'>
-          <h5 className='tagCurso'>BackEnd</h5>
-          <h5 className='tagCurso'>Inciante</h5>
+        <div className='container-tag'>
+          <h5 className='tag-curso'>BackEnd</h5>
+          <h5 className='tag-curso'>Iniciante</h5>
         </div>
       </div>
-      <span className='pessoaComCelular'><img src={pessoaComCelular} alt="" /></span>
-      <div className='detalhesCurso'>
-        <ul className='listaInfoCurso'>
+      <span className='pessoa-com-celular'><img src={pessoaComCelular} alt="Pessoa com Celular" /></span>
+      <div className='detalhes-curso'>
+        <ul className='lista-info-curso'>
           <li>
             <p><MdOutlineWatchLater /> Carga Horária</p>
             <p>5h</p>
@@ -30,7 +30,7 @@ const DetalhamentoIntroducao = () => {
             <p>5.0</p>
           </li>
         </ul>
-        <ul className='listaInfoCurso'>
+        <ul className='lista-info-curso'>
           <li>
             <p><IoCalendar /> Publicado dia</p>
             <p>05/11/2023</p>
@@ -40,10 +40,9 @@ const DetalhamentoIntroducao = () => {
             <p>500</p>
           </li>
         </ul>
-        
       </div>
     </div>
-  )
+  );
 }
 
 export default DetalhamentoIntroducao;

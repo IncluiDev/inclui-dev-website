@@ -9,26 +9,26 @@ const CursosCard = (props) => {
     };
 
     return (
-        <div className="containerCardCursoPrincipal" onClick={handleClick}>
+        <div className="container-card-curso-principal" onClick={handleClick}>
             <img src={props.imgSrc} alt={props.courseName} />
 
-            <div className="infoCursoCard">
-                <div className="tituloCurso">
+            <div className="info-curso-card">
+                <div className="titulo-curso">
                     <h1>{props.courseName}</h1>
                 </div>
                 
-                <div className="tagsCurso">
-                        {
-                            Array.isArray(props.courseTag) && props.courseTag.map((tag, index) => (
-                                <h2 key={index} className='tagCurso'><span>#</span>{tag}</h2>
-                            ))
-                        }
+                <div className="tags-curso">
+                    {
+                        Array.isArray(props.courseTag) && props.courseTag.map((tag, index) => (
+                            <h2 key={index} className='tag-curso'><span>#</span>{tag}</h2>
+                        ))
+                    }
                 </div>
-                <div className='descricaoCurso'>
+                <div className='descricao-curso'>
                     <h4>Descrição Curso</h4>
                     <p>{props.descricaoCurso}</p>
                 </div>
-                <div className="porcentagemCurso">
+                <div className="porcentagem-curso">
                     <h4>Progresso</h4>
                     <div id="progress-container">
                         <div id="progress-bar" style={{ width: `${props.progress}%` }}>

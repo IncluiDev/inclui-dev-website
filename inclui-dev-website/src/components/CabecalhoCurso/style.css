@@ -1,10 +1,10 @@
-.cabecalhoCursoMain {
+.cabecalho-curso-main {
     position: relative;
     top: 4rem;
     background-color: #F0F0F0;
 }
 
-.containerCabecalhoCurso {
+.container-cabecalho-curso {
     width: 100%;
     margin: 2%;
     padding: 40px;
@@ -13,11 +13,11 @@
     justify-content: center;
 }
 
-.tituloCabecalho {
+.titulo-cabecalho {
     font-size: 50px;
 }
 
-.continuarCurso {
+.continuar-curso {
     display: flex;
     align-items: center;
     gap: 10px;

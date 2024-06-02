@@ -26,18 +26,18 @@ export default function Cursos() {
         <div className="main">
             <div className="container-cursos">
                 <h1>Todos nossos cursos Java</h1>
-                <nav className='menuCurso'>
+                <nav className='menu-curso'>
                     <ul>
-                        <li className="itemAtivo">Java</li>
+                        <li className="item-ativo">Java</li>
                         <li>Python</li>
                         <li className='jogos-select'>Jogos</li>
                     </ul>
                 </nav>
-                <div className='containerCard'>
-                    <div className='lateralCard'>
+                <div className='container-card'>
+                    <div className='lateral-card'>
                         <img src={lateralCard} alt="Lateral Card" />
                     </div>
-                    <div className='containerPrincipal'>
+                    <div className='container-principal'>
                         <CursosCard
                             imgSrc={imgCurso1}
                             courseName="Crie sua primeira aplicação web Java"
@@ -58,11 +58,11 @@ export default function Cursos() {
                             ))
                         }
                     </div>
-                    <div className='lateralCard'>
+                    <div className='lateral-card'>
                         <img src={lateralCard} alt="Lateral Card" />
                     </div>
                 </div>
-                <div className='blocos1'>
+                <div className='blocos-1'>
                     <img src={blocosCentro} alt="blocosCentro" />
                 </div>
             </div>

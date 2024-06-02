@@ -1,4 +1,4 @@
-.containerCardCursoPrincipal {
+.container-card-curso-principal {
     width: 90%;
     margin-left: 100px;
     margin-right: 100px;
@@ -6,15 +6,15 @@
     border-radius: 20px;
     padding: 20px;
     border: 5px solid #CA1BB4;
-    box-shadow: 05px 05px 30px -9px rgba(70, 69, 69, 0.418);
+    box-shadow: 5px 5px 30px -9px rgba(70, 69, 69, 0.418);
 }
 
-.containerCardCursoPrincipal img {
+.container-card-curso-principal img {
     width: 300px;
     margin-right: 5%;
 }
 
-.infoCursoCard { 
+.info-curso-card { 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,18 +23,18 @@
     padding: 20px;
 }
 
-.tituloCurso {
+.titulo-curso {
     flex-grow: 1; 
 }
 
-.tagsCurso {
+.tags-curso {
     display: flex;
     width: 100%;
     gap: 8px;
     justify-content: flex-start;
 }
 
-.tagCurso {
+.tag-curso {
     font-size: 15px;
     padding: 5px 15px;
     background-color: #CA1BB4;
@@ -44,7 +44,7 @@
     width: fit-content;
 }
 
-.porcentagemCurso {
+.porcentagem-curso {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -63,7 +63,7 @@
     margin: 0;
 }
 
-.infoProgresso {
+.info-progresso {
     display: flex;
     gap: 20px;
 }
@@ -77,49 +77,49 @@
     color: white;
 }
 
-.descricaoCurso {
+.descricao-curso {
     align-items: center;
     justify-content: center;
     width: 90%;
 }
 
-.containerCardCursoPrincipal:hover {
+.container-card-curso-principal:hover {
     cursor: pointer;
     border: 5px solid #63AB72;
 }
 
-.containerCardCursoPrincipal:hover #progress-bar {
+.container-card-curso-principal:hover #progress-bar {
     background-color: #63AB72;
 }
 
-.containerCardCursoPrincipal:hover .tagCurso {
+.container-card-curso-principal:hover .tag-curso {
     background-color: #63AB72;
 }
 
 @media (max-width: 800px) {
-    .containerCardCursoPrincipal{
+    .container-card-curso-principal {
         margin-top: 30px;
     }
 
-    .containerCardCursoPrincipal img {
+    .container-card-curso-principal img {
         width: 200px;
         height: 200px;
         margin-right: 5%;
     }
 
-    .tagCurso {
+    .tag-curso {
         font-size: 8px;
     }
 
-    .tituloCurso h1 {
+    .titulo-curso h1 {
         font-size: 20px;
     }
 
-    .descricaoCurso h4 {
+    .descricao-curso h4 {
         display: none;
     }
     
-    .descricaoCurso p {
+    .descricao-curso p {
         display: none;
     }
- }
+}

@@ -21,48 +21,48 @@
     text-transform: uppercase;
 }
 
-.blocos1 > img{
+.blocos-1 > img {
     position: relative;
     top: 50px;
 }
 
-.itemAtivo {
+.item-ativo {
     font-weight: bold;
 }
 
-.menuCurso {
+.menu-curso {
     margin-top: 5%;
     font-size: 30px;
 }
 
-.menuCurso ul {
+.menu-curso ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-.menuCurso li {
+.menu-curso li {
     display: inline-block;
     position: relative;
     cursor: pointer;
-    margin-right: 30px; 
+    margin-right: 30px;
 }
 
-.menuCurso li::after {
+.menu-curso li::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -3px; /* Ajusta a posição da linha */
+    bottom: -3px;
     width: 100%;
-    height: 4px; /* Espessura da linha */
+    height: 4px;
     background-color: transparent;
-    transition: background-color 0.3s ease-in; /* Adiciona uma transição suave */
+    transition: background-color 0.3s ease-in;
 }
 
-.menuCurso li:hover::after,
-.menuCurso li.itemAtivo::after {
-    background-color: black; /* Cor da linha */
+.menu-curso li:hover::after,
+.menu-curso li.item-ativo::after {
+    background-color: black;
     cursor: pointer;
 }
 
@@ -73,7 +73,7 @@
     border-radius: 8px;
 }
 
-.lateralImg {
+.lateral-img {
     width: 25%;
     height: max-content;
     border: 5px solid #F9A3A4;
@@ -81,12 +81,12 @@
     border-radius: 15px;
 }
 
-.lateralImg img {
+.lateral-img img {
     width: 100%;
     height: max-content;
 }
 
-.containerCard {
+.container-card {
     display: flex;
     margin-top: 2%;
     justify-content: center;
@@ -94,7 +94,7 @@
     width: 100%;
 }
 
-.containerSecundarioCard {
+.container-secundario-card {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -103,64 +103,62 @@
     gap: 50px;
 }
 
-.containerPrincipal {
+.container-principal {
     display: flex;
     flex-direction: column;
     gap: 100px;
     align-items: center;
 }
 
-.containerPrincipal img {
+.container-principal img {
     width: 80%;
     transition: 1s;
 }
 
-.containerPrincipal img:hover{
+.container-principal img:hover {
     cursor: pointer;
     transform: scale(1.03);
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 1200px) {
-    .menuCurso {
+    .menu-curso {
         font-size: 25px;
     }
 
-    .menuCurso li {
+    .menu-curso li {
         margin-right: 20px;
     }
 }
 
 @media (max-width: 992px) {
-    .menuCurso {
+    .menu-curso {
         font-size: 20px;
     }
 
-    .menuCurso li {
+    .menu-curso li {
         margin-right: 15px;
     }
 
-    .containerPrincipal img {
+    .container-principal img {
         width: 90%;
     }
 
-    .lateralCard {
+    .lateral-card {
         display: none;
     }
 }
 
 @media (max-width: 768px) {
-
     .container-cursos h1 {
         font-size: 20px;
         margin-top: 10%;
     }
 
-    .menuCurso {
+    .menu-curso {
         font-size: 18px;
     }
 
-    .menuCurso ul {
+    .menu-curso ul {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -168,25 +166,25 @@
         flex-wrap: wrap;
     }
 
-    .menuCurso li {
+    .menu-curso li {
         margin-right: 10px;
         margin-bottom: 10px;
     }
 
-    .containerCard {
+    .container-card {
         flex-direction: column;
         align-items: center;
     }
 
-    .containerPrincipal img {
+    .container-principal img {
         width: 100%;
     }
 
-    .lateralImg {
+    .lateral-img {
         width: 50%;
     }
 
-    .lateralCard {
+    .lateral-card {
         display: none;
     }
 }
@@ -203,27 +201,27 @@
         margin-top: 10%;
     }
 
-    .menuCurso ul {
+    .menu-curso ul {
         font-size: 14px;
     }
 
-    .menuCurso li {
+    .menu-curso li {
         margin-right: 5px;
     }
 
-    .lateralImg {
+    .lateral-img {
         width: 75%;
     }
 
-    .containerPrincipal {
+    .container-principal {
         gap: 50px;
     }
 
-    .containerPrincipal img {
+    .container-principal img {
         width: 100%;
     }
 
-    .lateralCard {
+    .lateral-card {
         display: none;
     }
 }

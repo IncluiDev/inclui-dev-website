@@ -1,4 +1,4 @@
-.containerDetalhamento{
+.container-detalhamento {
     display: flex;
     position: relative;
     align-items: center;
@@ -9,42 +9,42 @@
     color: white;
 }
 
-.iconCurso {
+.icon-curso {
     margin-left: 8%;
     margin-top: 2%;
 }
 
-.iconCurso img {
+.icon-curso img {
     width: 300px;
 }
 
-.tituloCursoDetalhamento {
+.titulo-curso-detalhamento {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.tituloCursoDetalhamento h2 {
+.titulo-curso-detalhamento h2 {
     font-size: 26px;
     font-weight: lighter;
 }
 
-.tituloCursoDetalhamento h1 {
+.titulo-curso-detalhamento h1 {
     font-size: 40px;
     font-weight: bolder;
 }
 
-.containerTag {
+.container-tag {
     display: flex;
     gap: 10px;
     color: black;
 }
 
-.containerTag > .tagCurso{
+.container-tag .tag-curso {
     font-size: 16px;
 }
 
-.detalhesCurso {
+.detalhes-curso {
     display: flex;
     justify-content: space-between;
     width: 400px;
@@ -56,18 +56,18 @@
     color: rgba(0, 0, 0, 0.49);
 }
 
-.listaInfoCurso {
+.lista-info-curso {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.listaInfoCurso p {
+.lista-info-curso p {
     display: flex;
     gap: 5px;
     align-items: center;
 }
 
-.pessoaComCelular img {
+.pessoa-com-celular img {
     width: 100px;
 }
