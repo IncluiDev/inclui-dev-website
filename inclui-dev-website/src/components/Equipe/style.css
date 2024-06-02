@@ -1,7 +1,7 @@
-.Equipe{
+.Equipe {
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    height: auto;
     align-items: center;
     justify-content: space-evenly;
     border: 2px solid black;
@@ -11,18 +11,64 @@
 .members-one, .members-two {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    
 }
 
-.CenterBlocos{
+.CenterBlocos {
     width: 150%;
 }
 
-.blocos-Equipe{
+.blocos-Equipe {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    
+}
+
+@media (max-width: 1700px){
+
+        .EquipeCard {
+            width: 35%;
+        }
+}
+
+@media (max-width: 1200px) {
+    .EquipeCard {
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .EquipeCard {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .EquipeCard {
+        width: 100%;
+    }
+
+    .container-img-card img {
+        width: 75%;
+    }
+
+    .card-below {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .EquipeCard {
+        padding: 1rem;
+    }
+
+    .container-img-card img {
+        width: 100%;
+    }
+
+    .card-below {
+        padding: 1rem;
+    }
 }
