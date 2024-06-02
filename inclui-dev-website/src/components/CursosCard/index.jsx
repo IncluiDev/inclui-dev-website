@@ -5,7 +5,7 @@ const CursosCard = (props) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/detalhamento`); 
+        navigate(`/detalhamento?id=${props.id}`); 
     };
 
     return (
@@ -19,7 +19,7 @@ const CursosCard = (props) => {
                 
                 <div className="tags-curso">
                     {
-                        Array.isArray(props.courseTag) && props.courseTag.map((tag, index) => (
+                        props.courseTag.map((tag, index) => (
                             <h2 key={index} className='tag-curso'><span>#</span>{tag}</h2>
                         ))
                     }
@@ -30,6 +30,7 @@ const CursosCard = (props) => {
                 </div>
                 <div className="porcentagem-curso">
                     <h4>Progresso</h4>
+
                     <div id="progress-container">
                         <div id="progress-bar" style={{ width: `${props.progress}%` }}>
                         </div>

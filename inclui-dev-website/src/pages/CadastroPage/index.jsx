@@ -28,8 +28,7 @@ export default function CadastroPage() {
         console.log('Form Data:', formData);
         
         try {
-            const response = await api.post('/usuario', formData);
-            console.log('Response:', response.data);
+            await api.post('/usuario', formData);
         } catch (error) {
             console.error('Error submitting form:', error);
         }

@@ -2,11 +2,28 @@ import { useNavigate } from 'react-router-dom';
 import './style.css';
 import { FaPlay } from "react-icons/fa";
 
-const CabecalhoCurso = () => {
+import { api } from "../../lib/axios/axios";
+import { useEffect, useState } from 'react';
+
+const CabecalhoCurso = ( props ) => {
   const navigate = useNavigate();
+  const [aula, setAula] = useState();
+
+  async function getAula() {
+      try {
+          const response = await api.get(`/aula/all?curso=${props.id}`);
+          setAula(response.data[0]);
+      } catch (error) {
+          console.error('Error fetching courses:', error);
+      } 
+  }
+
+  useEffect(() => {
+    getAula();
+  }, []);
 
   const handleClick = () => {
-    navigate(`/curso`); 
+    navigate(`/curso?id=${aula.id}`); 
   };
 
   return (
@@ -15,6 +32,7 @@ const CabecalhoCurso = () => {
             <button className='continuar-curso' onClick={handleClick}>
               Continuar Curso <FaPlay />
             </button>
+
             <h1 className='titulo-cabecalho'>
               Tecnologia que 
               <span id='spanI'> I</span>

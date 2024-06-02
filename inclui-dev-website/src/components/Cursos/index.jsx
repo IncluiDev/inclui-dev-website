@@ -15,7 +15,7 @@ export default function Cursos() {
             setCursos(response.data);
         } catch (error) {
             console.error('Error fetching courses:', error);
-        }
+        } 
     }
 
     useEffect(() => {
@@ -33,12 +33,14 @@ export default function Cursos() {
                         <li className='jogos-select'>Jogos</li>
                     </ul>
                 </nav>
+
                 <div className='container-card'>
                     <div className='lateral-card'>
                         <img src={lateralCard} alt="Lateral Card" />
                     </div>
                     <div className='container-principal'>
                         <CursosCard
+                            id = "teste"
                             imgSrc={imgCurso1}
                             courseName="Crie sua primeira aplicação web Java"
                             courseTag={["Java", "OO", "Polimorfismo"]}
@@ -49,6 +51,7 @@ export default function Cursos() {
                             cursos.map(curso => (
                                 <CursosCard
                                     key={curso.id} 
+                                    id={curso.id}
                                     imgSrc={curso.referenciaImagem}
                                     courseName={curso.nome}
                                     courseTag={curso.tags}

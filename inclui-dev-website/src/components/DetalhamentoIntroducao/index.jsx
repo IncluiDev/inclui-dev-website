@@ -6,16 +6,22 @@ import { IoCalendar } from "react-icons/io5";
 import { BiSolidLike } from "react-icons/bi";
 import { FaUserAlt } from "react-icons/fa";
 
-const DetalhamentoIntroducao = () => {
+const DetalhamentoIntroducao = ( props ) => {
   return (
     <div className='container-detalhamento'>
-      <span className='icon-curso'><img src={javaIcon} alt="Java Icon" /></span>
+      <span className='icon-curso'>
+        <img src={props.imagem} alt="Java Icon" />
+      </span>
+
       <div className='titulo-curso-detalhamento'>
-        <h2>Categoria Curso</h2>
-        <h1>Titulo Curso</h1>
+        <h2>{props.area || "Teste"}</h2>
+        <h1>{props.nome || "Teste"}</h1>
         <div className='container-tag'>
-          <h5 className='tag-curso'>BackEnd</h5>
-          <h5 className='tag-curso'>Iniciante</h5>
+        {
+          Array.isArray(props.tags) && props.tags.map((tag, index) => (
+            <h5 key={index} className='tag-curso'>{tag}</h5>
+          ))
+        }
         </div>
       </div>
       <span className='pessoa-com-celular'><img src={pessoaComCelular} alt="Pessoa com Celular" /></span>
@@ -23,7 +29,7 @@ const DetalhamentoIntroducao = () => {
         <ul className='lista-info-curso'>
           <li>
             <p><MdOutlineWatchLater /> Carga Horária</p>
-            <p>5h</p>
+            <p>{props.horasDuracao || "0"}h</p>
           </li>
           <li>
             <p><BiSolidLike /> Avaliação</p>
