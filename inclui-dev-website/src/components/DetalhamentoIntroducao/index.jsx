@@ -1,5 +1,4 @@
 import './style.css';
-import javaIcon from '../../assets/javaIcon.png';
 import pessoaComCelular from '../../assets/pessoaComCelular.png';
 import { MdOutlineWatchLater } from "react-icons/md";
 import { IoCalendar } from "react-icons/io5";

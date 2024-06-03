@@ -1,11 +1,11 @@
 import EquipeCard from '../EquipeCard/index'
-import HenryFoto from '../../assets/HENRY.png'
-import KaiqueFoto from '../../assets/KAIQUE.png'
-import IgorFoto from '../../assets/IGOR.png'
-import AlineFoto from '../../assets/ALINE.png'
-import KaykFoto from '../../assets/KAYK.png'
-import LeonardoFoto from '../../assets/LEONARDO.png'
-import AdrieleFoto from '../../assets/ADRIELE.png'
+import HenryFoto from '../../assets/equipe/HENRY.png'
+import KaiqueFoto from '../../assets/equipe/KAIQUE.png'
+import IgorFoto from '../../assets/equipe/IGOR.png'
+import AlineFoto from '../../assets/equipe/ALINE.png'
+import KaykFoto from '../../assets/equipe/KAYK.png'
+import LeonardoFoto from '../../assets/equipe/LEONARDO.png'
+import AdrieleFoto from '../../assets/equipe/ADRIELE.png'
 import blocosCenter from '../../assets/chao-blocos.png'
 
 import "./style.css"
@@ -15,84 +15,86 @@ export default function Equipe() {
         <section id='Equipe' className='Equipe'>
             <div className='blocos-Equipe'><img className='CenterBlocos' src={blocosCenter} /></div>
             <h2 className='title-equipe'>EQUIPE</h2>
+            
             <div className="members-one">
                 <EquipeCard
                     foto={KaiqueFoto} 
-                    nome="KAIQUE SOUSA"
-                    funcao="Product Owner & FullStack"
+                    nome="Kaique Souza"
+                    funcao="Product Owner & Full-Stack"
                     github="https://github.com/kaiquesouzasantos"
                     linkedin="https://www.linkedin.com/in/kaique-souza-santos/"
                     instagram="https://www.instagram.com/kaiquesouzasantoss/"
-                    cor="#FF725E" 
-                 
-                />
-
-                <EquipeCard
-                    foto={HenryFoto} 
-                    nome="HENRY MODESTO"
-                    funcao="Scrum Master, UX/UI, FullStack"
-                    github="https://github.com/HenryModesto"
-                    linkedin="https://www.linkedin.com/in/henrymodesto/"
-                    instagram="https://www.instagram.com/henry_modesto05/"
                     cor="#4D8F9A" 
                 />
 
                 <EquipeCard
-                    foto={KaykFoto} 
-                    nome="KAYK GOMES"
-                    funcao="Financeiro & Back-End"
-                    github="https://github.com/Kayk-Dev"
-                    linkedin="https://www.linkedin.com/in/kaykmg/"
-                    instagram="https://www.instagram.com/kaykmessiass/"
+                    foto={HenryFoto} 
+                    nome="Henry Modesto"
+                    funcao="Scrum Master, Design & Full-Stack"
+                    github="https://github.com/HenryModesto"
+                    linkedin="https://www.linkedin.com/in/henrymodesto/"
+                    instagram="https://www.instagram.com/henry_modesto05/"
                     cor="#63AB72" 
                 />
 
                 <EquipeCard
+                    foto={KaykFoto} 
+                    nome="Kayk Gomes"
+                    funcao="Financeiro & Back-End"
+                    github="https://github.com/Kayk-Dev"
+                    linkedin="https://www.linkedin.com/in/kaykmg/"
+                    instagram="https://www.instagram.com/kaykmessiass/"
+                    cor="#CA1BB4" 
+                />
+
+                <EquipeCard
                     foto={AlineFoto} 
-                    nome="ALINE AGUIAR"
-                    funcao="Marketing - UX/UI & Front-End"
+                    nome="Aline Aguiar"
+                    funcao="Marketing, Design & Front-End"
                     github="https://github.com/eulineaguiar"
                     linkedin="https://www.linkedin.com/in/alineaguiarsilva/"
                     instagram="https://www.instagram.com/eulineaguiar/"
-                    cor="#C45BAA" 
+                    cor="#F76456" 
                 />
             </div>
             <div className="members-two">
                 <EquipeCard
                     foto={AdrieleFoto} 
-                    nome="ADRIELE LIMA"
+                    nome="Adriele Lima"
                     funcao="Marketing & Back-End"
                     github="#"
                     linkedin="https://www.linkedin.com/in/adrielels/"
                     instagram="https://www.instagram.com/adriele.7/"
-                    cor="#FFAA1D" 
+                    cor="#F76456" 
                 />
                 
                 <EquipeCard
                     foto={IgorFoto} 
-                    nome="IGOR SILVA"
-                    funcao="Designer & Front-End"
+                    nome="Igor Silva"
+                    funcao="Design & Front-End"
                     github="https://github.com/IgorOdSilva"
                     linkedin="https://www.linkedin.com/in/igorodsilva/"
                     instagram="https://www.instagram.com/igor_silva_150/"
-                    cor="#C45BAA" 
+                    cor="#4D8F9A" 
                 />
+
                 <EquipeCard
                     foto={LeonardoFoto}
-                    nome="LEONARDO DUARTE"
-                    funcao="Designer & Front-End"
+                    nome="Leonardo Duarte"
+                    funcao="Design & Front-End"
                     github="https://github.com/leoduarte14"
                     linkedin="https://www.linkedin.com/in/leonardo-duarte-pereira-a4705b255/"
                     instagram="https://www.instagram.com/duart.yn/"
-                    cor="#7DCEA0" 
+                    cor="#63AB72" 
                 />
+
                 <EquipeCard
                     foto={KaiqueFoto}
-                    nome="EDSON FERNANDEZ"
-                    funcao="Mentor - Gerente de TI - PAM"
+                    nome="Edson Fernandez"
+                    funcao="Mentor"
                     linkedin="https://www.linkedin.com/in/edsonfmarques/"
                     instagram="https://www.instagram.com/edsonfernandesmarques/"
-                    cor="#FFA07A" 
+                    cor="#CA1BB4" 
                 />
             </div>
         </section>
