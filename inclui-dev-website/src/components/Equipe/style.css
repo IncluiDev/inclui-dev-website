@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 4rem;
+    padding-top: 0;
 }
 
 .members-one, .members-two {
