@@ -4,6 +4,7 @@ import { FaPlay } from "react-icons/fa";
 
 import { api } from "../../lib/axios/axios";
 import { useEffect, useState } from 'react';
+import blocos from '../../assets/chao-blocos.png'
 
 const CabecalhoCurso = ( props ) => {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ const CabecalhoCurso = ( props ) => {
 
   return (
     <div className='cabecalho-curso-main'>
+      <img src={blocos} className='blocos-introducao'/>
         <div className='container-cabecalho-curso'>
             <button className='continuar-curso' onClick={handleClick}>
               Continuar Curso <FaPlay />
@@ -35,10 +37,10 @@ const CabecalhoCurso = ( props ) => {
 
             <h1 className='titulo-cabecalho'>
               Tecnologia que 
-              <span id='spanI'> I</span>
+              <span id='spanI'>I</span>
               <span id='spanN'>n</span>
               <span id='spanC'>c</span>
-              <span id='spanI'>l</span>
+              <span id='spanL'>l</span>
               <span id='spanN'>u</span>
               <span id='spanC'>i</span>
               <span id='spanM'>+</span>

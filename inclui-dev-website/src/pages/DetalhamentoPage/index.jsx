@@ -25,6 +25,7 @@ export default function DetalhamentoPage() {
     return (
       <>
         <Header/>
+        
         <main>
           {curso ? (
             <>
@@ -35,6 +36,7 @@ export default function DetalhamentoPage() {
                 tags={curso.tags}
                 imagem={curso.referenciaImagem}
               />
+              
               <CabecalhoCurso id={curso.id}/>
 
               <InfoDetalhamento 

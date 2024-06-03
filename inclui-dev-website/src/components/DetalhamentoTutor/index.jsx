@@ -6,7 +6,7 @@ import { api } from "../../lib/axios/axios";
 import { useEffect, useState } from 'react';
 
 const DetalhamentoTutor = (props) => {
-  const [professor, setProfessor] = useState(null); // Inicializar como null para evitar erro ao acessar propriedades antes de carregar os dados
+  const [professor, setProfessor] = useState(null); 
 
   async function getProfessor() {
     try {
@@ -30,7 +30,12 @@ const DetalhamentoTutor = (props) => {
       {professor && ( 
         <div className='tutor-nome'>
           <span className='tutorProfile'><img src={professor.referenciaFoto} alt="Professor Profile" /></span>
-          <h4>{professor.nome} <br />Professor da <span id='spanI'>I</span><span id='spanN'>n</span><span id='spanC'>c</span><span id='spanI'>l</span><span id='spanN'>u</span><span id='spanC'>i</span><span id='spanM'>+</span></h4>
+          <div className='tutor-nomeclaturas'>
+            <h4>{professor.nome} </h4>
+            <p>
+              Professor da <span id='spanI'>I</span><span id='spanN'>n</span><span id='spanC'>c</span><span id='spanL'>l</span><span id='spanN'>u</span><span id='spanC'>i</span><span id='spanM'>Dev</span>
+            </p>
+          </div>
         </div>
       )}
       <span className='imgPessoaPC'><img src={pessoaPC} alt="Pessoa usando PC" /></span>

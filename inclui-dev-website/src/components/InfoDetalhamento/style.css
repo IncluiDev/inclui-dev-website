@@ -1,22 +1,23 @@
 .infoDetalhamentoContainer {
-    margin-left: 0.5%;
     position: relative;
     top: 1rem;
     color: black;
-    padding: 5%;
+    padding: 100px 7rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+    gap: 50px;
+    width: 100%;
 }
 
 .titulo-desc-detalhamento {
-    width: 700px;
     display: flex;
     flex-direction: column;
 }
 
 .titulo-desc-detalhamento h3 {
-    font-size: 40px;
+    font-size: 35px;
+    margin-bottom: 15px;
 }
 
 .titulo-desc-detalhamento p {
@@ -39,30 +40,32 @@
     align-items: center;
 }
 
+.tutor-nomeclaturas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #63ab7359;
+    padding: 50px;
+    width: 400px;
+    border-radius: 50px;
+}
+
 .tutorIcon img {
     width: 250px;
     position: relative;
     left: 40px;
 }
 
-.tutor h2 {
-    border-radius: 50px;
-    width: 400px;
-    text-align: center;
-    background-color: #CCE4E6;
-    height: max-content;
-    padding: 50px;
-    font-size: 40px;
+.tutor-nomeclaturas h4 {
+    font-size: 25px;
 }
 
-.tutor-nome h4 {
-    width: 400px;
-    text-align: center;
-    padding: 25px;
-    height: max-content;
-    font-size: 25px;
-    background-color: #7bd2fa39;
-    border-radius: 50px;
+.tutor-nomeclaturas h4, .tutor-nomeclaturas span {
+    font-weight: 700;
+}
+
+.tutor-nomeclaturas p {
+    font-size: 18px;
 }
 
 .tutor-nome img {
@@ -84,7 +87,7 @@
 .aulasCurso {
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 100%;
     padding-top: 20px;
     text-align: center;
     border-radius: 20px;

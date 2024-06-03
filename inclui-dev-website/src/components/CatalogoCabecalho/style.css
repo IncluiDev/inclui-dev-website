@@ -23,7 +23,7 @@
 }
 
 .foto img {
-   width: 100%;
+    width: 100%;
 }
 
 .container-foto {
@@ -63,12 +63,12 @@
     flex-direction: column;
 }
 
-.container-texto > h1 {
+.container-texto>h1 {
     margin: 2% 0;
     font-size: 36px;
 }
 
-.container-texto > p {
+.container-texto>p {
     font-size: 22px;
 }
 
@@ -87,59 +87,64 @@
     transition: 1s;
 }
 
-.button-saiba-mais:hover{
+.button-saiba-mais:hover {
     transform: scale(1.08);
 }
 
-#spanI{
+#spanI {
+    margin-left: 7px;
     color: #4D8F9A;
-  }
-  
-  #spanN{
-    color: #CA1BB4;
-  }
-  
-  #spanC{
-    color: #F76456;
-  }
-  
-  
-  #spanM{
-    color: #63AB72;
-  }
+}
 
-  .blocos > img{
+#spanN {
+    color: #CA1BB4;
+}
+
+#spanC {
+    color: #F76456;
+}
+
+#spanL {
+    color: #4D8F9A;
+}
+
+#spanM {
+    color: #63AB72;
+}
+
+.blocos>img {
     position: relative;
     top: 270px;
-  }
+}
 
-  @media (max-width: 800px) {
-   .container {
-    flex-direction: column;
-   }
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
 
-   .container-info {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
+    .container-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-   .blocos, .blocosimg img{
-    display: none;
-   }
+    .blocos,
+    .blocosimg img {
+        display: none;
+    }
 
-   .foto {
-    width: 80%;
-    margin: 0;
-    padding: 0;
-   }
+    .foto {
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
 
-   .fundo-container {
-    width: 100%;
-   }
+    .fundo-container {
+        width: 100%;
+    }
 
-   .texto {
-    margin-right: 0;
-    width: 80%;
-   }
+    .texto {
+        margin-right: 0;
+        width: 80%;
+    }
 }

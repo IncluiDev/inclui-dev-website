@@ -1,17 +1,49 @@
 .container-detalhamento {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: start;
-    top: 8rem;
     width: 100%;
-    background-color: #63AB72;
-    color: white;
+    height: 600px;
+    position: relative;
+    top: 6rem;
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
 }
 
-.icon-curso {
-    margin-left: 8%;
-    margin-top: 2%;
+.container-detalhamento::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/background-curso.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2; 
+}
+
+.container-detalhamento::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: -1; 
+}
+
+
+.content-detalhamento {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    gap: 30px;
+    z-index: 10;
 }
 
 .icon-curso img {
@@ -22,6 +54,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
 }
 
 .titulo-curso-detalhamento h2 {

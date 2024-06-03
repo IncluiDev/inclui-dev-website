@@ -7,7 +7,6 @@ import blocosCenter from '../../assets/chao-blocos.png'
 import blocoMais from '../../assets/mais-roxo.png'
 import { CircleChevronDown } from 'lucide-react';
 
-
 export default function Home() {
     return( 
         <>
@@ -15,7 +14,7 @@ export default function Home() {
         <section className="home">
        
              <div className='titulos'>
-                <h1> <span id='tituloS'>Sociedade Justa,</span><br /> Tecnologia que <span id='spanI'>I</span><span id='spanN'>n</span><span id='spanC'>c</span><span id='spanI'>l</span><span id='spanN'>u</span><span id='spanC'>i</span><span id='spanM'>+</span></h1>
+                <h1> <span id='tituloS'>Sociedade Justa,</span><br /> Tecnologia que <span id='spanI'>I</span><span id='spanN'>n</span><span id='spanC'>c</span><span id='spanL'>l</span><span id='spanN'>u</span><span id='spanC'>i</span><span id='spanM'>+</span></h1>
                 <p id='subtitulo'> Juntos, podemos construir um futuro onde todos  <br /> tenham acesso igualitário às oportunidades e ao progresso. </p>
 
                 <img className='Details1' src={Details1}/>

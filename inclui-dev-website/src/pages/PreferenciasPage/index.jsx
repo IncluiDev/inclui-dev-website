@@ -4,12 +4,15 @@ import { useState } from 'react'
 import headerPreferencia from '../../assets/inclui-dev-logo.png'
 import rodape from '../../assets/rodape-curso.png';
 
-import { FaEye } from "react-icons/fa";
-import { FaBrain } from "react-icons/fa";
-import { IoIosSave } from "react-icons/io";
+import { FaRibbon } from "react-icons/fa6";
+import { FaEyeSlash } from "react-icons/fa6";
+import { FaGlasses } from "react-icons/fa";
+import { MdHearingDisabled } from "react-icons/md";
+import { PiEyedropperSampleFill } from "react-icons/pi";
 
 import { BsToggleOff } from "react-icons/bs";
 import { BsToggleOn } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa";
 
 const PreferenciasPage = () => {
     const [isToggledCega, setIsToggledCega] = useState(false);
@@ -52,8 +55,8 @@ const PreferenciasPage = () => {
                             className={`item-preferencia ${isToggledCega ? 'active' : ''}`}
                             onClick={handleToggleCega}
                         >
-                            <FaEye />
-                            Pessoa Cega
+                            <FaGlasses />
+                            Miopia, Hipermetropia ou Astigmatismo
                             <button className='option-preferencia'>
                                 {isToggledCega ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
@@ -62,8 +65,8 @@ const PreferenciasPage = () => {
                             className={`item-preferencia ${isToggledDaltonismo ? 'active' : ''}`}
                             onClick={handleToggleDaltonismo}
                         >
-                            <FaEye />
-                            Daltonismo
+                            <FaEyeSlash />
+                            Deficiência visual (baixa visão, cegueira legal ou total)
                             <button className='option-preferencia'>
                                 {isToggledDaltonismo ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
@@ -72,8 +75,8 @@ const PreferenciasPage = () => {
                             className={`item-preferencia ${isToggledBaixaVisao ? 'active' : ''}`}
                             onClick={handleToggleBaixaVisao}
                         >
-                            <FaEye />
-                            Baixa Visão
+                            <FaRibbon />
+                            Autismo com Grau de Suporte 1
                             <button className='option-preferencia'>
                                 {isToggledBaixaVisao ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
@@ -82,8 +85,8 @@ const PreferenciasPage = () => {
                             className={`item-preferencia ${isToggledDislexia ? 'active' : ''}`}
                             onClick={handleToggleDislexia}
                         >
-                            <FaBrain />
-                            Dislexia
+                            <MdHearingDisabled />
+                            Perda auditiva (parcial ou total)
                             <button className='option-preferencia'>
                                 {isToggledDislexia ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
@@ -92,8 +95,8 @@ const PreferenciasPage = () => {
                             className={`item-preferencia ${isToggledEpilepsia ? 'active' : ''}`}
                             onClick={handleToggleEpilepsia}
                         >
-                            <FaBrain />
-                            Epilepsia
+                            <PiEyedropperSampleFill />
+                            Daltonismo
                             <button className='option-preferencia'>
                                 {isToggledEpilepsia ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
@@ -101,8 +104,8 @@ const PreferenciasPage = () => {
                         
                         <a href='/home'>
                             <button className='button-preferencias'>
-                                Salvar
-                                <IoIosSave />
+                                Contunuar
+                                <FaArrowRight />
                             </button>
                         </a>
                     </ul>
