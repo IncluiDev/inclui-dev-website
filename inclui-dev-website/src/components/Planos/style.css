@@ -1,0 +1,121 @@
+.Planos {
+    width: 100%;
+    padding: 3rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.titulo-e-paragrafo {
+    margin-bottom: 2rem;
+}
+
+.titulo-e-paragrafo p {
+    font-size: 1.54rem;
+    text-align: center;
+}
+
+.titulo-e-paragrafo h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #392E2E;
+}
+
+.cartoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.cartoes .card-planos {
+    width: 26.2%;
+    min-width: 280px; /* Garante que os cartões não fiquem muito estreitos */
+}
+
+.card-header-planos img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    padding: 2rem;
+    margin: 1rem;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.card-planos:hover {
+    transform: scale(1.05);
+    background-color: #d246c0;
+    color: #fff;
+}
+
+.card-header-planos {
+    margin: 1rem;
+    text-align: center;
+}
+
+.card-planos .card-header-planos > h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.card-detail-plano > p {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.card-detail-plano > p:hover {
+    background-color: #e787da;
+}
+
+.card-button {
+    padding: 1.8rem 5rem;
+    border: 2px solid #ffffff;
+    background-color: #d246c0;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 50ms ease-in;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    margin: 3rem;
+}
+
+.card-button:hover {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 1500px) {
+    .cartoes .card-planos {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .cartoes .card-planos {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cartoes .card-planos {
+        width: 80%;
+    }
+}

@@ -10,6 +10,7 @@ import PaletaCard from '../../components/PaletaCard'
 import IdentidadeVisual from '../../components/IdentidadeVisual'
 import { useTranslation } from 'react-i18next'
 import Equipe from '../../components/Equipe'
+import Planos from '../../components/Planos'
 
 export default function HomePage() {
   const { t } = useTranslation()
@@ -27,6 +28,7 @@ export default function HomePage() {
         <PaletaCard />
         <IdentidadeVisual />
         <Equipe />
+        <Planos />
         <Newsletter />
       </main>
 
