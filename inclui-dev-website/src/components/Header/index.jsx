@@ -75,6 +75,7 @@ export default function Header() {
             <li><a href="/home#preco" onClick={() => handleItemClick(3)}>Planos</a></li>
             <li><a href="/home#newsletter" onClick={() => handleItemClick(4)}>Newsletter</a></li>
             <li><a href="/home#contato" onClick={() => handleItemClick(5)}>Contato</a></li>
+
             <li>
               <SwitchLanguage />
             </li>
@@ -83,7 +84,7 @@ export default function Header() {
           <FontAwesomeIcon 
             icon={faXmark}
             onClick={closeMenu}
-            className={`nav ${isOpen ? 'open' : ''} icon-navigator`}
+            className={`nav ${isOpen ? 'open' : ''} icon-navigator close-icon`}
           />
         </nav>
       }
