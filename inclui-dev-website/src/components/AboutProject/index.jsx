@@ -8,11 +8,9 @@ export default function AboutProject() {
                 <h1 className="title" style={{color: '#CA1BB4'}}>SOBRE NÓS</h1>
 
                 <p id='paragrafo'>
-                    Somos uma plataforma educacional contendo jogos, dinâmicas e cursos voltados para auxiliar no desenvolvimento de pessoas com deficiências que queiram ingressar no mercado tecnológico, equiparada com ferramentas didáticas e comunicação constante durante o processo lúdico.
-                    <br></br>
-                
-                    Com o objetivo de garantir que todas as pessoas tenham acesso igualitário a oportunidades, recursos e participação no mercado tecnológico, não somente incluindo, mas tornando-as pertencentes, buscamos promover a inclusão ativa e a diversidade como pilares fundamentais da nossa missão. 
-                </p>
+                    Somos uma plataforma educacional contendo jogos, dinâmicas e cursos voltados para auxiliar no desenvolvimento de pessoas com deficiências que queiram aprender sobre tecnologia, equiparada com ferramentas didáticas e comunicação constante durante o processo lúdico.                     
+                    <br/><br/>
+                    Com o objetivo de garantir que todas as pessoas tenham acesso igualitário a oportunidades, recursos e participação no mercado tecnológico, não somente incluindo, mas tornando-as pertencentes.                </p>
             </div>
 
             <img src={rectangles} id="img-about" alt="" />
