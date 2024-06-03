@@ -1,15 +1,19 @@
-
 .grid-card{
     display: flex;
     width: 100%;
-    max-width: 80vw;
-    gap: 0;
+    gap: 20px;
     margin: 0 auto;
     position: relative;  
     justify-content: space-between;
-    margin-top: -8rem ;
+    padding: 2rem 4rem;
 }
 
+.paleta-title {
+    color: #392E2E;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
 
 .bloquinhoCenter{
     width: 150%;
@@ -20,53 +24,17 @@
 }
 
 @media (max-width: 900px) {
-
     .grid-card {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px; 
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10rem;
-        right: 7rem;
-        top: -10rem;
-    }
-  
-    .grid-card > * {
-        margin: -10rem;
+        width: 100%;
+        padding: 2rem 4rem;
+        gap: 20px;
     }
 
     .bloquinhoCenter{
         height: 5%;
       }
-
-}
-
-@media (max-width: 550px) {
-
-
-    
-    .grid-card {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px; /* Reduz o espaço entre os itens */
-        justify-content: center;
-        align-items: center;
-        padding: 10rem; /* Remove o espaço interno em torno dos itens */
-        right: 10rem;
-        top: -10rem;
-        max-width: 100vw;
-      
-    }
-  
-    .grid-card > * {
-        margin: -10rem;
-    }
-
-
-    .bloquinhoCenter{
-        height: 5%;
-      }
-
- 
 }

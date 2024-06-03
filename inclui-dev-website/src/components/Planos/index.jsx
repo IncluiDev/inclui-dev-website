@@ -8,14 +8,14 @@ import './style.css';
 export default function Planos() {
     const planosData = [
         {
-            title: 'Gratis',
+            title: 'Grátis',
             image: planoGratis,
             details: [
                 { icon: faCheck, text: 'Acesso a Tutoriais', color: '#CA1BB4' },
                 { icon: faCheck, text: 'Acesso Limitado aos Jogos', color: '#CA1BB4' },
                 { icon: faCheck, text: 'Acesso Limitado aos Cursos', color: '#CA1BB4' },
                 { icon: faXmark, text: 'Acesso a Aulas Extras', color: '#F76456' },
-                { icon: faXmark, text: 'Conteúdo Especial', color: '#F76456' },
+                { icon: faXmark, text: 'Conteúdo Exclusivo', color: '#F76456' },
             ],
         },
         {
@@ -23,10 +23,10 @@ export default function Planos() {
             image: planoMensal,
             details: [
                 { icon: faCheck, text: 'Acesso a Tutoriais', color: '#CA1BB4' },
-                { icon: faCheck, text: 'Acesso Limitado aos Jogos', color: '#CA1BB4' },
-                { icon: faCheck, text: 'Acesso Limitado aos Cursos', color: '#CA1BB4' },
+                { icon: faCheck, text: 'Acesso Ilimitado aos Jogos', color: '#CA1BB4' },
+                { icon: faCheck, text: 'Acesso Ilimitado aos Cursos', color: '#CA1BB4' },
                 { icon: faCheck, text: 'Acesso a Aulas Extras', color: '#CA1BB4' },
-                { icon: faCheck, text: 'Conteúdo Especial', color: '#CA1BB4' },
+                { icon: faCheck, text: 'Conteúdo Exclusivo', color: '#CA1BB4' },
             ],
         },
         {
@@ -37,7 +37,7 @@ export default function Planos() {
                 { icon: faCheck, text: 'Acesso Ilimitado aos Jogos', color: '#CA1BB4' },
                 { icon: faCheck, text: 'Acesso Ilimitado aos Cursos', color: '#CA1BB4' },
                 { icon: faCheck, text: 'Acesso a Aulas Extras', color: '#CA1BB4' },
-                { icon: faCheck, text: 'Conteúdo Especial', color: '#CA1BB4' },
+                { icon: faCheck, text: 'Conteúdo Exclusivo', color: '#CA1BB4' },
             ],
         },
     ];

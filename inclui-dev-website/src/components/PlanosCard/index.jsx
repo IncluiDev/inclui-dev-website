@@ -7,10 +7,12 @@ const PlanosCard = ({ title, details, image }) => {
                 <img src={image} alt={title} />
                 <h2>{title}</h2>
             </div>
+
             <div className="card-detail-plano">
                 {details.map((detail, index) => (
-                    <p key={index}>
-                        <FontAwesomeIcon icon={detail.icon} style={{ color: detail.color, fontSize: '2rem' }} /> {detail.text}
+                    <p key={index} className='detail-text'>
+                        <FontAwesomeIcon icon={detail.icon} style={{ color: detail.color }} className='plano-icon'/> 
+                        {detail.text}
                     </p>
                 ))}
             </div>

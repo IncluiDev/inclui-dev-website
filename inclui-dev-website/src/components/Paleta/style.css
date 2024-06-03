@@ -1,26 +1,28 @@
-.cardizin {
+.paleta-card {
     color: #929292;
     font-size: 1rem;
     text-align: center;
-    font-weight: 700;
-    margin-top: 6.5em;
     padding: 2rem;
 }
 
-.cardizin img {
+.paleta-card img {
     width: 100%;
     max-width: 250px;
     border-radius: 20px;
 }
 
 
-.cardizin p{
+.paleta-card p {
     color: #392E2E;
     font-size: 24px;
 }
 
-.cardizin h2{
-    color: #392E2E;
-    font-size: 42px;
+.paleta-card .hexadecimal {
+    font-weight: 700;
 }
 
+@media (max-width: 900px) {
+    .paleta-card {
+        width: 100%;
+    }
+}

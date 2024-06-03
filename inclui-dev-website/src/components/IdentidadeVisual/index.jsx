@@ -12,38 +12,30 @@ export default function IdentidadeVisual() {
     return(
         <section className="IdentidadeVisual">
           <article className='identidade-caracteristicas'>
-          <h3 className='title-identidade'>COMPOSICAO DE LOGO</h3>
+          <h3 className='title-identidade'>COMPOSIÇÃO DE LOGO</h3>
 
             <div className='logoGridMarca'>
               <div className='identidade-grid'>
-                <img src={gridLogo} className='gridLogo'/>
+                <div className='identidade-column'>
+                  <IdentidadeLogo 
+                    images = {imgApoio}
+                    meaning = 'APOIO'
+                    text = 'As mãos simbolizam a solidariedade e também a união em torno de um propósito comum.'/>
 
-                <div className='identidade-grid-sub'>
-                  <img src={incluiLogoDev2} className='logo-01'/>
-                  <img src={incluiDevGrid} className='logo-02'/>
+                  <IdentidadeLogo 
+                    images = {imgInclusao}
+                    meaning = 'INCLUSÃO SOCIAL'
+                    text = 'Simbolizando a união e o apoio mútuo entre as pessoas, independentemente de suas diferenças.'
+                    id='inclusaoLogo' />
+
+                  <IdentidadeLogo 
+                    images = {imgProgramacao}
+                    meaning = 'PROGRAMAÇÃO'
+                    text = 'Simboliza o foco da marca na programação e tecnologia.'
+                    id='programacaoLogo'
+                    mineText = 'textMinu'/>
                 </div>
-              </div>
-
-              <h3 className='title-identidade'>LOGO MARCA</h3>
-
-              <div className='identidade-row'>
-                <IdentidadeLogo 
-                  images = {imgApoio}
-                  meaning = 'APOIO'
-                  text = 'As mãos simbolizam a solidariedade e também a união em torno de um propósito comum.'/>
-
-                <IdentidadeLogo 
-                  images = {imgInclusao}
-                  meaning = 'INCLUSÃO SOCIAL'
-                  text = 'Simbolizando a união e o apoio mútuo entre as pessoas, independentemente de suas diferenças.'
-                  id='inclusaoLogo' />
-
-                <IdentidadeLogo 
-                  images = {imgProgramacao}
-                  meaning = 'PROGRAMAÇÃO'
-                  text = 'Simboliza o foco da marca na programação e tecnologia.'
-                  id='programacaoLogo'
-                  mineText = 'textMinu'/>
+                <img src={gridLogo} className='gridLogo'/>              
               </div>
             </div>
           </article>

@@ -81,6 +81,18 @@
     background-color: #e787da;
 }
 
+.detail-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plano-icon {
+    font-size: 2rem;
+    position: relative;
+    left: 0;
+}
+
 .card-button {
     padding: 1.8rem 5rem;
     border: 2px solid #ffffff;

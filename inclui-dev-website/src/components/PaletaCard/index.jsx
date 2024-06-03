@@ -9,32 +9,32 @@ import Paleta from '../Paleta/index'
 export default function PaletaCard() {
   return (
 
-    <section className='PaletaCard' id='feedback'>
+    <section className='PaletaCard' id='identidade'>
       <img src={bloquinhoCenter} className='bloquinhoCenter' />
       
-      <Paleta subtitle= "CORES IDENTIDADE VISUAL" />
+      <h2 className='paleta-title'>CORES IDENTIDADE VISUAL</h2>
 
       <div className='grid-card'>   
         
         <Paleta 
           image = {LaranjaCor} 
-          hexadecimal = "LARANJA"
-          name = "ALEGRIA" />
+          hexadecimal = "Laranja"
+          name = "Alegria" />
 
         <Paleta 
           image = {RosaCor}
-          hexadecimal = "ROSA"
-          name = "CRIATIVIDADE" />
+          hexadecimal = "Rosa"
+          name = "Criatividade" />
 
         <Paleta 
           image = {VerdeCor}
-          hexadecimal = "VERDE"
-          name = "CORAGEM" />
+          hexadecimal = "Verde"
+          name = "Coragem" />
 
         <Paleta 
           image = {AzulCor}
-          hexadecimal = "AZUL"
-          name = "CONFIANÇA" />
+          hexadecimal = "Azul"
+          name = "Confiança" />
       </div>
     </section>
   )
