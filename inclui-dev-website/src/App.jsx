@@ -1,7 +1,7 @@
 import './style.css'
 import './acessibilidade.css'
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
 import CatalogoPage from './pages/CatalogoPage'
@@ -24,6 +24,7 @@ export default function App() {
         <Route path="/catalogo" element={<CatalogoPage/>}></Route>
         <Route path="/detalhamento" element={<DetalhamentoPage/>}></Route>
         <Route path="/curso" element={<CursoExibicaoPage/>}></Route>
+        <Route path="*" element={<Navigate to="/home" replace />} />
       </Routes>
     </BrowserRouter>
   )
