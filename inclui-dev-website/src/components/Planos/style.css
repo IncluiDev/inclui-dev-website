@@ -29,7 +29,7 @@
 
 .cartoes .card-planos {
     width: 26.2%;
-    min-width: 280px; /* Garante que os cartões não fiquem muito estreitos */
+    min-width: 280px; 
 }
 
 .card-header-planos img {
@@ -43,10 +43,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    min-height: 100%;
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    box-shadow: 5px 5px 30px -9px rgba(70, 69, 69, 0.418);
     padding: 2rem;
     margin: 1rem;
     transition: all 0.2s ease-in;
@@ -86,7 +86,7 @@
     border: 2px solid #ffffff;
     background-color: #d246c0;
     color: #fff;
-    border-radius: 40px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 50ms ease-in;
     font-size: 1.5rem;
