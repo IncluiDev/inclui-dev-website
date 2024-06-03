@@ -12,7 +12,7 @@ import "./style.css"
 
 export default function Equipe() {
     return (
-        <section id='Equipe' className='Equipe'>
+        <section id='equipe' className='Equipe'>
             <div className='blocos-Equipe'><img className='CenterBlocos' src={blocosCenter} /></div>
             <h2 className='title-equipe'>EQUIPE</h2>
             

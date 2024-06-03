@@ -1,4 +1,3 @@
-import React from 'react';
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
 import PlanosCard from '../../components/PlanosCard';
 import planoGratis from '../../assets/planoGratis.png';
@@ -44,7 +43,7 @@ export default function Planos() {
     ];
 
     return (
-        <section className="Planos">
+        <section className="Planos" id='planos'>
             <div className="titulo-e-paragrafo">
                 <h3>Nossos Planos</h3>
                 <p>Escolha o plano que melhor se adapta às suas necessidades e <br></br>aproveite ao máximo nossos serviços.</p>

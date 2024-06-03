@@ -38,13 +38,13 @@ export default function Header() {
             <a href="/home" className={selectedItem === 0 ? 'selected' : ''} onClick={() => handleItemClick(0)}>Inicio</a>
           </li>
           <li>
-            <a href="/home#about" className={selectedItem === 1 ? 'selected' : ''} onClick={() => handleItemClick(1)}>Sobre</a>
+            <a href="/home#sobre" className={selectedItem === 1 ? 'selected' : ''} onClick={() => handleItemClick(1)}>Sobre</a>
           </li>
           <li>
-            <a href="/home" className={selectedItem === 2 ? 'selected' : ''} onClick={() => handleItemClick(2)}>Participantes</a>
+            <a href="/home#equipe" className={selectedItem === 2 ? 'selected' : ''} onClick={() => handleItemClick(2)}>Equipe</a>
           </li>
           <li>
-            <a href="/home#preco" className={selectedItem === 3 ? 'selected' : ''} onClick={() => handleItemClick(3)}>Planos</a>
+            <a href="/home#planos" className={selectedItem === 3 ? 'selected' : ''} onClick={() => handleItemClick(3)}>Planos</a>
           </li>
           <li>
             <a href="/catalogo" className={selectedItem === 4 ? 'selected' : ''} onClick={() => handleItemClick(4)}>Cursos</a>
@@ -71,7 +71,7 @@ export default function Header() {
           <ul>
             <li><a href="/home" onClick={() => handleItemClick(0)}>Inicio</a></li>
             <li><a href="/home#about" onClick={() => handleItemClick(1)}>Sobre</a></li>
-            <li><a href="/home#feedback" onClick={() => handleItemClick(2)}>Participantes</a></li>
+            <li><a href="/home#equipe" onClick={() => handleItemClick(2)}>Equipe</a></li>
             <li><a href="/home#preco" onClick={() => handleItemClick(3)}>Planos</a></li>
             <li><a href="/home#newsletter" onClick={() => handleItemClick(4)}>Newsletter</a></li>
             <li><a href="/home#contato" onClick={() => handleItemClick(5)}>Contato</a></li>

@@ -1,12 +1,11 @@
 import './style.css'
 import rectangles from '../../assets/retangulos-aplicativo.png'
 
-
 export default function AboutProject() {
     return(
-        <section className="add">
+        <section className="add" id='sobre'>
             <div className='add-content'>
-                <h1 className="title">SOBRE NÓS</h1>
+                <h1 className="title" style={{color: '#CA1BB4'}}>SOBRE NÓS</h1>
 
                 <p id='paragrafo'>
                     Somos uma plataforma educacional contendo jogos, dinâmicas e cursos voltados para auxiliar no desenvolvimento de pessoas com deficiências que queiram ingressar no mercado tecnológico, equiparada com ferramentas didáticas e comunicação constante durante o processo lúdico.

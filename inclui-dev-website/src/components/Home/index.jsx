@@ -26,9 +26,7 @@ export default function Home() {
                     <img className='blocoMais' src={blocoMais} />
                     <img className='CenterBlocos' src={blocosCenter} />
                     
-                    <a className='saibaMais' href="/">  <span id='saiba'>SAIBA MAIS <CircleChevronDown id='circleDown' size={45} color="white" weight="bold"/> </span> 
-                    
-    
+                    <a className='saibaMais' href="/home#sobre">  <span id='saiba'>SAIBA MAIS <CircleChevronDown id='circleDown' size={45} color="white" weight="bold"/> </span> 
                     </a>
             </div>
  
