@@ -8,22 +8,29 @@ import Users from '../../assets/comunidade.png';
 import Books from '../../assets/livros.png';
 import Games from '../../assets/jogos.png';
 
+import { useTranslation } from 'react-i18next'
+
 export default function About() {
+    const { t } = useTranslation()
+
     return (
         <section id="about" className='about'>
             <img src={Dash2} className='dash' alt='dash'></img>
+
             <div className='grid-content'>
                 <AboutCard 
                     icons={Users}
-                    description="USUÁRIOS"
+                    description={t("about-usuarios")}
                     image={CardUser}  />
+
                 <AboutCard
                     icons={Books}
-                    description="AULAS"
+                    description={t("about-aulas")}
                     image={CardClass} />
+
                 <AboutCard
                     icons={Games}
-                    description="JOGOS"
+                    description={t("about-jogos")}
                     image={CardGames} />
             </div> 
         </section>

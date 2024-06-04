@@ -14,6 +14,7 @@ export default function RecuperacaoPage() {
       <img src={blocosRodape} alt="" className="blocos-rodape" />
       <img src={blocoMais} alt="" className="bloco-mais" />
       <img src={blocoMaisAzul} alt="" className="icone-mais" />
+      
       <div className="left-side">
         <h2>NOVA SENHA</h2>
         <p>Informe o email para o qual deseja redefinir sua senha.</p>

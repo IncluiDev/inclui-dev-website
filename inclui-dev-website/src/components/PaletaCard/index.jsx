@@ -6,35 +6,39 @@ import LaranjaCor from '../../assets/identidade-cor-laranja.png';
 import AzulCor from '../../assets/identidade-cor-azul.png';
 import Paleta from '../Paleta/index'
 
+import { useTranslation } from 'react-i18next'
+
 export default function PaletaCard() {
+  const { t } = useTranslation()
+
   return (
 
     <section className='PaletaCard' id='identidade'>
       <img src={bloquinhoCenter} className='bloquinhoCenter' />
       
-      <h2 className='paleta-title'>CORES IDENTIDADE VISUAL</h2>
+      <h2 className='paleta-title'>{t("paleta-card-titulo")}</h2>
 
       <div className='grid-card'>   
         
         <Paleta 
           image = {LaranjaCor} 
-          hexadecimal = "Laranja"
-          name = "Alegria" />
+          hexadecimal = {t("paleta-card-laranja")}
+          name = {t("paleta-card-laranja-significado")} />
 
         <Paleta 
           image = {RosaCor}
-          hexadecimal = "Rosa"
-          name = "Criatividade" />
+          hexadecimal = {t("paleta-card-rosa")}
+          name = {t("paleta-card-rosa-significado")} />
 
         <Paleta 
           image = {VerdeCor}
-          hexadecimal = "Verde"
-          name = "Coragem" />
+          hexadecimal = {t("paleta-card-verde")}
+          name = {t("paleta-card-verde-significado")} />
 
         <Paleta 
           image = {AzulCor}
-          hexadecimal = "Azul"
-          name = "Confiança" />
+          hexadecimal = {t("paleta-card-azul")}
+          name = {t("paleta-card-azul-significado")} />
       </div>
     </section>
   )

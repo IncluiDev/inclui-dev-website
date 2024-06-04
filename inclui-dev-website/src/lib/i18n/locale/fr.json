@@ -1,0 +1,82 @@
+{
+    "translation": {
+        "preferencias-titulo": "Profils d'Accessibilité",
+        "preferencias-opcao-01": "Myopie, Hypermétropie ou Astigmatisme",
+        "preferencias-opcao-02": "Déficience visuelle (basse vision, cécité légale ou totale)",
+        "preferencias-opcao-03": "Autisme avec Niveau de Soutien 1",
+        "preferencias-opcao-04": "Perte auditive (partielle ou totale)",
+        "preferencias-opcao-05": "Daltonisme",
+        "preferencias-continuar": "Continuer",
+
+        "header-inicio": "Accueil",
+        "header-sobre": "À propos",
+        "header-equipe": "Équipe",
+        "header-planos": "Plans",
+        "header-cursos": "Cours",
+        "header-perfil": "Profil",
+
+        "home-titulo-01": "Société Juste,",
+        "home-titulo-02": "Technologie qui",
+        "home-subtitulo-01": "Ensemble, nous pouvons construire un avenir où chacun",
+        "home-subtitulo-02": "a un accès égal aux opportunités et au progrès.",
+        "home-saiba-mais": "En savoir plus",
+
+        "about-usuarios": "UTILISATEURS",
+        "about-aulas": "COURS",
+        "about-jogos": "JEUX",
+
+        "about-project-titulo": "À PROPOS DE NOUS",
+        "about-project-paragrafo-01": "Nous sommes une plateforme éducative contenant des jeux, des dynamiques et des cours visant à aider au développement des personnes handicapées qui souhaitent apprendre la technologie, équipée d'outils didactiques et d'une communication constante pendant le processus ludique.",
+        "about-project-paragrafo-02": "Avec pour objectif de garantir que toutes les personnes aient un accès égal aux opportunités, aux ressources et à la participation au marché technologique, non seulement en les incluant, mais en les intégrant pleinement.",
+
+        "paleta-card-titulo": "COULEURS DE L'IDENTITÉ VISUELLE",
+        "paleta-card-laranja": "Orange",
+        "paleta-card-laranja-significado": "Joie",
+        "paleta-card-rosa": "Rose",
+        "paleta-card-rosa-significado": "Créativité",
+        "paleta-card-verde": "Vert",
+        "paleta-card-verde-significado": "Courage",
+        "paleta-card-azul": "Bleu",
+        "paleta-card-azul-significado": "Confiance",
+
+        "identidade-titulo": "COMPOSITION DU LOGO",
+        "identidade-apoio": "SOUTIEN",
+        "identidade-apoio-significado": "Les mains symbolisent la solidarité et l'union autour d'un objectif commun.",
+        "identidade-inclusao": "INCLUSION SOCIALE",
+        "identidade-inclusao-significado": "Symbolisant l'unité et le soutien mutuel entre les personnes, quelles que soient leurs différences.",
+        "identidade-programacao": "PROGRAMMATION",
+        "identidade-programacao-significado": "Symbolise l'orientation de la marque vers la programmation et la technologie.",
+        
+        "tipografia-titulo": "TYPOGRAPHIE",
+        "tipografia-anybody-descricao": "AnyBody est une police moderne et polyvalente, avec un style amical et contemporain.",
+        "tipografia-jasmin-descricao": "Jazmin Regular est une police moderne et élégante, avec des formes arrondies et douces, idéale pour transmettre une image amicale.",
+
+        "equipe-titulo": "ÉQUIPE",
+
+        "planos-titulo": "NOS PLANS",
+        "planos-subtitulo-01": "Choisissez le plan qui correspond le mieux à vos besoins et",
+        "planos-subtitulo-02": "profitez au maximum de nos services.",
+        "planos-titulo-gratis": "Gratuit",
+        "planos-titulo-mensal": "Mensuel",
+        "planos-titulo-anual": "Annuel",
+        "planos-tutoriais": "Accès aux tutoriels",
+        "planos-jogos-limitado": "Accès limité aux jeux",
+        "planos-cursos-limitado": "Accès limité aux cours",
+        "planos-jogos": "Accès illimité aux jeux",
+        "planos-cursos": "Accès illimité aux cours",
+        "planos-aulas": "Accès aux cours supplémentaires",
+        "planos-exclusivo": "Contenu exclusif",
+        "planos-assinar": "S'abonner",
+
+        "newsletter-titulo-01": "Abonnez-vous à notre",
+        "newsletter-titulo-02": "Newsletter !",
+        "newsletter-subtitulo": "Inscrivez-vous à notre newsletter et recevez des contenus incroyables directement dans votre boîte mail. Ne manquez pas l'opportunité de rester informé de nos nouveautés !",
+        "newsletter-inscrever": "S'abonner",
+        "newsletter-placeholder": "Entrez votre email",
+
+        "footer-links": "Liens rapides",
+        "footer-contato": "Contact",
+        "footer-redes": "Suivez-nous",
+        "footer-copywrite": "Tous droits réservés"
+    }
+}

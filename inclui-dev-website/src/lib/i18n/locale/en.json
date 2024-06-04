@@ -1,5 +1,82 @@
-{ 
+{
     "translation": {
-        "header": "header"
+        "preferencias-titulo": "Accessibility Profiles",
+        "preferencias-opcao-01": "Myopia, Hyperopia or Astigmatism",
+        "preferencias-opcao-02": "Visual impairment (low vision, legal blindness or total blindness)",
+        "preferencias-opcao-03": "Autism with Support Level 1",
+        "preferencias-opcao-04": "Hearing loss (partial or total)",
+        "preferencias-opcao-05": "Color blindness",
+        "preferencias-continuar": "Continue",
+
+        "header-inicio": "Home",
+        "header-sobre": "About",
+        "header-equipe": "Team",
+        "header-planos": "Plans",
+        "header-cursos": "Courses",
+        "header-perfil": "Profile",
+
+        "home-titulo-01": "Just Society,",
+        "home-titulo-02": "Technology that",
+        "home-subtitulo-01": "Together, we can build a future where everyone",
+        "home-subtitulo-02": "has equal access to opportunities and progress.",
+        "home-saiba-mais": "Learn More",
+
+        "about-usuarios": "USERS",
+        "about-aulas": "CLASSES",
+        "about-jogos": "GAMES",
+
+        "about-project-titulo": "ABOUT US",
+        "about-project-paragrafo-01": "We are an educational platform containing games, dynamics, and courses aimed at helping the development of people with disabilities who want to learn about technology, equipped with didactic tools and constant communication during the playful process.",
+        "about-project-paragrafo-02": "With the aim of ensuring that all people have equal access to opportunities, resources, and participation in the technology market, not only including them but making them belong.",
+
+        "paleta-card-titulo": "VISUAL IDENTITY COLORS",
+        "paleta-card-laranja": "Orange",
+        "paleta-card-laranja-significado": "Joy",
+        "paleta-card-rosa": "Pink",
+        "paleta-card-rosa-significado": "Creativity",
+        "paleta-card-verde": "Green",
+        "paleta-card-verde-significado": "Courage",
+        "paleta-card-azul": "Blue",
+        "paleta-card-azul-significado": "Trust",
+
+        "identidade-titulo": "LOGO COMPOSITION",
+        "identidade-apoio": "SUPPORT",
+        "identidade-apoio-significado": "The hands symbolize solidarity and also unity around a common purpose.",
+        "identidade-inclusao": "SOCIAL INCLUSION",
+        "identidade-inclusao-significado": "Symbolizing unity and mutual support among people, regardless of their differences.",
+        "identidade-programacao": "PROGRAMMING",
+        "identidade-programacao-significado": "Symbolizes the brand's focus on programming and technology.",
+        
+        "tipografia-titulo": "TYPOGRAPHY",
+        "tipografia-anybody-descricao": "AnyBody is a modern and versatile font, with a friendly and contemporary style.",
+        "tipografia-jasmin-descricao": "Jazmin Regular is a modern and elegant font, with rounded and smooth shapes, ideal for conveying a friendly image.",
+
+        "equipe-titulo": "TEAM",
+
+        "planos-titulo": "OUR PLANS",
+        "planos-subtitulo-01": "Choose the plan that best suits your needs and",
+        "planos-subtitulo-02": "make the most of our services.",
+        "planos-titulo-gratis": "Free",
+        "planos-titulo-mensal": "Monthly",
+        "planos-titulo-anual": "Annual",
+        "planos-tutoriais": "Access to Tutorials",
+        "planos-jogos-limitado": "Limited Access to Games",
+        "planos-cursos-limitado": "Limited Access to Courses",
+        "planos-jogos": "Unlimited Access to Games",
+        "planos-cursos": "Unlimited Access to Courses",
+        "planos-aulas": "Access to Extra Classes",
+        "planos-exclusivo": "Exclusive Content",
+        "planos-assinar": "Subscribe",
+
+        "newsletter-titulo-01": "Subscribe to our",
+        "newsletter-titulo-02": "Newsletter!",
+        "newsletter-subtitulo": "Sign up for our newsletter and receive amazing content directly to your email. Don't miss the opportunity to stay up to date with our news!",
+        "newsletter-inscrever": "Subscribe",
+        "newsletter-placeholder": "Enter your email",
+
+        "footer-links": "Quick Links",
+        "footer-contato": "Contact",
+        "footer-redes": "Follow us",
+        "footer-copywrite": "All rights reserved"
     }
 }

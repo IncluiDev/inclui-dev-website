@@ -10,11 +10,15 @@ import blocosCenter from '../../assets/chao-blocos.png'
 
 import "./style.css"
 
+import { useTranslation } from 'react-i18next'
+
 export default function Equipe() {
+    const { t } = useTranslation()
+
     return (
         <section id='equipe' className='Equipe'>
             <div className='blocos-Equipe'><img className='CenterBlocos' src={blocosCenter} /></div>
-            <h2 className='title-equipe'>EQUIPE</h2>
+            <h2 className='title-equipe'>{t("equipe-titulo")}</h2>
             
             <div className="members-one">
                 <EquipeCard

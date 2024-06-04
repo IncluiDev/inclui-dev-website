@@ -14,12 +14,16 @@ import { BsToggleOff } from "react-icons/bs";
 import { BsToggleOn } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa";
 
+import { useTranslation } from 'react-i18next'
+
 const PreferenciasPage = () => {
     const [isToggledCega, setIsToggledCega] = useState(false);
     const [isToggledDaltonismo, setIsToggledDaltonismo] = useState(false);
     const [isToggledBaixaVisao, setIsToggledBaixaVisao] = useState(false);
     const [isToggledDislexia, setIsToggledDislexia] = useState(false);
     const [isToggledEpilepsia, setIsToggledEpilepsia] = useState(false);
+
+    const { t } = useTranslation()
 
     const handleToggleCega = () => {
         setIsToggledCega(!isToggledCega);
@@ -45,7 +49,7 @@ const PreferenciasPage = () => {
         <>
             <header className='header-preferencia'>
                 <img src={headerPreferencia} alt="" />
-                <h1>Perfis de Acessibilidade</h1>
+                <h1>{t("preferencias-titulo")}</h1>
             </header>
 
             <div className='container-main-preferencias'>
@@ -56,7 +60,7 @@ const PreferenciasPage = () => {
                             onClick={handleToggleCega}
                         >
                             <FaGlasses />
-                            Miopia, Hipermetropia ou Astigmatismo
+                            {t("preferencias-opcao-01")}
                             <button className='option-preferencia'>
                                 {isToggledCega ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
@@ -66,7 +70,7 @@ const PreferenciasPage = () => {
                             onClick={handleToggleDaltonismo}
                         >
                             <FaEyeSlash />
-                            Deficiência visual (baixa visão, cegueira legal ou total)
+                            {t("preferencias-opcao-02")}
                             <button className='option-preferencia'>
                                 {isToggledDaltonismo ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
@@ -76,7 +80,7 @@ const PreferenciasPage = () => {
                             onClick={handleToggleBaixaVisao}
                         >
                             <FaRibbon />
-                            Autismo com Grau de Suporte 1
+                            {t("preferencias-opcao-03")}
                             <button className='option-preferencia'>
                                 {isToggledBaixaVisao ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
@@ -86,7 +90,7 @@ const PreferenciasPage = () => {
                             onClick={handleToggleDislexia}
                         >
                             <MdHearingDisabled />
-                            Perda auditiva (parcial ou total)
+                            {t("preferencias-opcao-04")}
                             <button className='option-preferencia'>
                                 {isToggledDislexia ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
@@ -96,7 +100,7 @@ const PreferenciasPage = () => {
                             onClick={handleToggleEpilepsia}
                         >
                             <PiEyedropperSampleFill />
-                            Daltonismo
+                            {t("preferencias-opcao-05")}
                             <button className='option-preferencia'>
                                 {isToggledEpilepsia ? <BsToggleOn size={40}/> : <BsToggleOff size={40}/>}
                             </button>
@@ -104,7 +108,7 @@ const PreferenciasPage = () => {
                         
                         <a href='/home'>
                             <button className='button-preferencias'>
-                                Contunuar
+                                {t("preferencias-continuar")}
                                 <FaArrowRight />
                             </button>
                         </a>

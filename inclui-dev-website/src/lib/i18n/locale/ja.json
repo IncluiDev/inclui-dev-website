@@ -1,0 +1,82 @@
+{
+    "translation": {
+        "preferencias-titulo": "アクセシビリティプロファイル",
+        "preferencias-opcao-01": "近視、遠視、乱視",
+        "preferencias-opcao-02": "視覚障害（低視力、法的盲目または全盲）",
+        "preferencias-opcao-03": "サポートレベル1の自閉症",
+        "preferencias-opcao-04": "聴覚障害（部分的または全体）",
+        "preferencias-opcao-05": "色覚異常",
+        "preferencias-continuar": "続ける",
+
+        "header-inicio": "ホーム",
+        "header-sobre": "概要",
+        "header-equipe": "チーム",
+        "header-planos": "プラン",
+        "header-cursos": "コース",
+        "header-perfil": "プロフィール",
+
+        "home-titulo-01": "公正な社会,",
+        "home-titulo-02": "技術が",
+        "home-subtitulo-01": "一緒に、誰もが",
+        "home-subtitulo-02": "機会と進歩に平等にアクセスできる未来を築きましょう。",
+        "home-saiba-mais": "もっと詳しく",
+
+        "about-usuarios": "ユーザー",
+        "about-aulas": "クラス",
+        "about-jogos": "ゲーム",
+
+        "about-project-titulo": "私たちについて",
+        "about-project-paragrafo-01": "私たちは、技術について学びたい障害を持つ人々の発展を支援するためのゲーム、ダイナミクス、コースを含む教育プラットフォームです。教育ツールと遊びの過程での継続的なコミュニケーションを備えています。",
+        "about-project-paragrafo-02": "すべての人が機会、リソース、技術市場への参加に平等にアクセスできるようにすることを目指しています。単に含むだけでなく、所属させることを目的としています。",
+
+        "paleta-card-titulo": "ビジュアルアイデンティティの色",
+        "paleta-card-laranja": "オレンジ",
+        "paleta-card-laranja-significado": "喜び",
+        "paleta-card-rosa": "ピンク",
+        "paleta-card-rosa-significado": "創造性",
+        "paleta-card-verde": "グリーン",
+        "paleta-card-verde-significado": "勇気",
+        "paleta-card-azul": "ブルー",
+        "paleta-card-azul-significado": "信頼",
+
+        "identidade-titulo": "ロゴの構成",
+        "identidade-apoio": "サポート",
+        "identidade-apoio-significado": "手は連帯と共通の目的の周りの団結を象徴しています。",
+        "identidade-inclusao": "社会的包摂",
+        "identidade-inclusao-significado": "違いに関係なく、人々の間の団結と相互支援を象徴しています。",
+        "identidade-programacao": "プログラミング",
+        "identidade-programacao-significado": "ブランドのプログラミングと技術への焦点を象徴しています。",
+        
+        "tipografia-titulo": "タイポグラフィ",
+        "tipografia-anybody-descricao": "AnyBodyは、現代的で多用途なフォントで、フレンドリーで現代的なスタイルです。",
+        "tipografia-jasmin-descricao": "Jazmin Regularは、丸みを帯びた滑らかな形のモダンでエレガントなフォントで、フレンドリーなイメージを伝えるのに最適です。",
+
+        "equipe-titulo": "チーム",
+
+        "planos-titulo": "私たちのプラン",
+        "planos-subtitulo-01": "あなたのニーズに最適なプランを選んで、",
+        "planos-subtitulo-02": "私たちのサービスを最大限に活用してください。",
+        "planos-titulo-gratis": "無料",
+        "planos-titulo-mensal": "月間",
+        "planos-titulo-anual": "年間",
+        "planos-tutoriais": "チュートリアルへのアクセス",
+        "planos-jogos-limitado": "限定ゲームアクセス",
+        "planos-cursos-limitado": "限定コースアクセス",
+        "planos-jogos": "無制限のゲームアクセス",
+        "planos-cursos": "無制限のコースアクセス",
+        "planos-aulas": "追加クラスへのアクセス",
+        "planos-exclusivo": "独占コンテンツ",
+        "planos-assinar": "申し込む",
+
+        "newsletter-titulo-01": "私たちのニュースレターに",
+        "newsletter-titulo-02": "登録する！",
+        "newsletter-subtitulo": "ニュースレターに登録して、素晴らしいコンテンツを直接メールで受け取りましょう。最新のニュースを常に把握する機会をお見逃しなく！",
+        "newsletter-inscrever": "登録する",
+        "newsletter-placeholder": "メールアドレスを入力してください",
+
+        "footer-links": "クイックリンク",
+        "footer-contato": "お問い合わせ",
+        "footer-redes": "フォローする",
+        "footer-copywrite": "全著作権所有"
+    }
+}

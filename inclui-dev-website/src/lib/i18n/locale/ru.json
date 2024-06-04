@@ -1,0 +1,82 @@
+{
+    "translation": {
+        "preferencias-titulo": "Профили Доступности",
+        "preferencias-opcao-01": "Близорукость, Дальнозоркость или Астигматизм",
+        "preferencias-opcao-02": "Нарушение зрения (слабое зрение, легальная или полная слепота)",
+        "preferencias-opcao-03": "Аутизм с Уровнем Поддержки 1",
+        "preferencias-opcao-04": "Потеря слуха (частичная или полная)",
+        "preferencias-opcao-05": "Дальтонизм",
+        "preferencias-continuar": "Продолжить",
+
+        "header-inicio": "Главная",
+        "header-sobre": "О нас",
+        "header-equipe": "Команда",
+        "header-planos": "Тарифы",
+        "header-cursos": "Курсы",
+        "header-perfil": "Профиль",
+
+        "home-titulo-01": "Справедливое общество,",
+        "home-titulo-02": "Технологии, которые",
+        "home-subtitulo-01": "Вместе мы можем создать будущее, в котором каждый",
+        "home-subtitulo-02": "имеет равный доступ к возможностям и прогрессу.",
+        "home-saiba-mais": "Узнать больше",
+
+        "about-usuarios": "ПОЛЬЗОВАТЕЛИ",
+        "about-aulas": "УРОКИ",
+        "about-jogos": "ИГРЫ",
+
+        "about-project-titulo": "О НАС",
+        "about-project-paragrafo-01": "Мы образовательная платформа, содержащая игры, динамики и курсы, направленные на помощь в развитии людей с инвалидностью, которые хотят изучать технологии, оснащённая учебными инструментами и постоянной коммуникацией в процессе обучения.",
+        "about-project-paragrafo-02": "Наша цель - обеспечить равный доступ к возможностям, ресурсам и участию в технологическом рынке для всех людей, не только включая, но и делая их частью.",
+
+        "paleta-card-titulo": "ЦВЕТА ВИЗУАЛЬНОЙ ИДЕНТИЧНОСТИ",
+        "paleta-card-laranja": "Оранжевый",
+        "paleta-card-laranja-significado": "Радость",
+        "paleta-card-rosa": "Розовый",
+        "paleta-card-rosa-significado": "Креативность",
+        "paleta-card-verde": "Зелёный",
+        "paleta-card-verde-significado": "Смелость",
+        "paleta-card-azul": "Синий",
+        "paleta-card-azul-significado": "Доверие",
+
+        "identidade-titulo": "СОСТАВ ЛОГОТИПА",
+        "identidade-apoio": "ПОДДЕРЖКА",
+        "identidade-apoio-significado": "Руки символизируют солидарность и объединение вокруг общей цели.",
+        "identidade-inclusao": "СОЦИАЛЬНАЯ ИНКЛЮЗИЯ",
+        "identidade-inclusao-significado": "Символизирует единство и взаимную поддержку между людьми, независимо от их различий.",
+        "identidade-programacao": "ПРОГРАММИРОВАНИЕ",
+        "identidade-programacao-significado": "Символизирует фокус бренда на программирование и технологии.",
+        
+        "tipografia-titulo": "ТИПОГРАФИКА",
+        "tipografia-anybody-descricao": "AnyBody - современный и универсальный шрифт, дружелюбный и современный по стилю.",
+        "tipografia-jasmin-descricao": "Jazmin Regular - современный и элегантный шрифт с округлыми и мягкими формами, идеально подходящий для передачи дружелюбного образа.",
+
+        "equipe-titulo": "КОМАНДА",
+
+        "planos-titulo": "НАШИ ТАРИФЫ",
+        "planos-subtitulo-01": "Выберите тариф, который наилучшим образом соответствует вашим потребностям, и",
+        "planos-subtitulo-02": "максимально используйте наши услуги.",
+        "planos-titulo-gratis": "Бесплатно",
+        "planos-titulo-mensal": "Месячный",
+        "planos-titulo-anual": "Годовой",
+        "planos-tutoriais": "Доступ к учебным пособиям",
+        "planos-jogos-limitado": "Ограниченный доступ к играм",
+        "planos-cursos-limitado": "Ограниченный доступ к курсам",
+        "planos-jogos": "Неограниченный доступ к играм",
+        "planos-cursos": "Неограниченный доступ к курсам",
+        "planos-aulas": "Доступ к дополнительным урокам",
+        "planos-exclusivo": "Эксклюзивный контент",
+        "planos-assinar": "Подписаться",
+
+        "newsletter-titulo-01": "Подпишитесь на нашу",
+        "newsletter-titulo-02": "рассылку!",
+        "newsletter-subtitulo": "Подпишитесь на нашу рассылку и получайте невероятный контент прямо на вашу электронную почту. Не упустите возможность всегда быть в курсе наших новостей!",
+        "newsletter-inscrever": "Подписаться",
+        "newsletter-placeholder": "Введите ваш email",
+
+        "footer-links": "Быстрые ссылки",
+        "footer-contato": "Контакты",
+        "footer-redes": "Подписывайтесь на нас",
+        "footer-copywrite": "Все права защищены"
+    }
+}

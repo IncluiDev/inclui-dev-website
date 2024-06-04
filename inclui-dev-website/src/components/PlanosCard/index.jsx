@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const PlanosCard = ({ title, details, image }) => {
+const PlanosCard = ({ title, details, image, button }) => {
     return (
         <div className='card-planos'>
             <div className="card-header-planos">
@@ -16,7 +16,7 @@ const PlanosCard = ({ title, details, image }) => {
                     </p>
                 ))}
             </div>
-            <button className='card-button'>ASSINAR</button>
+            <button className='card-button'>{button}</button>
         </div>
     );
 };

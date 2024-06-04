@@ -1,5 +1,82 @@
-{ 
+{
     "translation": {
-        "header": "cabecalho"
+        "preferencias-titulo": "Perfis de Acessibilidade",
+        "preferencias-opcao-01": "Miopia, Hipermetropia ou Astigmatismo",
+        "preferencias-opcao-02": "Deficiência visual (baixa visão, cegueira legal ou total)",
+        "preferencias-opcao-03": "Autismo com Grau de Suporte 1",
+        "preferencias-opcao-04": "Perda auditiva (parcial ou total)",
+        "preferencias-opcao-05": "Daltonismo",
+        "preferencias-continuar": "Continuar",
+
+        "header-inicio": "Início",
+        "header-sobre": "Sobre",
+        "header-equipe": "Equipe",
+        "header-planos": "Planos",
+        "header-cursos": "Cursos",
+        "header-perfil": "Perfil",
+
+        "home-titulo-01": "Sociedade Justa,",
+        "home-titulo-02": "Tecnologia que",
+        "home-subtitulo-01": "Juntos, podemos construir um futuro onde todos",
+        "home-subtitulo-02": "tenham acesso igualitário às oportunidades e ao progresso.",
+        "home-saiba-mais": "Saiba Mais",
+
+        "about-usuarios": "USUÁRIOS",
+        "about-aulas": "AULAS",
+        "about-jogos": "JOGOS",
+
+        "about-project-titulo": "SOBRE NÓS",
+        "about-project-paragrafo-01": "Somos uma plataforma educacional contendo jogos, dinâmicas e cursos voltados para auxiliar no desenvolvimento de pessoas com deficiências que queiram aprender sobre tecnologia, equiparada com ferramentas didáticas e comunicação constante durante o processo lúdico.",
+        "about-project-paragrafo-02": "Com o objetivo de garantir que todas as pessoas tenham acesso igualitário a oportunidades, recursos e participação no mercado tecnológico, não somente incluindo, mas tornando-as pertencentes.",
+
+        "paleta-card-titulo": "CORES DA IDENTIDADE VISUAL",
+        "paleta-card-laranja": "Laranja",
+        "paleta-card-laranja-significado": "Alegria",
+        "paleta-card-rosa": "Rosa",
+        "paleta-card-rosa-significado": "Criatividade",
+        "paleta-card-verde": "Verde",
+        "paleta-card-verde-significado": "Coragem",
+        "paleta-card-azul": "Azul",
+        "paleta-card-azul-significado": "Confiança",
+
+        "identidade-titulo": "COMPOSIÇÃO DE LOGO",
+        "identidade-apoio": "APOIO",
+        "identidade-apoio-significado": "As mãos simbolizam a solidariedade e também a união em torno de um propósito comum.",
+        "identidade-inclusao": "INCLUSÃO SOCIAL",
+        "identidade-inclusao-significado": "Simbolizando a união e o apoio mútuo entre as pessoas, independentemente de suas diferenças.",
+        "identidade-programacao": "PROGRAMAÇÃO",
+        "identidade-programacao-significado": "Simboliza o foco da marca na programação e tecnologia.",
+        
+        "tipografia-titulo": "TIPOGRAFIA",
+        "tipografia-anybody-descricao": "A AnyBody é uma fonte moderna e versátil, com um estilo amigável e contemporâneo.",
+        "tipografia-jasmin-descricao": "A Jazmin Regular é uma fonte moderna e elegante, com formas arredondadas e suaves, ideal para transmitir uma imagem amigável.",
+
+        "equipe-titulo": "EQUIPE",
+
+        "planos-titulo": "NOSSOS PLANOS",
+        "planos-subtitulo-01": "Escolha o plano que melhor se adapta às suas necessidades e",
+        "planos-subtitulo-02": "aproveite ao máximo nossos serviços.",
+        "planos-titulo-gratis": "Grátis",
+        "planos-titulo-mensal": "Mensal",
+        "planos-titulo-anual": "Anual",
+        "planos-tutoriais": "Acesso a Tutoriais",
+        "planos-jogos-limitado": "Acesso Limitado aos Jogos",
+        "planos-cursos-limitado": "Acesso Limitado aos Cursos",
+        "planos-jogos": "Acesso Ilimitado aos Jogos",
+        "planos-cursos": "Acesso Ilimitado aos Cursos",
+        "planos-aulas": "Acesso a Aulas Extras",
+        "planos-exclusivo": "Conteúdo Exclusivo",
+        "planos-assinar": "Assinar",
+
+        "newsletter-titulo-01": "Se inscreva em nosso",
+        "newsletter-titulo-02": "Newsletter!",
+        "newsletter-subtitulo": "Cadastre-se em nossa newsletter e receba conteúdos incríveis diretamente no seu e-mail. Não perca a oportunidade de estar sempre por dentro das nossas novidades!",
+        "newsletter-inscrever": "Inscrever-se",
+        "newsletter-placeholder": "Digite seu e-mail",
+
+        "footer-links": "Links Rápidos",
+        "footer-contato": "Contato",
+        "footer-redes": "Siga-nos",
+        "footer-copywrite": "Todos os direitos reservados"
     }
 }

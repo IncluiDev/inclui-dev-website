@@ -1,0 +1,82 @@
+{
+    "translation": {
+        "preferencias-titulo": "접근성 프로필",
+        "preferencias-opcao-01": "근시, 원시 또는 난시",
+        "preferencias-opcao-02": "시각 장애 (저시력, 법적 실명 또는 전맹)",
+        "preferencias-opcao-03": "지원 수준 1의 자폐증",
+        "preferencias-opcao-04": "청각 장애 (부분적 또는 전부)",
+        "preferencias-opcao-05": "색맹",
+        "preferencias-continuar": "계속",
+
+        "header-inicio": "홈",
+        "header-sobre": "소개",
+        "header-equipe": "팀",
+        "header-planos": "플랜",
+        "header-cursos": "코스",
+        "header-perfil": "프로필",
+
+        "home-titulo-01": "공정한 사회,",
+        "home-titulo-02": "기술이",
+        "home-subtitulo-01": "함께, 우리 모두가",
+        "home-subtitulo-02": "기회와 발전에 동등하게 접근할 수 있는 미래를 만들어 나갑시다.",
+        "home-saiba-mais": "더 알아보기",
+
+        "about-usuarios": "사용자",
+        "about-aulas": "수업",
+        "about-jogos": "게임",
+
+        "about-project-titulo": "회사 소개",
+        "about-project-paragrafo-01": "우리는 기술을 배우고자 하는 장애인을 돕기 위한 게임, 다이내믹스 및 코스를 포함하는 교육 플랫폼입니다. 교육 도구와 놀이 과정에서의 지속적인 소통을 갖추고 있습니다.",
+        "about-project-paragrafo-02": "모든 사람이 기회, 자원 및 기술 시장 참여에 동등하게 접근할 수 있도록 보장하는 것을 목표로 하고 있습니다. 단순히 포함하는 것이 아니라 소속감을 부여하는 것을 목표로 합니다.",
+
+        "paleta-card-titulo": "비주얼 아이덴티티 색상",
+        "paleta-card-laranja": "주황색",
+        "paleta-card-laranja-significado": "기쁨",
+        "paleta-card-rosa": "분홍색",
+        "paleta-card-rosa-significado": "창의성",
+        "paleta-card-verde": "녹색",
+        "paleta-card-verde-significado": "용기",
+        "paleta-card-azul": "파란색",
+        "paleta-card-azul-significado": "신뢰",
+
+        "identidade-titulo": "로고 구성",
+        "identidade-apoio": "지원",
+        "identidade-apoio-significado": "손은 연대와 공통 목표를 향한 단결을 상징합니다.",
+        "identidade-inclusao": "사회적 포용",
+        "identidade-inclusao-significado": "차이와 상관없이 사람들 간의 단결과 상호 지원을 상징합니다.",
+        "identidade-programacao": "프로그래밍",
+        "identidade-programacao-significado": "브랜드의 프로그래밍 및 기술에 대한 집중을 상징합니다.",
+        
+        "tipografia-titulo": "타이포그래피",
+        "tipografia-anybody-descricao": "AnyBody는 현대적이고 다재다능한 글꼴로, 친근하고 현대적인 스타일을 가지고 있습니다.",
+        "tipografia-jasmin-descricao": "Jazmin Regular는 부드럽고 둥근 형태를 가진 현대적이고 우아한 글꼴로, 친근한 이미지를 전달하는 데 이상적입니다.",
+
+        "equipe-titulo": "팀",
+
+        "planos-titulo": "우리의 플랜",
+        "planos-subtitulo-01": "귀하의 필요에 가장 적합한 플랜을 선택하고",
+        "planos-subtitulo-02": "우리의 서비스를 최대한 활용하세요.",
+        "planos-titulo-gratis": "무료",
+        "planos-titulo-mensal": "월간",
+        "planos-titulo-anual": "연간",
+        "planos-tutoriais": "튜토리얼 접근",
+        "planos-jogos-limitado": "제한된 게임 접근",
+        "planos-cursos-limitado": "제한된 코스 접근",
+        "planos-jogos": "무제한 게임 접근",
+        "planos-cursos": "무제한 코스 접근",
+        "planos-aulas": "추가 수업 접근",
+        "planos-exclusivo": "독점 콘텐츠",
+        "planos-assinar": "구독",
+
+        "newsletter-titulo-01": "우리의 뉴스레터에",
+        "newsletter-titulo-02": "가입하세요!",
+        "newsletter-subtitulo": "우리의 뉴스레터에 가입하고 놀라운 콘텐츠를 이메일로 직접 받아보세요. 최신 소식을 항상 놓치지 마세요!",
+        "newsletter-inscrever": "가입",
+        "newsletter-placeholder": "이메일을 입력하세요",
+
+        "footer-links": "빠른 링크",
+        "footer-contato": "문의",
+        "footer-redes": "팔로우하세요",
+        "footer-copywrite": "모든 권리 보유"
+    }
+}

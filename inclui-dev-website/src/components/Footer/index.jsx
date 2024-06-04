@@ -2,7 +2,11 @@ import './style.css'
 import { ArrowRight, NavigationArrow, EnvelopeSimple, InstagramLogo, GithubLogo, LinkedinLogo  } from 'phosphor-react'
 import {  LinktreeLogo  } from "@phosphor-icons/react"
 
+import { useTranslation } from 'react-i18next'
+
 export default function Footer() {
+    const { t } = useTranslation()
+    
     return(
         <footer className='footer-container'>
 
@@ -15,22 +19,22 @@ export default function Footer() {
             <div className='footer-content'>
 
                 <div>
-                   <h3>Links Rápidos</h3>
+                   <h3>{t("footer-links")}</h3>
 
                    <nav>
                         <ul>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/home">Inicio</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/home#about">Sobre</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#">Participantes</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="#">Planos</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/catalogo">Cursos</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/login">Dashboard</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/home">{t("header-inicio")}</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/home#sobre">{t("header-sobre")}</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/home#equipe">{t("header-equipe")}</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/home#planos">{t("header-planos")}</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/catalogo">{t("header-cursos")}</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/login">{t("header-perfil")}</a></li>
                         </ul>
                     </nav> 
                 </div>
 
                 <div>
-                   <h3>Contato</h3>
+                   <h3>{t("footer-contato")}</h3>
 
                    <nav>
                     <ul>
@@ -41,7 +45,7 @@ export default function Footer() {
                 </div>
                 
                 <div>
-                   <h3>Siga-nos</h3>
+                   <h3>{t("footer-redes")}</h3>
 
                    <nav>
                         <ul>
@@ -68,7 +72,8 @@ export default function Footer() {
                     </nav> 
                 </div>
             </div>
-            <p>All right by @IncluiDev 2024</p>
+
+            <p>{t("footer-copywrite")}  @IncluiDev 2024</p>
         </footer>
     )
 }

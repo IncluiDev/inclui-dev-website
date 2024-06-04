@@ -3,7 +3,10 @@ import newsletter from '../../assets/newsletter.png';
 
 import { EnvelopeSimple, WarningCircle } from 'phosphor-react'
 
+import { useTranslation } from 'react-i18next'
+
 export default function Newsletter() {
+    const { t } = useTranslation()
 
     async function newsletterAPI() {
        event.preventDefault()
@@ -14,14 +17,14 @@ export default function Newsletter() {
             <form onSubmit={newsletterAPI} className="newsletter-flex">
                 <div className='content-newsletter'>
                     <h1 className="title">
-                        Se inscreva em nosso <span className="strong-newsletter">Newsletter!</span>
+                    {t("newsletter-titulo-01")} <span className="strong-newsletter">{t("newsletter-titulo-02")}</span>
                     </h1>
                     
-                    <p>Cadastre-se em nossa newsletter e receba conteúdos incríveis diretamente no seu e-mail. Não perca a oportunidade de estar sempre por dentro das nossas novidades!</p>
+                    <p>{t("newsletter-subtitulo")}</p>
 
                     <div className="flex-input">
-                        <EnvelopeSimple size={32} color="#CA1BB4" className="position-input-icon" weight="bold" /> <input id="email" name="" type="email" placeholder="Digite seu email" required /> <br />
-                         <input type="submit" value="ENVIAR"/>
+                        <EnvelopeSimple size={32} color="#CA1BB4" className="position-input-icon" weight="bold" /> <input id="email" name="" type="email" placeholder={t("newsletter-placeholder")} required /> <br />
+                         <input type="submit" value={t("newsletter-inscrever")}/>
                     </div>
                 </div>
                 
