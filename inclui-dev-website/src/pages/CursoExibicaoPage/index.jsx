@@ -7,26 +7,33 @@ import { faArrowRight, faRightFromBracket } from '@fortawesome/free-solid-svg-ic
 import { api } from "../../lib/axios/axios";
 import { useEffect, useState } from 'react';
 import { URLGetter } from "../../helpers/component/URLGetter";
+import Loader from '../../components/Loader';
 
 export default function CursoExibicaoPage() {
     const navigate = useNavigate();
     const [aula, setAula] = useState();
+    const numeroAula = URLGetter.getAtribut("aula");
+    const cursoId = URLGetter.getIdentification();
 
     async function getAula() {
         try {
-            const response = await api.get(`/aula?id=${URLGetter.getIdentification()}`);
-            setAula(response.data);
+            const response = await api.get(`/aula/all?curso=${cursoId}`);
+            setAula(response.data[numeroAula]);
         } catch (error) {
-            console.error('Error fetching courses:', error);
+            navigate("/catalogo")
         }
     }
 
     useEffect(() => {
         getAula();
-    }, []);
+    }, [numeroAula]);
 
-    function handleClick(root) {
-        navigate(root);
+    function handleClick() {
+        navigate(`/detalhamento?id=${cursoId}`);
+    }
+
+    function nextClass() {
+        navigate(`/curso?id=${cursoId}&aula=${Number(numeroAula) + 1}`)
     }
 
     return (
@@ -34,17 +41,17 @@ export default function CursoExibicaoPage() {
             <div className='curso-container'>
                 <header className='header-curso'>
                     <h2>
-                        <span className='enumeracao-curso'>01.</span>
+                        <span className='enumeracao-curso'>{Number(numeroAula) + 1}.</span>
                         {aula.nome}
                     </h2>
 
                     <nav className='navigation-curso'>
-                        <button className='button-proxima-aula'>
+                        <button className='button-proxima-aula' onClick={nextClass}>
                             Próxima Aula
                             <FontAwesomeIcon icon={faArrowRight} className='icon-curso' />
                         </button>
 
-                        <button className='button-sair' onClick={() => handleClick("/catalogo")}>
+                        <button className='button-sair' onClick={handleClick}>
                             Sair
                             <FontAwesomeIcon icon={faRightFromBracket} className='icon-curso' />
                         </button>
@@ -88,7 +95,7 @@ export default function CursoExibicaoPage() {
                 </main>
             </div>
         ) : (
-            "Loading..."
+            <Loader/>
         )
     );
 }

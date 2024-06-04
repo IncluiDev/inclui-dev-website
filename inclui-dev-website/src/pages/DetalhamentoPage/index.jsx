@@ -2,6 +2,7 @@ import CabecalhoCurso from "../../components/CabecalhoCurso";
 import DetalhamentoIntroducao from "../../components/DetalhamentoIntroducao";
 import Header from "../../components/Header";
 import InfoDetalhamento from "../../components/InfoDetalhamento";
+import Loader from '../../components/Loader';
 import { api } from "../../lib/axios/axios";
 import { useEffect, useState } from 'react';
 import { URLGetter } from "../../helpers/component/URLGetter";
@@ -47,7 +48,7 @@ export default function DetalhamentoPage() {
               />
             </>
           ) : (
-            <p>Loading...</p> 
+            <Loader/>
           )}
         </main>
       </>
