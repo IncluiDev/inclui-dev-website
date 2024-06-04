@@ -5,6 +5,27 @@
   width: 150px;
 }
 
+.blocos-rodape {
+  position: absolute;
+  bottom: -35px;
+}
+
+.bloco-mais {
+  position: absolute;
+  bottom: 0%;
+  width: 150px;
+  left: 400px;
+  z-index: 4;
+}
+
+.icone-mais {
+  position: absolute;
+  right: 650px;
+  width: 50px;
+  z-index: 4;
+  top: 25px;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -21,9 +42,10 @@
   top: -200px;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #4D8F9A 0%, #4D8F9A 100%);
+  background-image: linear-gradient(-45deg, #63AB72 0%, #63AB72 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
+  z-index: 1;
 }
 
 #back-to-login {
