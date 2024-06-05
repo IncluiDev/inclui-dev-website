@@ -19,7 +19,7 @@ export default function ManagerRoutes() {
           <Route path="/" element={<PreferenciasPage/>}/>
           <Route path="/home" element={<HomePage/>}/>
           
-          <Route path="/login" element={!authenticated ? <LoginPage/> : <Navigate to="/home" replace />}/>
+          <Route path="/login" element={<LoginPage/>}/>
           <Route path="/catalogo" element={<CatalogoPage/>}/>
           {/* <Route path="/catalogo" element={authenticated ? <CatalogoPage/> : <Navigate to="/login" replace />}/> */}
           <Route path="/cadastro" element={<CadastroPage/>}/>

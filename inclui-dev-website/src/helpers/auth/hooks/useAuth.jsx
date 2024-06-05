@@ -15,7 +15,7 @@ export default function useAuth() {
       setAuthenticated(true);
     } else {
       setAuthenticated(false);
-      navigate("/login");
+      // navigate("/login");
     }
 
     setLoading(false);
