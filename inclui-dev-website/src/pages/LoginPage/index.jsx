@@ -9,21 +9,35 @@ import blocoMaisVerde from "../../assets/MaisVerde.svg";
 
 import TiposLogin from "../../components/TiposLogin";
 
+import { useContext, useState } from 'react';
+import { Context } from '../../helpers/auth/AuthContext'
+
 export default function LoginPage() {
+  const { handleLogin } = useContext(Context);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    handleLogin(email, password);
+  };
+
   return (
     <div className="container" id="login-container">
       <img src={logo} alt="Logo" className="logo" />
       <img src={blocosRodape} alt="" className="blocos-rodape" />
       <img src={blocoMais} alt="" className="bloco-mais" />
       <img src={blocoMaisVerde} alt="" className="icone-mais" />
+
       <div className="left-side">
         <h2>NOVO AQUI?</h2>
         <p>Caso seja novo aqui, aperte em cadastre-se, e preencha os dados pedidos.</p>
         <img src={imgLogin} alt="Uma mulher fazendo autenticação" />
       </div>
+
       <div className="forms-container">
         <div className="signin-signup">
-          <form action="#" className="sign-in-form">
+          <form className="sign-in-form" onSubmit={handleSubmit}>
             <h2 className="title">Login</h2>
             <p className="description">
               Não tem uma conta?{" "}
@@ -38,12 +52,18 @@ export default function LoginPage() {
                 type="text"
                 id="emailLogin"
                 placeholder="E-mail ou Telefone"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
 
             <div className="input-field">
               <FontAwesomeIcon icon={faLock} className="icon" />
-              <input id="passwordLogin" type="password" placeholder="Senha" />
+              <input 
+                id="passwordLogin" 
+                type="password" 
+                placeholder="Senha" 
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
 
             <a href="/recuperacao" id="forgot-password-link">

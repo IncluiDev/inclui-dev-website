@@ -20,6 +20,7 @@ export default function CadastroPage() {
   const [formData, setFormData] = useState({
     nome: "",
     email: "",
+    perfil: "USUARIO",
     dataNascimento: "",
     senha: "",
   });
