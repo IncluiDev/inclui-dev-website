@@ -1,25 +1,24 @@
 import tutorIcon from '../../assets/tutorIcon.png';
 import pessoaPC from '../../assets/pessoaMexendoPc.png';
 import './style.css';
-
-import { api } from "../../lib/axios/axios";
 import { useEffect, useState } from 'react';
+import baseURL from '../../helpers/api/api'
 
 const DetalhamentoTutor = (props) => {
-  const [professor, setProfessor] = useState(null); 
-
-  async function getProfessor() {
-    try {
-      const response = await api.get(`/usuario?id=${props.professor}`);
-      setProfessor(response.data);
-    } catch (error) {
-      console.error('Error fetching professor:', error);
-    }
-  }
+  const [professor, setProfessor] = useState(null);
 
   useEffect(() => {
-    getProfessor();
-  }, [props.professor]); 
+    fetch(`${baseURL}/usuario?id=${props.professor}`)
+      .then(response => 
+        response.json()
+      )
+      .then(data => 
+        setProfessor(data)
+      )
+      .catch(error => {
+        console.error('Error fetching professor:', error);
+      });
+  }, [props.professor]);
 
   return (
     <div className='tutor'>
@@ -27,7 +26,7 @@ const DetalhamentoTutor = (props) => {
         <span className='tutorIcon'><img src={tutorIcon} alt="Tutor Icon" /></span>
         <h2>SEU TUTOR</h2>
       </div>
-      {professor && ( 
+      {professor && (
         <div className='tutor-nome'>
           <span className='tutorProfile'><img src={professor.referenciaFoto} alt="Professor Profile" /></span>
           <div className='tutor-nomeclaturas'>

@@ -4,36 +4,37 @@ import descricaoBlocos from '../../assets/descricao-linha-blocos.png';
 import rodapeCurso from '../../assets/rodape-curso.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
-import { api } from "../../lib/axios/axios";
 import { useEffect, useState } from 'react';
 import { URLGetter } from "../../helpers/component/URLGetter";
 import Loader from '../../components/Loader';
+import baseURL  from '../../helpers/api/api'
 
 export default function CursoExibicaoPage() {
     const navigate = useNavigate();
-    const [aula, setAula] = useState();
+    const [aula, setAula] = useState(null);
     const numeroAula = URLGetter.getAtribut("aula");
     const cursoId = URLGetter.getIdentification();
 
-    async function getAula() {
-        try {
-            const response = await api.get(`/aula/all?curso=${cursoId}`);
-            setAula(response.data[numeroAula]);
-        } catch (error) {
-            navigate("/catalogo")
-        }
-    }
-
     useEffect(() => {
-        getAula();
-    }, [numeroAula]);
+        fetch(`${baseURL}/aula/all?curso=${cursoId}`)
+            .then(response => 
+                response.json()
+            )
+            .then(data => 
+                setAula(data[numeroAula])
+            )
+            .catch(error => {
+                console.error('Error fetching class:', error);
+                navigate("/catalogo");
+            });
+    }, [numeroAula, cursoId, navigate]);
 
     function handleClick() {
         navigate(`/detalhamento?id=${cursoId}`);
     }
 
     function nextClass() {
-        navigate(`/curso?id=${cursoId}&aula=${Number(numeroAula) + 1}`)
+        navigate(`/curso?id=${cursoId}&aula=${Number(numeroAula) + 1}`);
     }
 
     return (

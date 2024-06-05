@@ -3,26 +3,27 @@ import { FaChevronDown } from 'react-icons/fa';
 import blocosCentro from '../../assets/chao-blocos.png';
 import livrosOculos from '../../assets/livrosOculos.png';
 import DetalhamentoTutor from '../DetalhamentoTutor';
-
-import { api } from "../../lib/axios/axios";
 import { useEffect, useState } from 'react';
 
-const InfoDetalhamento = ( props ) => {
+const InfoDetalhamento = (props) => {
   const [showDescriptions, setShowDescriptions] = useState([false, false, false]);
   const [aulas, setAulas] = useState([]);
 
-  async function getAulas() {
-      try {
-          const response = await api.get(`/aula/all?curso=${props.id}`);
-          setAulas(response.data);
-      } catch (error) {
-          console.error('Error fetching courses:', error);
-      } 
-  }
-
   useEffect(() => {
-    getAulas();
-  }, []);
+    fetch(`https://inclui-dev-api-production-production.up.railway.app/aula/all?curso=${props.id}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch courses');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setAulas(data);
+      })
+      .catch(error => {
+        console.error('Error fetching courses:', error);
+      });
+  }, [props.id]);
 
   const toggleDescription = (index) => {
     const updatedShowDescriptions = [...showDescriptions];
@@ -41,25 +42,25 @@ const InfoDetalhamento = ( props ) => {
           <span className='aulasIcon'><img src={livrosOculos} alt="" /></span>
           <div className='aulasCurso'>
             <h3>Aulas</h3>
-            
+
             <ol className='listaAulas'>
               {
                 Array.isArray(aulas) && aulas.map((aula, index) => (
                   <li key={index}>
                     <div className="li-content">
                       {aula.nome}
-                      <button onClick={() => toggleDescription(0)}>
+                      <button onClick={() => toggleDescription(index)}>
                         <FaChevronDown />
                       </button>
                     </div>
-                    {showDescriptions[0] && <p className="description">{aula.descricao || ""}</p>}
-                </li>
+                    {showDescriptions[index] && <p className="description">{aula.descricao || ""}</p>}
+                  </li>
                 ))
               }
             </ol>
           </div>
         </div>
-              <DetalhamentoTutor professor={props.professor} />
+        <DetalhamentoTutor professor={props.professor} />
       </div>
 
       <div className='blocos1'>

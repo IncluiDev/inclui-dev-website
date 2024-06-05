@@ -3,24 +3,24 @@ import DetalhamentoIntroducao from "../../components/DetalhamentoIntroducao";
 import Header from "../../components/Header";
 import InfoDetalhamento from "../../components/InfoDetalhamento";
 import Loader from '../../components/Loader';
-import { api } from "../../lib/axios/axios";
 import { useEffect, useState } from 'react';
 import { URLGetter } from "../../helpers/component/URLGetter";
+import baseURL from '../../helpers/api/api'
 
 export default function DetalhamentoPage() {
-    const [curso, setCurso] = useState();
-
-    async function getCurso() {
-        try {
-            const response = await api.get(`/curso?id=${URLGetter.getIdentification()}`);
-            setCurso(response.data);
-        } catch (error) {
-            console.error('Error fetching courses:', error);
-        } 
-    }
+    const [curso, setCurso] = useState(null);
 
     useEffect(() => {
-        getCurso();
+        fetch(`${baseURL}/curso?id=${URLGetter.getIdentification()}`)
+            .then(response => 
+                response.json()
+            )
+            .then(data => 
+                setCurso(data)
+            )
+            .catch(error => {
+                console.error('Error fetching courses:', error);
+            });
     }, []);
 
     return (
