@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <header className={`header ${isOpen ? 'ajusted-height' : ''}`}>
       <div className='in-logo'>
-        <img src={incluiLogo} alt="Logo" />
+        <img src={incluiLogo} alt="Logo" id='logoInclui' />
       </div>
 
       <nav className='nav-bar'>
