@@ -12,18 +12,25 @@
 
 .bloco-mais {
   position: absolute;
-  bottom: 0%;
-  width: 150px;
-  left: 400px;
+  bottom: 30px;
+  width: 100px;
+  left: 490px;
   z-index: 4;
 }
 
 .icone-mais {
   position: absolute;
-  right: 650px;
+  right: 600px;
   width: 50px;
   z-index: 4;
-  top: 25px;
+  top: 35px;
+}
+
+img[src*="imgCadastro.svg"] {
+  width: 110%;
+  height: auto;
+  margin-top: 50px;
+  margin-left: -30px;
 }
 
 .container {
@@ -87,7 +94,11 @@ form {
 .sign-up-form {
   position: relative;
   width: 100%;
-  height: 100vh;
+  max-width: 500px;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .title {
@@ -192,6 +203,101 @@ form {
 
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+@media (max-width: 1200px) {
+  .signin-signup {
+    left: 60%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .signin-signup {
+    left: 50%;
+    width: 70%;
+  }
+
+  .logo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signin-signup {
+    left: 50%;
+    width: 80%;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  form {
+    padding: 0rem 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .signin-signup {
+    left: 50%;
+    width: 90%;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  form {
+    padding: 0rem 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .signin-signup {
+    left: 50%;
+    width: 100%;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  form {
+    padding: 0rem 1rem;
+  }
+
+  .input-field {
+    height: 45px;
+  }
+
+  .input-field .icon {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  img[src*="imgCadastro.svg"] {
     display: none;
-    -webkit-appearance: none;
+  }
+  #cadastro-container:before {
+    background-image: none;
+  }
+  .bloco-mais, .icone-mais {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  img[src*="imgCadastro.svg"] {
+    display: block;
+  }
+  #cadastro-container:before {
+    background-image: linear-gradient(-45deg, #63AB72 0%, #63AB72 100%);
+  }
+  .bloco-mais, .icone-mais {
+    display: block;
+  }
 }

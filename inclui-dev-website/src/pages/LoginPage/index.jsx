@@ -9,13 +9,13 @@ import blocoMaisVerde from "../../assets/MaisVerde.svg";
 
 import TiposLogin from "../../components/TiposLogin";
 
-import { useContext, useState } from 'react';
-import { Context } from '../../helpers/auth/AuthContext'
+import { useContext, useState } from "react";
+import { Context } from "../../helpers/auth/AuthContext";
 
 export default function LoginPage() {
   const { handleLogin } = useContext(Context);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -31,7 +31,10 @@ export default function LoginPage() {
 
       <div className="left-side">
         <h2>NOVO AQUI?</h2>
-        <p>Caso seja novo aqui, aperte em cadastre-se, e preencha os dados pedidos.</p>
+        <p>
+          Caso seja novo aqui, aperte em cadastre-se, e preencha os dados
+          pedidos.
+        </p>
         <img src={imgLogin} alt="Uma mulher fazendo autenticação" />
       </div>
 
@@ -58,10 +61,10 @@ export default function LoginPage() {
 
             <div className="input-field">
               <FontAwesomeIcon icon={faLock} className="icon" />
-              <input 
-                id="passwordLogin" 
-                type="password" 
-                placeholder="Senha" 
+              <input
+                id="passwordLogin"
+                type="password"
+                placeholder="Senha"
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
@@ -77,6 +80,10 @@ export default function LoginPage() {
             />
 
             <TiposLogin />
+            <br />
+            <a href="/home" id="back-to-home">
+              Página Inicial
+            </a>
           </form>
         </div>
       </div>
