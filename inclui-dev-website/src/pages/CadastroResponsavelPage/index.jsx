@@ -10,16 +10,16 @@ import {
   faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
 import { api } from "../../lib/axios/axios";
-import imgCadastro from "../../assets/imgCadastro.svg";
+import imgResponsavel from "../../assets/imgResponsavel.svg";
 import blocosRodape from "../../assets/blocosCentro.png";
 import blocoMais from "../../assets/blocoMais.png";
 import blocoMaisVerde from "../../assets/MaisVerde.svg";
 
-export default function CadastroPage() {
+export default function CadastroResponsavelPage() {
   const [formData, setFormData] = useState({
     nome: "",
     email: "",
-    perfil: "USUARIO",
+    perfil: "RESPONSAVEL",
     dataNascimento: "",
     senha: "",
   });
@@ -44,7 +44,7 @@ export default function CadastroPage() {
   };
 
   return (
-    <div className="container" id="cadastro-container">
+    <div className="container" id="responsavel-container">
       <img src={logo} alt="Logo" className="logo" />
       <img src={blocosRodape} alt="" className="blocos-rodape" />
       <img src={blocoMais} alt="" className="bloco-mais" />
@@ -55,17 +55,14 @@ export default function CadastroPage() {
           Caso você já tenha uma conta, aperte em conecte-se, e preencha os
           dados pedidos.
         </p>
-        <img src={imgCadastro} alt="Uma mulher fazendo autenticação" />
+        <img src={imgResponsavel} alt="Uma mulher fazendo autenticação" />
       </div>
       <div className="forms-container">
         <div className="signin-signup">
           <form onSubmit={handleSubmit} className="sign-up-form">
-            <h2 className="title">Cadastre-se</h2>
+            <h2 className="title-responsavel">Cadastro de Responsável</h2>
             <p className="description">
-              Possui uma conta?{" "}
-              <a href="/login" id="sign-in-btn">
-                Conecte-se
-              </a>
+              Associe-se e receba informativos de seu adolescente 
             </p>
 
             <div className="input-field">
@@ -124,23 +121,36 @@ export default function CadastroPage() {
                 placeholder="Confirmar Senha"
               />
             </div>
-            
+
+            <div className="input-field">
+              <FontAwesomeIcon icon={faEnvelope} className="icon" />
+              <input
+                type="email"
+                id="email-user"
+                name="email-user"
+                placeholder="E-mail do adolescente"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+
             <p className="description">
-              Quer acompanhar seu filho(a)?{" "}
-              <a href="/responsavel" id="sign-in-btn">
-                Cadastre-se
+              Possui uma conta?{" "}
+              <a href="/login" id="responsavel-btn">
+                Conecte-se
               </a>
             </p>
 
             <input
               id="btn-signUp"
               type="submit"
-              className="btn-cadastro"
+              className="btn-responsavel"
               value="Cadastre-se"
             />
-              <a href="/home" className="description" id="sign-in-btn">
+
+            <a href="/home" className="description" id="responsavel-btn">
                 Página incial
-              </a>
+            </a>
           </form>
         </div>
       </div>

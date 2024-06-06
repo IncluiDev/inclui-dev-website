@@ -75,12 +75,12 @@
 }
 
 .gridLogo {
-  height: 650px;
+  height: 600px;
   width: auto;
 }
 
 .section-tipografia  {
-  padding: 2rem 6rem;
+  padding: 2rem 10rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -133,6 +133,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 2rem 5rem;
     margin: 30px 0 60px 0;
     gap: 20px;
   }

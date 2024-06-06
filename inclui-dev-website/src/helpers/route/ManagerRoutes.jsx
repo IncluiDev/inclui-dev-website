@@ -10,6 +10,7 @@ import RecuperacaoPage from "../../pages/RecuperacaoPage";
 import CatalogoPage from "../../pages/CatalogoPage";
 import DetalhamentoPage from "../../pages/DetalhamentoPage";
 import CursoExibicaoPage from "../../pages/CursoExibicaoPage";
+import CadastroResponsavelPage from '../../pages/CadastroResponsavelPage';
 
 export default function ManagerRoutes() {
     const { authenticated } = useContext(Context);
@@ -23,6 +24,7 @@ export default function ManagerRoutes() {
           <Route path="/catalogo" element={<CatalogoPage/>}/>
           {/* <Route path="/catalogo" element={authenticated ? <CatalogoPage/> : <Navigate to="/login" replace />}/> */}
           <Route path="/cadastro" element={<CadastroPage/>}/>
+          <Route path="/responsavel" element={<CadastroResponsavelPage/>}/>
           <Route path="/recuperacao" element={<RecuperacaoPage/>}/>
 
           <Route path="/detalhamento" element={<DetalhamentoPage/>}/>

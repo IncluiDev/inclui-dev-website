@@ -30,7 +30,7 @@ export default function LoginPage() {
       <img src={blocoMaisVerde} alt="" className="icone-mais" />
 
       <div className="left-side">
-        <h2>NOVO AQUI?</h2>
+        <h2>Novo aqui?</h2>
         <p>
           Caso seja novo aqui, aperte em cadastre-se, e preencha os dados
           pedidos.

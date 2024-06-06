@@ -16,7 +16,7 @@ export default function RecuperacaoPage() {
       <img src={blocoMaisAzul} alt="" className="icone-mais" />
       
       <div className="left-side">
-        <h2>NOVA SENHA</h2>
+        <h2>Nova senha</h2>
         <p>Informe o email para o qual deseja redefinir sua senha.</p>
         <img src={imgRecuperarSenha} alt="Uma mulher fazendo autenticação" />
       </div>

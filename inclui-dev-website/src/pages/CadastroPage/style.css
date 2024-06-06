@@ -148,13 +148,13 @@ form {
 }
 
 #sign-in-btn {
-  color: #4D8F9A;
+  color: #63AB72;
 }
 
 .btn {
   width: 150px;
   position: relative;
-  background-color: #4D8F9A;
+  background-color: #63AB72;
   border: none;
   outline: none;
   height: 49px;
@@ -188,7 +188,7 @@ form {
 .btn-cadastro {
   width: 150px;
   position: relative;
-  background-color: #4D8F9A;
+  background-color: #63AB72;
   border: none;
   outline: none;
   height: 49px;
