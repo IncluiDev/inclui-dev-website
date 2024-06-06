@@ -1,7 +1,7 @@
 import './style.css'
 import bloquinhoCenter from '../../assets/chao-blocos.png'
 import VerdeCor from '../../assets/identidade-cor-verde.png';
-import RosaCor from '../../assets/identidade-cor-rosa.png';
+import roxoCor from '../../assets/identidade-cor-roxo.png';
 import LaranjaCor from '../../assets/identidade-cor-laranja.png';
 import AzulCor from '../../assets/identidade-cor-azul.png';
 import Paleta from '../Paleta/index'
@@ -26,9 +26,9 @@ export default function PaletaCard() {
           name = {t("paleta-card-laranja-significado")} />
 
         <Paleta 
-          image = {RosaCor}
-          hexadecimal = {t("paleta-card-rosa")}
-          name = {t("paleta-card-rosa-significado")} />
+          image = {roxoCor}
+          hexadecimal = {t("paleta-card-roxo")}
+          name = {t("paleta-card-roxo-significado")} />
 
         <Paleta 
           image = {VerdeCor}
