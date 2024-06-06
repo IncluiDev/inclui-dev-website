@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./style.css";
 import logo from "../../assets/inclui-dev-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +10,6 @@ import {
   faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
 import { api } from "../../lib/axios/axios";
-import TiposLogin from "../../components/TiposLogin";
 import imgCadastro from "../../assets/imgCadastro.svg";
 import blocosRodape from "../../assets/blocosCentro.png";
 import blocoMais from "../../assets/blocoMais.png";
@@ -52,7 +51,10 @@ export default function CadastroPage() {
       <img src={blocoMaisVerde} alt="" className="icone-mais" />
       <div className="left-side">
         <h2>Já possui uma conta? </h2>
-        <p>Caso você já tenha uma conta, aperte em conecte-se, e preencha os dados pedidos.</p>
+        <p>
+          Caso você já tenha uma conta, aperte em conecte-se, e preencha os
+          dados pedidos.
+        </p>
         <img src={imgCadastro} alt="Uma mulher fazendo autenticação" />
       </div>
       <div className="forms-container">
@@ -93,9 +95,10 @@ export default function CadastroPage() {
             <div className="input-field">
               <FontAwesomeIcon icon={faCalendarDays} className="icon" />
               <input
-                type="date"
+                type="text"
                 id="dataNascimento"
                 name="dataNascimento"
+                placeholder="Data de Nascimento"
                 value={formData.dataNascimento}
                 onChange={handleChange}
               />
@@ -128,8 +131,6 @@ export default function CadastroPage() {
               className="btn-cadastro"
               value="Cadastre-se"
             />
-
-            <TiposLogin />
           </form>
         </div>
       </div>

@@ -5,6 +5,13 @@
   width: 150px;
 }
 
+img[src*="imgLogin.svg"] {
+  width: 99%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: -22px;
+}
+
 .left-side {
   position: absolute;
   left: 0%;
@@ -105,7 +112,7 @@ form {
   outline: none;
   border: none;
   line-height: 1;
-  font-weight: 600;
+  font-weight: normal !important;
   font-size: 1.1rem;
   color: #333;
 }
@@ -153,6 +160,10 @@ form {
 
 .sign-up-form .btn:hover {
   background-color: #63AB72;
+}
+
+#back-to-home {
+  color: #F76456;
 }
 
 .panels-container {
@@ -229,4 +240,26 @@ form {
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .logo,
+  img[src*="imgLogin.svg"],
+  #login-container:before,
+  .left-side,
+  .bloco-mais,
+  .icone-mais {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo,
+  img[src*="imgLogin.svg"],
+  #login-container:before,
+  .left-side,
+  .bloco-mais,
+  .icone-mais {
+    display: block;
+  }
 }
