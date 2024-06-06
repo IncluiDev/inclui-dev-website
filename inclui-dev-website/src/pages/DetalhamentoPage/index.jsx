@@ -5,19 +5,15 @@ import InfoDetalhamento from "../../components/InfoDetalhamento";
 import Loader from '../../components/Loader';
 import { useEffect, useState } from 'react';
 import { URLGetter } from "../../helpers/component/URLGetter";
-import baseURL from '../../helpers/api/api'
+import { WebClient } from '../../helpers/api/WebClient';
 
 export default function DetalhamentoPage() {
     const [curso, setCurso] = useState(null);
 
     useEffect(() => {
-        fetch(`${baseURL}/curso?id=${URLGetter.getIdentification()}`)
-            .then(response => 
-                response.json()
-            )
-            .then(data => 
-                setCurso(data)
-            )
+      WebClient.exchange(`/curso?id=${URLGetter.getIdentification()}`, "GET")
+            .then(response => response.json())
+            .then(data => setCurso(data))
             .catch(error => {
                 console.error('Error fetching courses:', error);
             });

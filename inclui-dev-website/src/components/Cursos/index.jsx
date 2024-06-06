@@ -3,20 +3,20 @@ import blocosCentro from '../../assets/chao-blocos.png';
 import lateralCard from '../../assets/lateralCard.png';
 import imgCurso1 from '../../assets/cursos/curso-java.png';
 import CursosCard from '../CursosCard';
-import { api } from "../../lib/axios/axios";
 import { useEffect, useState } from 'react';
+import { WebClient } from '../../helpers/api/WebClient';
 
 export default function Cursos() {
     const [cursos, setCursos] = useState([]);
 
-    async function getCursos() {
-        try {
-            const response = await api.get('/curso/all');
-            setCursos(response.data);
-        } catch (error) {
-            console.error('Error fetching courses:', error);
-        } 
-    }
+    function getCursos() {
+        WebClient.exchange("/curso/all", "GET")
+            .then(response => response.json()) 
+            .then(data => setCursos(data))
+            .catch(error => {
+                console.error('Error fetching courses:', error);
+            });
+    }    
 
     useEffect(() => {
         getCursos();

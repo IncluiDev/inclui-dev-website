@@ -4,22 +4,16 @@ import blocosCentro from '../../assets/chao-blocos.png';
 import livrosOculos from '../../assets/livrosOculos.png';
 import DetalhamentoTutor from '../DetalhamentoTutor';
 import { useEffect, useState } from 'react';
+import { WebClient } from '../../helpers/api/WebClient';
 
 const InfoDetalhamento = (props) => {
   const [showDescriptions, setShowDescriptions] = useState([false, false, false]);
   const [aulas, setAulas] = useState([]);
 
   useEffect(() => {
-    fetch(`https://inclui-dev-api-production-production.up.railway.app/aula/all?curso=${props.id}`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Failed to fetch courses');
-        }
-        return response.json();
-      })
-      .then(data => {
-        setAulas(data);
-      })
+    WebClient.exchange(`/aula/all?curso=${props.id}`, "GET")
+      .then(response => response.json())
+      .then(data => setAulas(data))
       .catch(error => {
         console.error('Error fetching courses:', error);
       });

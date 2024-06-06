@@ -2,19 +2,15 @@ import tutorIcon from '../../assets/tutorIcon.png';
 import pessoaPC from '../../assets/pessoaMexendoPc.png';
 import './style.css';
 import { useEffect, useState } from 'react';
-import baseURL from '../../helpers/api/api'
+import { WebClient } from '../../helpers/api/WebClient';
 
 const DetalhamentoTutor = (props) => {
   const [professor, setProfessor] = useState(null);
 
   useEffect(() => {
-    fetch(`${baseURL}/usuario?id=${props.professor}`)
-      .then(response => 
-        response.json()
-      )
-      .then(data => 
-        setProfessor(data)
-      )
+    WebClient.exchange(`/usuario?id=${props.professor}`, "GET")
+      .then(response => response.json())
+      .then(data => setProfessor(data))
       .catch(error => {
         console.error('Error fetching professor:', error);
       });

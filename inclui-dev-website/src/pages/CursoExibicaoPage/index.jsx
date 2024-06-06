@@ -7,7 +7,7 @@ import { faArrowRight, faRightFromBracket } from '@fortawesome/free-solid-svg-ic
 import { useEffect, useState } from 'react';
 import { URLGetter } from "../../helpers/component/URLGetter";
 import Loader from '../../components/Loader';
-import baseURL  from '../../helpers/api/api'
+import { WebClient } from '../../helpers/api/WebClient';
 
 export default function CursoExibicaoPage() {
     const navigate = useNavigate();
@@ -16,13 +16,12 @@ export default function CursoExibicaoPage() {
     const cursoId = URLGetter.getIdentification();
 
     useEffect(() => {
-        fetch(`${baseURL}/aula/all?curso=${cursoId}`)
-            .then(response => 
-                response.json()
-            )
-            .then(data => 
-                setAula(data[numeroAula])
-            )
+        WebClient.exchange(`/aula/all?curso=${cursoId}`, "GET")
+            .then(response => response.json())
+            .then(data => {
+                let aula = data[numeroAula]
+                aula ? setAula(aula) : navigate(`/detalhamento?id=${cursoId}`)
+            })
             .catch(error => {
                 console.error('Error fetching class:', error);
                 navigate("/catalogo");
