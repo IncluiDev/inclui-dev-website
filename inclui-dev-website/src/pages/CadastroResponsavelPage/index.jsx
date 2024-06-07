@@ -101,6 +101,7 @@ export default function CadastroResponsavelPage() {
                 type="text"
                 id="dataNascimento"
                 name="dataNascimento"
+                placeholder="Data de nascimento"
                 value={formData.dataNascimento}
                 onChange={handleChange}
               />

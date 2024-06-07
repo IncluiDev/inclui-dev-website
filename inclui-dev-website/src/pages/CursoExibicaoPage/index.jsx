@@ -12,6 +12,8 @@ import SwitchLanguage from '../../components/SwitchLanguage'
 
 import { useTranslation } from 'react-i18next'
 
+import { curso } from "../../helpers/gambiarra/gambiarra"
+
 export default function CursoExibicaoPage() {
     const navigate = useNavigate();
     const [aula, setAula] = useState(null);
@@ -28,8 +30,10 @@ export default function CursoExibicaoPage() {
             })
             .catch(error => {
                 console.error('Error fetching class:', error);
-                navigate("/catalogo");
+                //navigate("/catalogo");
             });
+
+            setAula(curso)
     }, [numeroAula, cursoId, navigate]);
 
     function handleClick() {
@@ -37,7 +41,8 @@ export default function CursoExibicaoPage() {
     }
 
     function nextClass() {
-        navigate(`/curso?id=${cursoId}&aula=${Number(numeroAula) + 1}`);
+        navigate(`/detalhamento?id=${cursoId}`);
+        //navigate(`/curso?id=${cursoId}&aula=${Number(numeroAula) + 1}`);
     }
 
     return (
@@ -45,7 +50,7 @@ export default function CursoExibicaoPage() {
             <div className='curso-container'>
                 <header className='header-curso'>
                     <h2>
-                        <span className='enumeracao-curso'>{Number(numeroAula) + 1}.</span>
+                        <span className='enumeracao-curso'>01.</span>
                         {aula.nome}
                     </h2>
 
