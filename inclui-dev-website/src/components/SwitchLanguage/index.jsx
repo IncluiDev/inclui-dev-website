@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './style.css';
 import { useTranslation } from 'react-i18next';
 
@@ -56,11 +56,18 @@ const options = [
 
 export default function SwitchLanguage() {
   const { i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState(options[0]);
+  const [selectedLanguage, setSelectedLanguage] = useState(() => {
+    const storedLanguage = localStorage.getItem('selectedLanguage');
+    return storedLanguage ? JSON.parse(storedLanguage) : options[0];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('selectedLanguage', JSON.stringify(selectedLanguage));
+    i18n.changeLanguage(selectedLanguage.value);
+  }, [selectedLanguage, i18n]);
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
-    i18n.changeLanguage(language.value);
   };
 
   return (

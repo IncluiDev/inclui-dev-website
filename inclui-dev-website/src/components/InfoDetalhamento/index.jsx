@@ -6,9 +6,12 @@ import DetalhamentoTutor from '../DetalhamentoTutor';
 import { useEffect, useState } from 'react';
 import { WebClient } from '../../helpers/api/WebClient';
 
+import { useTranslation } from 'react-i18next'
+
 const InfoDetalhamento = (props) => {
   const [showDescriptions, setShowDescriptions] = useState([false, false, false]);
   const [aulas, setAulas] = useState([]);
+  const { t } = useTranslation()
 
   useEffect(() => {
     WebClient.exchange(`/aula/all?curso=${props.id}`, "GET")
@@ -35,7 +38,7 @@ const InfoDetalhamento = (props) => {
           </div>
           <span className='aulasIcon'><img src={livrosOculos} alt="" /></span>
           <div className='aulasCurso'>
-            <h3>Aulas</h3>
+            <h3>{t("detalhamento-info-titulo-aula")}</h3>
 
             <ol className='listaAulas'>
               {

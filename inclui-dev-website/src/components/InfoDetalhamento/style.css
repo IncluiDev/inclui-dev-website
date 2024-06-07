@@ -38,6 +38,11 @@
 .tutor-titulo, .tutor-nome {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.tutor-titulo {
+    width: 450px;
 }
 
 .tutor-nomeclaturas {

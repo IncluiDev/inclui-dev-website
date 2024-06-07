@@ -14,6 +14,8 @@ import imgCadastro from "../../assets/imgCadastro.svg";
 import blocosRodape from "../../assets/blocosCentro.png";
 import blocoMais from "../../assets/blocoMais.png";
 import blocoMaisVerde from "../../assets/MaisVerde.svg";
+import SwitchLanguage from '../../components/SwitchLanguage'
+import { useTranslation } from 'react-i18next'
 
 export default function CadastroPage() {
   const [formData, setFormData] = useState({
@@ -23,6 +25,7 @@ export default function CadastroPage() {
     dataNascimento: "",
     senha: "",
   });
+  const { t } = useTranslation()
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -45,26 +48,29 @@ export default function CadastroPage() {
 
   return (
     <div className="container" id="cadastro-container">
-      <img src={logo} alt="Logo" className="logo" />
+      <div className="header-informations">
+        <SwitchLanguage/>
+        <img src={logo} alt="Logo" className="logo" />
+      </div>
+      
       <img src={blocosRodape} alt="" className="blocos-rodape" />
       <img src={blocoMais} alt="" className="bloco-mais" />
       <img src={blocoMaisVerde} alt="" className="icone-mais" />
       <div className="left-side">
-        <h2>Já possui uma conta? </h2>
+        <h2>{t("cadastro-side-subtitulo")} </h2>
         <p>
-          Caso você já tenha uma conta, aperte em conecte-se, e preencha os
-          dados pedidos.
+          {t("cadastro-side-descricao")}
         </p>
         <img src={imgCadastro} alt="Uma mulher fazendo autenticação" />
       </div>
       <div className="forms-container">
         <div className="signin-signup">
           <form onSubmit={handleSubmit} className="sign-up-form">
-            <h2 className="title">Cadastre-se</h2>
+            <h2 className="title">{t("cadastro-titulo")}</h2>
             <p className="description">
-              Possui uma conta?{" "}
+              {t("cadastro-descricao-login")}{" "}
               <a href="/login" id="sign-in-btn">
-                Conecte-se
+                {t("cadastro-button-login")}
               </a>
             </p>
 
@@ -74,7 +80,7 @@ export default function CadastroPage() {
                 type="text"
                 id="nome"
                 name="nome"
-                placeholder="Nome Completo"
+                placeholder={t("cadastro-input-nome")}
                 value={formData.nome}
                 onChange={handleChange}
               />
@@ -86,7 +92,7 @@ export default function CadastroPage() {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="E-mail"
+                placeholder={t("cadastro-input-email")}
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -98,7 +104,6 @@ export default function CadastroPage() {
                 type="text"
                 id="dataNascimento"
                 name="dataNascimento"
-                placeholder="Data de Nascimento"
                 value={formData.dataNascimento}
                 onChange={handleChange}
               />
@@ -110,7 +115,7 @@ export default function CadastroPage() {
                 id="senha"
                 type="password"
                 name="senha"
-                placeholder="Senha"
+                placeholder={t("cadastro-input-senha")}
                 value={formData.senha}
                 onChange={handleChange}
               />
@@ -121,14 +126,14 @@ export default function CadastroPage() {
               <input
                 id="confirmPassword"
                 type="password"
-                placeholder="Confirmar Senha"
+                placeholder={t("cadastro-input-senha-verificacao")}
               />
             </div>
             
             <p className="description">
-              Quer acompanhar seu filho(a)?{" "}
+              {t("cadastro-descricao-responsavel")}{" "}
               <a href="/responsavel" id="sign-in-btn">
-                Cadastre-se
+                {t("cadastro-button-responsavel")}
               </a>
             </p>
 
@@ -136,10 +141,10 @@ export default function CadastroPage() {
               id="btn-signUp"
               type="submit"
               className="btn-cadastro"
-              value="Cadastre-se"
+              value={t("cadastro-button-cadastrar")}
             />
               <a href="/home" className="description" id="sign-in-btn">
-                Página incial
+                {t("pagina-inicial")}
               </a>
           </form>
         </div>

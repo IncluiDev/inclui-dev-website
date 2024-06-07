@@ -20,8 +20,9 @@
 
 .navigation-curso {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   justify-content: end;
+  align-items: center;
 }
 
 .button-proxima-aula {
@@ -35,12 +36,12 @@
   overflow: none;
   border: none;
   cursor: pointer;
+  margin-left: 15px; /* relacao com o SwitchLanguage */
 }
 
 .button-sair {
   background-color: #4D8F9A;
   color: white;
-  width: 100px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 17px;

@@ -75,24 +75,20 @@
   font-weight: 500;
 }
 
-#spanI {
-  margin-left: 7px;
+#spanI{
   color: #4D8F9A;
 }
 
-#spanN {
+#spanN{
   color: #CA1BB4;
 }
 
-#spanC {
+#spanC{
   color: #F76456;
 }
 
-#spanL {
-  color: #4D8F9A;
-}
 
-#spanM {
+#spanM{
   color: #63AB72;
 }
 
@@ -135,8 +131,9 @@
   width: 200%;
   object-fit: cover;
   position: absolute;
-  right: -20%;
+  right: -46%;
   margin-top: 27.5%;
+
 }
 
 .wave-container {  

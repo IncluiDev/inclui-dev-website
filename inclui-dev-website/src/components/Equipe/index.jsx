@@ -61,6 +61,7 @@ export default function Equipe() {
                     cor="#F76456" 
                 />
             </div>
+
             <div className="members-two">
                 <EquipeCard
                     foto={AdrieleFoto} 
@@ -92,7 +93,14 @@ export default function Equipe() {
                     cor="#63AB72" 
                 />
 
-                <EquipeCard
+                
+            </div>
+        </section>
+    )
+}
+
+/*
+<EquipeCard
                     foto={KaiqueFoto}
                     nome="Edson Fernandez"
                     funcao="Mentor"
@@ -100,7 +108,4 @@ export default function Equipe() {
                     instagram="https://www.instagram.com/edsonfernandesmarques/"
                     cor="#CA1BB4" 
                 />
-            </div>
-        </section>
-    )
-}
+*/

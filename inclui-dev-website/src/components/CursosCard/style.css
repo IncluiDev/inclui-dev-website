@@ -58,10 +58,10 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 95%;
+    width: 100%;
     background-color: white;
     border: 1px solid #ccc;
-    border-radius: 2px;
+    border-radius: 8px;
     margin: 0;
 }
 
@@ -92,15 +92,7 @@
 
 .container-card-curso-principal:hover {
     cursor: pointer;
-    border: 5px solid #63AB72;
-}
-
-.container-card-curso-principal:hover #progress-bar {
-    background-color: #63AB72;
-}
-
-.container-card-curso-principal:hover .tag-curso {
-    background-color: #63AB72;
+    
 }
 
 @media (max-width: 800px) {

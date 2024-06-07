@@ -1,8 +1,18 @@
-.logo {
+.header-informations {
+  z-index: 10;
   position: absolute;
   top: 25px;
   right: 25px;
-  width: 150px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
 }
 
 img[src*="imgLogin.svg"] {
@@ -239,7 +249,6 @@ form {
 }
 
 @media (max-width: 768px) {
-  .logo,
   img[src*="imgLogin.svg"],
   #login-container:before,
   .left-side,
@@ -247,10 +256,17 @@ form {
   .icone-mais {
     display: none;
   }
+
+  .header-informations {
+    left: -230px;
+  }
+
+  .logo {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) {
-  .logo,
   img[src*="imgLogin.svg"],
   #login-container:before,
   .left-side,

@@ -1,11 +1,13 @@
-import { useNavigate } from 'react-router-dom';
 import './style.css';
 import { FaPlay } from "react-icons/fa";
-
 import blocos from '../../assets/chao-blocos.png'
+
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'
 
 const CabecalhoCurso = ( props ) => {
   const navigate = useNavigate();
+  const { t } = useTranslation()
 
   const handleClick = () => {
     navigate(`/curso?id=${props.id}&aula=0`); 
@@ -16,7 +18,7 @@ const CabecalhoCurso = ( props ) => {
       <img src={blocos} className='blocos-introducao'/>
         <div className='container-cabecalho-curso'>
             <button className='continuar-curso' onClick={handleClick}>
-              Continuar Curso <FaPlay />
+              {t("detalhamento-button-continuar-curso")} <FaPlay />
             </button>
         </div>
     </div>
