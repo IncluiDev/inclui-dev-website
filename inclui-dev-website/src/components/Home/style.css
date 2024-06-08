@@ -1,7 +1,6 @@
 .home {
   background-color: #ffffff;
-
-  padding: 5rem 14rem 10rem;
+  padding: 8rem 14rem 10rem;
   color: #392E2E;
   justify-content: center;
   align-items: center;
@@ -21,15 +20,12 @@
   position: absolute;
 }
 
-
-
 .home h1 {
   padding: 4rem 0 0;
   font-size: 4rem;
   text-align: center;
   transition: .5s;
   letter-spacing: -1px;
-
 }
 
 .titulos{

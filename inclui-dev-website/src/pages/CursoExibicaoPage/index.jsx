@@ -2,8 +2,9 @@ import './style.css';
 import { useNavigate } from 'react-router-dom';
 import descricaoBlocos from '../../assets/descricao-linha-blocos.png';
 import rodapeCurso from '../../assets/rodape-curso.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { FaArrowRight } from "react-icons/fa";
+import { FaRightFromBracket } from "react-icons/fa6";
+
 import { useEffect, useState } from 'react';
 import { URLGetter } from "../../helpers/component/URLGetter";
 import Loader from '../../components/Loader';
@@ -58,12 +59,12 @@ export default function CursoExibicaoPage() {
                         <SwitchLanguage/>
                         <button className='button-proxima-aula' onClick={nextClass}>
                             {t("curso-button-proxima-aula")}
-                            <FontAwesomeIcon icon={faArrowRight} className='icon-curso' />
+                            <FaArrowRight className='icon-curso' />
                         </button>
 
                         <button className='button-sair' onClick={handleClick}>
                             {t("curso-button-sair")}
-                            <FontAwesomeIcon icon={faRightFromBracket} className='icon-curso' />
+                            <FaRightFromBracket className='icon-curso' />
                         </button>
                     </nav>
                 </header>

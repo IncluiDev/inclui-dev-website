@@ -1,6 +1,7 @@
 import "./style.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
+
+import { FaUser, FaLock } from "react-icons/fa6";
+
 import logo from "../../assets/inclui-dev-logo.png";
 import imgLogin from "../../assets/imgLogin.svg";
 import blocosRodape from "../../assets/blocosCentro.png";
@@ -57,7 +58,7 @@ export default function LoginPage() {
             </p>
 
             <div className="input-field">
-              <FontAwesomeIcon icon={faUser} className="icon" />
+              <FaUser className="icon" />
               <input
                 type="text"
                 id="emailLogin"
@@ -67,7 +68,7 @@ export default function LoginPage() {
             </div>
 
             <div className="input-field">
-              <FontAwesomeIcon icon={faLock} className="icon" />
+              <FaLock className="icon" />
               <input
                 id="passwordLogin"
                 type="password"

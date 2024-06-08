@@ -1,6 +1,7 @@
 import './style.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+
 
 export default function EquipeCard(props) {
     return (
@@ -14,9 +15,12 @@ export default function EquipeCard(props) {
                 <p>{props.funcao}</p>
 
                 <div className="redes-sociais">
-                    <a href={props.github} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon color={"#FF725E"} id='githubIcon' icon={faGithub} className='icons' /></a>
-                    <a href={props.linkedin} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon color={"#4D8F9A"} id='linkedinIcon' icon={faLinkedin} className='icons'/></a>
-                    <a href={props.instagram} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon color={"#63AB72"} id='instagramIcon' icon={faInstagram} className='icons'/></a>
+                    <a href={props.github} target="_blank" rel="noopener noreferrer">
+                        <FaGithub color={"#FF725E"} id='githubIcon' className='icons' /></a>
+                    <a href={props.linkedin} target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin color={"#4D8F9A"} id='linkedinIcon' className='icons'/></a>
+                    <a href={props.instagram} target="_blank" rel="noopener noreferrer">
+                        <FaInstagram color={"#63AB72"} id='instagramIcon' className='icons'/></a>
                 </div>
             </div>
         </div>

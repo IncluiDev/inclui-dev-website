@@ -1,6 +1,5 @@
 import "./style.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FaEnvelope } from "react-icons/fa";
 import logo from "../../assets/inclui-dev-logo.png";
 import imgRecuperarSenha from "../../assets/imgRecuperarSenha.svg";
 import blocosRodape from "../../assets/blocosCentro.png";
@@ -36,7 +35,7 @@ export default function RecuperacaoPage() {
           </p>
 
           <div className="input-field">
-            <FontAwesomeIcon icon={faEnvelope} className="icon" />
+            <FaEnvelope className="icon" />
             <input
               type="email"
               id="recoveryEmail"

@@ -10,6 +10,8 @@ import imgFr from '../../assets/bandeiras/bandeira-fr.png';
 import imgKo from '../../assets/bandeiras/bandeira-ko.png';
 import imgRu from '../../assets/bandeiras/bandeira-ru.png';
 import imgDe from '../../assets/bandeiras/bandeira-de.png';
+import imgZh from '../../assets/bandeiras/bandeira-zh.png';
+import imgAr from '../../assets/bandeiras/bandeira-ar.png';
 
 const options = [
   {
@@ -51,6 +53,16 @@ const options = [
     name: "Coreano",
     value: "ko",
     flag: imgKo
+  },
+  {
+    name: "Mandarim",
+    value: "zh",
+    flag: imgZh
+  },
+  {
+    name: "Árabe",
+    value: "ar",
+    flag: imgAr
   },
 ];
 

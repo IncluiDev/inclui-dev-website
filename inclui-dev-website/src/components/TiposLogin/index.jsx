@@ -1,7 +1,5 @@
 import './style.css';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { FaFacebookF, FaGoogle } from "react-icons/fa";
 
 export default function TiposLogin() {
     return (
@@ -14,10 +12,10 @@ export default function TiposLogin() {
 
             <div className="social-media">
                 <a href="#" className="social-icon">
-                    <FontAwesomeIcon icon={faFacebookF} />
+                    <FaFacebookF />
                 </a>
                 <a href="#" className="social-icon">
-                    <FontAwesomeIcon icon={faGoogle} />
+                    <FaGoogle />
                 </a>
             </div>
         </section>

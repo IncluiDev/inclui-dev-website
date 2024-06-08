@@ -1,14 +1,10 @@
 import { useState } from "react";
 import "./style.css";
 import logo from "../../assets/inclui-dev-logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUser,
-  faEnvelope,
-  faLock,
-  faEye,
-  faCalendarDays,
-} from "@fortawesome/free-solid-svg-icons";
+
+import { FaUser } from "react-icons/fa6";
+import { FaEnvelope, FaLock, FaCalendarAlt, FaEye } from "react-icons/fa";
+
 import { api } from "../../lib/axios/axios";
 import imgResponsavel from "../../assets/imgResponsavel.svg";
 import blocosRodape from "../../assets/blocosCentro.png";
@@ -72,7 +68,7 @@ export default function CadastroResponsavelPage() {
             </p>
 
             <div className="input-field">
-              <FontAwesomeIcon icon={faUser} className="icon" />
+              <FaUser className="icon" />
               <input
                 type="text"
                 id="nome"
@@ -84,7 +80,7 @@ export default function CadastroResponsavelPage() {
             </div>
 
             <div className="input-field">
-              <FontAwesomeIcon icon={faEnvelope} className="icon" />
+              <FaEnvelope className="icon" />
               <input
                 type="email"
                 id="email"
@@ -96,7 +92,7 @@ export default function CadastroResponsavelPage() {
             </div>
 
             <div className="input-field">
-              <FontAwesomeIcon icon={faCalendarDays} className="icon" />
+              <FaCalendarAlt className="icon" />
               <input
                 type="text"
                 id="dataNascimento"
@@ -108,7 +104,7 @@ export default function CadastroResponsavelPage() {
             </div>
 
             <div id="inputLogin" className="input-field">
-              <FontAwesomeIcon icon={faLock} className="icon" />
+              <FaLock className="icon" />
               <input
                 id="senha"
                 type="password"
@@ -120,7 +116,7 @@ export default function CadastroResponsavelPage() {
             </div>
 
             <div className="input-field">
-              <FontAwesomeIcon icon={faEye} className="icon" />
+              <FaEye className="icon" />
               <input
                 id="confirmPassword"
                 type="password"
@@ -129,7 +125,7 @@ export default function CadastroResponsavelPage() {
             </div>
 
             <div className="input-field">
-              <FontAwesomeIcon icon={faEnvelope} className="icon" />
+              <FaEnvelope className="icon" />
               <input
                 type="email"
                 id="email-user"
