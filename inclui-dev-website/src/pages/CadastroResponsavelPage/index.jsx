@@ -5,13 +5,14 @@ import logo from "../../assets/inclui-dev-logo.png";
 import { FaUser } from "react-icons/fa6";
 import { FaEnvelope, FaLock, FaCalendarAlt, FaEye } from "react-icons/fa";
 
-import { api } from "../../lib/axios/axios";
 import imgResponsavel from "../../assets/imgResponsavel.svg";
 import blocosRodape from "../../assets/blocosCentro.png";
 import blocoMais from "../../assets/blocoMais.png";
 import blocoMaisVerde from "../../assets/MaisVerde.svg";
 import SwitchLanguage from '../../components/SwitchLanguage'
 import { useTranslation } from 'react-i18next'
+
+import { WebClient } from '../../helpers/api/WebClient';
 
 export default function CadastroResponsavelPage() {
   const [formData, setFormData] = useState({
@@ -20,6 +21,7 @@ export default function CadastroResponsavelPage() {
     perfil: "RESPONSAVEL",
     dataNascimento: "",
     senha: "",
+    emailAdolescente: ""
   });
   const { t } = useTranslation()
 
@@ -33,13 +35,10 @@ export default function CadastroResponsavelPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
 
-    try {
-      await api.post("/usuario", formData);
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
+    WebClient.exchange("/usuario", "POST", formData)
+      .then(() => console.log("Success"))
+      .catch(() => console.log("Error"))
   };
 
   return (
@@ -94,7 +93,7 @@ export default function CadastroResponsavelPage() {
             <div className="input-field">
               <FaCalendarAlt className="icon" />
               <input
-                type="text"
+                type="date"
                 id="dataNascimento"
                 name="dataNascimento"
                 placeholder="Data de nascimento"
@@ -128,10 +127,10 @@ export default function CadastroResponsavelPage() {
               <FaEnvelope className="icon" />
               <input
                 type="email"
-                id="email-user"
-                name="email-user"
+                id="email-adolescente"
+                name="email-adolescente"
                 placeholder={t("cadastro-responsavel-input-email-adolescente")}
-                value={formData.email}
+                value={formData.emailAdolescente}
                 onChange={handleChange}
               />
             </div>

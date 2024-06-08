@@ -13,6 +13,8 @@ import blocoMaisVerde from "../../assets/MaisVerde.svg";
 import SwitchLanguage from '../../components/SwitchLanguage'
 import { useTranslation } from 'react-i18next'
 
+import { WebClient } from '../../helpers/api/WebClient';
+
 export default function CadastroPage() {
   const [formData, setFormData] = useState({
     nome: "",
@@ -31,15 +33,12 @@ export default function CadastroPage() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
 
-    try {
-      await api.post("/usuario", formData);
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
+    WebClient.exchange("/usuario", "POST", formData)
+      .then(() => console.log("Success"))
+      .catch(() => console.log("Error"))
   };
 
   return (
@@ -97,7 +96,7 @@ export default function CadastroPage() {
             <div className="input-field">
               <FaCalendarAlt className="icon" />
               <input
-                type="text"
+                type="date"
                 id="dataNascimento"
                 name="dataNascimento"
                 placeholder="Data de nascimento"
