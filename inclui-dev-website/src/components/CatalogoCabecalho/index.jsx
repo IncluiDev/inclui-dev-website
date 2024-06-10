@@ -20,12 +20,8 @@ export default function CatalogoCabecalho() {
                         <button className='button-saiba-mais'>Saiba mais</button>
                     </div>
                 </section>
-                
             </div>
-            
-            <div className='blocos'>
-                <img src={blocosCentro} alt="blocosCentro"/>
-            </div>
+            <img src={blocosCentro} alt="blocosCentro" className='blocos-catalogo'/>
         </div>
     )
 }

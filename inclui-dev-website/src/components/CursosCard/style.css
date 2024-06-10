@@ -90,17 +90,14 @@
     text-align: justify;
 }
 
+.container-card-curso-principal {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .container-card-curso-principal:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    border: 5px solid #63AB72;
-}
-
-.container-card-curso-principal:hover #progress-bar {
-    background-color: #63AB72;
-}
-
-.container-card-curso-principal:hover .tag-curso {
-    background-color: #63AB72;
 }
 
 @media (max-width: 800px) {

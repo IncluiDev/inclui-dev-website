@@ -35,9 +35,6 @@ export default function Cursos() {
                 </nav>
 
                 <div className='container-card'>
-                    <div className='lateral-card'>
-                        <img src={lateralCard} alt="Lateral Card" />
-                    </div>
                     <div className='container-principal'>
                         <CursosCard
                             id = "teste"
@@ -60,9 +57,6 @@ export default function Cursos() {
                                 />
                             ))
                         }
-                    </div>
-                    <div className='lateral-card'>
-                        <img src={lateralCard} alt="Lateral Card" />
                     </div>
                 </div>
                 <div className='blocos-1'>

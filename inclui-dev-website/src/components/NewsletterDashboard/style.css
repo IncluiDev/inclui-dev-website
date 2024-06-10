@@ -1,0 +1,96 @@
+.main-dashboard {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    margin-left: 30rem;
+    padding: 14px;
+    font-weight: 600;
+    max-width: 1400px;
+}
+
+.dashboard-content {
+    padding: 14px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.newsletter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.newsletter-image {
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+}
+
+.newsletter-form {
+    top: -85px;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    margin-bottom: 10px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: #CA1BB4;
+    width: 100%;
+    border: 1px solid #ffffff45;
+    border-radius: 15px;
+}
+
+.newsletter-title {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.text-highlight {
+    color: #E0E0E0;
+}
+
+.input-field {
+    background-color: #F5F5F5;
+    width: 100%;
+    padding-top: 1.9rem;
+    padding-bottom: 1.9rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    color: #CA1BB4;
+    height: 10vh;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.textarea-field {
+    width: 100%;
+    margin-top: 5px;
+    background-color: #F5F5F5;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 15px;
+    height: 40vh;
+    border: none;
+    color: #CA1BB4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-button {
+    background-color: #80BA8C;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    margin-top: 0.7rem;
+    width: 100%;
+    color: #F5F5F5;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
