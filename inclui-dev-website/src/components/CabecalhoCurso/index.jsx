@@ -1,41 +1,35 @@
 import './style.css';
 import { FaPlay } from "react-icons/fa";
-import blocos from '../../assets/chao-blocos.png'
-
+import blocos from '../../assets/chao-blocos.png';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
-const CabecalhoCurso = ( props ) => {
+const CabecalhoCurso = (props) => {
   const navigate = useNavigate();
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const handleClick = () => {
-    navigate(`/curso?id=${props.id}&aula=0`); 
+    navigate(`/curso?id=${props.id}&aula=0`);
   };
 
   return (
     <div className='cabecalho-curso-main'>
-      <img src={blocos} className='blocos-introducao'/>
-        <div className='container-cabecalho-curso'>
-            <button className='continuar-curso' onClick={handleClick}>
-              {t("detalhamento-button-continuar-curso")} <FaPlay />
-            </button>
-        </div>
+      <motion.img 
+        src={blocos} 
+        className='blocos-introducao'
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+      />
+      <div className='container-cabecalho-curso'>
+        <button className='continuar-curso' onClick={handleClick}>
+          {t("detalhamento-button-continuar-curso")} <FaPlay />
+        </button>
+      </div>
     </div>
   );
 }
 
 export default CabecalhoCurso;
-
-/*
-<h1 className='titulo-cabecalho'>
-              Tecnologia que 
-              <span id='spanI'>I</span>
-              <span id='spanN'>n</span>
-              <span id='spanC'>c</span>
-              <span id='spanL'>l</span>
-              <span id='spanN'>u</span>
-              <span id='spanC'>i</span>
-              <span id='spanM'>+</span>
-            </h1>
-*/
