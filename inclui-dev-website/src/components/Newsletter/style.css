@@ -1,9 +1,10 @@
 .newsletter {
-    position: relative;
     padding: 4rem;
     background: #f5f5f5;
-    margin-top: -2rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .newsletter-img {
@@ -17,6 +18,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    justify-content: center;
 }
 
 .content-newsletter p {

@@ -100,9 +100,6 @@ export default function CursoExibicaoPage() {
                         </div>
                     </article>
 
-                    <footer>
-                        <img className='rodape-curso' src={rodapeCurso} alt="Rodapé do curso" />
-                    </footer>
                 </main>
             </div>
         ) : (
