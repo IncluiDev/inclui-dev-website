@@ -3,8 +3,9 @@ import { useState } from 'react';
 import incluiLogo from '../../assets/inclui-dev-logo.png';
 import blocos from '../../assets/blocos.png';
 import SwitchLanguage from '../../components/SwitchLanguage';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+
+import { FaBars } from "react-icons/fa";
+import { FaXmark } from "react-icons/fa6";
 
 import { useTranslation } from 'react-i18next'
 
@@ -64,8 +65,7 @@ export default function Header() {
 
       <img src={blocos} className='blocos' alt='Blocos' />
 
-      <FontAwesomeIcon 
-        icon={faBars}
+      <FaBars 
         onClick={toggleMenu} 
         className={`nav ${isOpen ? 'open' : ''} icon-navigator`} 
       />
@@ -96,8 +96,7 @@ export default function Header() {
           </li>
           </ul>
 
-          <FontAwesomeIcon 
-            icon={faXmark}
+          <FaXmark 
             onClick={closeMenu}
             className={`nav ${isOpen ? 'open' : ''} icon-navigator close-icon`}
           />

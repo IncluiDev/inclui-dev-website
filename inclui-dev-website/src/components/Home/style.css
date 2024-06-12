@@ -1,7 +1,6 @@
 .home {
   background-color: #ffffff;
-
-  padding: 5rem 14rem 10rem;
+  padding: 8rem 14rem 10rem;
   color: #392E2E;
   justify-content: center;
   align-items: center;
@@ -21,15 +20,12 @@
   position: absolute;
 }
 
-
-
 .home h1 {
   padding: 4rem 0 0;
   font-size: 4rem;
   text-align: center;
   transition: .5s;
   letter-spacing: -1px;
-
 }
 
 .titulos{
@@ -75,24 +71,20 @@
   font-weight: 500;
 }
 
-#spanI {
-  margin-left: 7px;
+#spanI{
   color: #4D8F9A;
 }
 
-#spanN {
+#spanN{
   color: #CA1BB4;
 }
 
-#spanC {
+#spanC{
   color: #F76456;
 }
 
-#spanL {
-  color: #4D8F9A;
-}
 
-#spanM {
+#spanM{
   color: #63AB72;
 }
 
@@ -135,8 +127,9 @@
   width: 200%;
   object-fit: cover;
   position: absolute;
-  right: -20%;
+  right: -26%;
   margin-top: 27.5%;
+
 }
 
 .wave-container {  

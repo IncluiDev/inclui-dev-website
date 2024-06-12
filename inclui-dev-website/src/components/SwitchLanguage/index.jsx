@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './style.css';
 import { useTranslation } from 'react-i18next';
 
@@ -10,6 +10,8 @@ import imgFr from '../../assets/bandeiras/bandeira-fr.png';
 import imgKo from '../../assets/bandeiras/bandeira-ko.png';
 import imgRu from '../../assets/bandeiras/bandeira-ru.png';
 import imgDe from '../../assets/bandeiras/bandeira-de.png';
+import imgZh from '../../assets/bandeiras/bandeira-zh.png';
+import imgAr from '../../assets/bandeiras/bandeira-ar.png';
 
 const options = [
   {
@@ -52,15 +54,32 @@ const options = [
     value: "ko",
     flag: imgKo
   },
+  {
+    name: "Mandarim",
+    value: "zh",
+    flag: imgZh
+  },
+  {
+    name: "Árabe",
+    value: "ar",
+    flag: imgAr
+  },
 ];
 
 export default function SwitchLanguage() {
   const { i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState(options[0]);
+  const [selectedLanguage, setSelectedLanguage] = useState(() => {
+    const storedLanguage = localStorage.getItem('selectedLanguage');
+    return storedLanguage ? JSON.parse(storedLanguage) : options[0];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('selectedLanguage', JSON.stringify(selectedLanguage));
+    i18n.changeLanguage(selectedLanguage.value);
+  }, [selectedLanguage, i18n]);
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
-    i18n.changeLanguage(language.value);
   };
 
   return (

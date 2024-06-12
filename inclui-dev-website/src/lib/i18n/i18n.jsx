@@ -9,6 +9,8 @@ import fr from './locale/fr.json'
 import ru from './locale/ru.json'
 import de from './locale/de.json'
 import ko from './locale/ko.json'
+import zh from './locale/zh.json'
+import ar from './locale/ar.json'
 
 i18n.use(initReactI18next).init({
     fallbackLng: "ptBR",
@@ -37,6 +39,12 @@ i18n.use(initReactI18next).init({
         },
         ko: {
             ...ko
+        },
+        zh: {
+            ...zh
+        },
+        ar: {
+            ...ar
         }
     },
 })

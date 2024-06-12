@@ -1,10 +1,3 @@
-.logo {
-  position: absolute;
-  top: 30px;
-  right: 25px;
-  width: 150px;
-}
-
 img[src*="imgRecuperarSenha.svg"] {
   width: 100%;
   height: auto;
@@ -70,7 +63,6 @@ img[src*="imgRecuperarSenha.svg"] {
 }
 
 @media (max-width: 768px) {
-  .logo,
   img[src*="imgRecuperarSenha.svg"],
   #recuperacao-container:before {
     display: none;
@@ -78,7 +70,6 @@ img[src*="imgRecuperarSenha.svg"] {
 }
 
 @media (min-width: 769px) {
-  .logo,
   img[src*="imgRecuperarSenha.svg"],
   #recuperacao-container:before {
     display: block;
@@ -97,12 +88,5 @@ img[src*="imgRecuperarSenha.svg"] {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .logo {
-    display: block;
-    width: 100px;
   }
 }

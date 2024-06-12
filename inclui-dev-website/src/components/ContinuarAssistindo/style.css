@@ -1,0 +1,37 @@
+.continuar-assistindo-container {
+    position: relative;
+    margin-left: 25rem;
+    margin-top: 2%;
+    width: 900px;
+}
+
+.continuar-assistindo-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.curso-icon {
+    width: 100%;
+    max-width: 60px;
+    height: 60px;
+}
+
+.curso-continuar-assistindo {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+    background-color: #ca1bb37c;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.info-continuar-assistindo {
+    width: 40%;
+}
+
+.nome-tutor {
+    color: #CA1BB4;
+    font-weight: bolder;
+}

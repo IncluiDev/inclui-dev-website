@@ -53,19 +53,6 @@
     color: #E0E0E0;
 }
 
-.input-field {
-    background-color: #F5F5F5;
-    width: 100%;
-    padding-top: 1.9rem;
-    padding-bottom: 1.9rem;
-    font-size: 1.5rem;
-    border-radius: 15px;
-    color: #CA1BB4;
-    height: 10vh;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-}
-
 .textarea-field {
     width: 100%;
     margin-top: 5px;
@@ -73,10 +60,26 @@
     font-size: 1.5rem;
     padding: 5px;
     border-radius: 15px;
-    height: 40vh;
+    height: 10vh;
     border: none;
     color: #CA1BB4;
     font-family: 'Poppins', sans-serif;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px; /* Adicionando espaço entre os campos de entrada */
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 1180px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 34px;
 }
 
 .submit-button {

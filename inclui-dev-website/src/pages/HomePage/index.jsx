@@ -13,8 +13,8 @@ import Planos from '../../components/Planos'
 
 export default function HomePage() {
   return (
-    <>
-      <Header />
+    <div className='home-page'>
+      <Header/>
 
       <main>        
         <Home />
@@ -28,6 +28,6 @@ export default function HomePage() {
       </main>
 
       <Footer />
-    </>
+    </div>
   )
 }

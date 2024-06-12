@@ -1,6 +1,7 @@
 import "./style.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
+
+import { FaUser, FaLock } from "react-icons/fa6";
+
 import logo from "../../assets/inclui-dev-logo.png";
 import imgLogin from "../../assets/imgLogin.svg";
 import blocosRodape from "../../assets/blocosCentro.png";
@@ -9,13 +10,17 @@ import blocoMaisVerde from "../../assets/MaisVerde.svg";
 
 import TiposLogin from "../../components/TiposLogin";
 
+import SwitchLanguage from '../../components/SwitchLanguage'
 import { useContext, useState } from "react";
 import { Context } from "../../helpers/auth/AuthContext";
+
+import { useTranslation } from 'react-i18next'
 
 export default function LoginPage() {
   const { handleLogin } = useContext(Context);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { t } = useTranslation()
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -24,16 +29,19 @@ export default function LoginPage() {
 
   return (
     <div className="container" id="login-container">
-      <img src={logo} alt="Logo" className="logo" />
+      <div className="header-informations">
+        <SwitchLanguage/>
+        <img src={logo} alt="Logo" className="logo" />
+      </div>
+
       <img src={blocosRodape} alt="" className="blocos-rodape" />
       <img src={blocoMais} alt="" className="bloco-mais" />
       <img src={blocoMaisVerde} alt="" className="icone-mais" />
 
       <div className="left-side">
-        <h2>Novo aqui?</h2>
+        <h2>{t("login-side-subtitulo")}</h2>
         <p>
-          Caso seja novo aqui, aperte em cadastre-se, e preencha os dados
-          pedidos.
+          {t("login-side-descricao")}
         </p>
         <img src={imgLogin} alt="Uma mulher fazendo autenticação" />
       </div>
@@ -41,40 +49,40 @@ export default function LoginPage() {
       <div className="forms-container">
         <div className="signin-signup">
           <form className="sign-in-form" onSubmit={handleSubmit}>
-            <h2 className="title">Login</h2>
+            <h2 className="title">{t("login-titulo")}</h2>
             <p className="description">
-              Não tem uma conta?{" "}
+            {t("login-legenda-cadastro")}{" "}
               <a href="/cadastro" id="sign-up-btn">
-                Cadastre-se
+                {t("login-button-cadastro")}
               </a>
             </p>
 
             <div className="input-field">
-              <FontAwesomeIcon icon={faUser} className="icon" />
+              <FaUser className="icon" />
               <input
                 type="text"
                 id="emailLogin"
-                placeholder="E-mail ou Telefone"
+                placeholder={t("login-input-email")}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
 
             <div className="input-field">
-              <FontAwesomeIcon icon={faLock} className="icon" />
+              <FaLock className="icon" />
               <input
                 id="passwordLogin"
                 type="password"
-                placeholder="Senha"
+                placeholder={t("login-input-senha")}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
 
             <a href="/recuperacao" id="forgot-password-link">
-              Esqueci minha senha
+              {t("login-recuperacao")}
             </a>
             <input
               type="submit"
-              value="Entrar"
+              value={t("login-button-enviar")}
               id="btn-login"
               className="btn-login solid"
             />
@@ -82,7 +90,7 @@ export default function LoginPage() {
             <TiposLogin />
             <br />
             <a href="/home" id="back-to-home">
-              Página Inicial
+              {t("pagina-inicial")}
             </a>
           </form>
         </div>

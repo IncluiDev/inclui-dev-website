@@ -31,9 +31,8 @@ export default function IdentidadeVisual() {
 
                   <IdentidadeLogo 
                     images = {imgProgramacao}
-                    meaning = 'PROGRAMAÇÃO'
-                    text = {t("identidade-programacao")}
-                    id={t("identidade-programacao-significado")}
+                    meaning = {t("identidade-programacao")}
+                    text = {t("identidade-programacao-significado")}
                     mineText = 'textMinu'/>
                 </div>
                 <img src={gridLogo} className='gridLogo'/>              

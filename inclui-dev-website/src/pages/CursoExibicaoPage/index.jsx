@@ -2,18 +2,25 @@ import './style.css';
 import { useNavigate } from 'react-router-dom';
 import descricaoBlocos from '../../assets/descricao-linha-blocos.png';
 import rodapeCurso from '../../assets/rodape-curso.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { FaArrowRight } from "react-icons/fa";
+import { FaRightFromBracket } from "react-icons/fa6";
+
 import { useEffect, useState } from 'react';
 import { URLGetter } from "../../helpers/component/URLGetter";
 import Loader from '../../components/Loader';
 import { WebClient } from '../../helpers/api/WebClient';
+import SwitchLanguage from '../../components/SwitchLanguage'
+
+import { useTranslation } from 'react-i18next'
+
+import { curso } from "../../helpers/gambiarra/gambiarra"
 
 export default function CursoExibicaoPage() {
     const navigate = useNavigate();
     const [aula, setAula] = useState(null);
     const numeroAula = URLGetter.getAtribut("aula");
     const cursoId = URLGetter.getIdentification();
+    const { t } = useTranslation()
 
     useEffect(() => {
         WebClient.exchange(`/aula/all?curso=${cursoId}`, "GET")
@@ -24,8 +31,10 @@ export default function CursoExibicaoPage() {
             })
             .catch(error => {
                 console.error('Error fetching class:', error);
-                navigate("/catalogo");
+                //navigate("/catalogo");
             });
+
+            setAula(curso)
     }, [numeroAula, cursoId, navigate]);
 
     function handleClick() {
@@ -33,7 +42,8 @@ export default function CursoExibicaoPage() {
     }
 
     function nextClass() {
-        navigate(`/curso?id=${cursoId}&aula=${Number(numeroAula) + 1}`);
+        navigate(`/detalhamento?id=${cursoId}`);
+        //navigate(`/curso?id=${cursoId}&aula=${Number(numeroAula) + 1}`);
     }
 
     return (
@@ -41,19 +51,20 @@ export default function CursoExibicaoPage() {
             <div className='curso-container'>
                 <header className='header-curso'>
                     <h2>
-                        <span className='enumeracao-curso'>{Number(numeroAula) + 1}.</span>
+                        <span className='enumeracao-curso'>01.</span>
                         {aula.nome}
                     </h2>
 
                     <nav className='navigation-curso'>
+                        <SwitchLanguage/>
                         <button className='button-proxima-aula' onClick={nextClass}>
-                            Próxima Aula
-                            <FontAwesomeIcon icon={faArrowRight} className='icon-curso' />
+                            {t("curso-button-proxima-aula")}
+                            <FaArrowRight className='icon-curso' />
                         </button>
 
                         <button className='button-sair' onClick={handleClick}>
-                            Sair
-                            <FontAwesomeIcon icon={faRightFromBracket} className='icon-curso' />
+                            {t("curso-button-sair")}
+                            <FaRightFromBracket className='icon-curso' />
                         </button>
                     </nav>
                 </header>
@@ -72,7 +83,7 @@ export default function CursoExibicaoPage() {
                     <article>
                         <div className='descricao-imagem'>
                             <div className='curso-subtitulos'>
-                                <h3>Descrição de Imagem</h3>
+                                <h3>{t("curso-subtitulo-descricao-imagem")}</h3>
                                 <img src={descricaoBlocos} alt="Descrição de blocos" />
                             </div>
 
@@ -81,7 +92,7 @@ export default function CursoExibicaoPage() {
 
                         <div className='transcricao-descricao'>
                             <div className='curso-subtitulos'>
-                                <h3>Transcrição</h3>
+                                <h3>{t("curso-subtitulo-transcricao")}</h3>
                                 <img src={descricaoBlocos} alt="Transcrição de blocos" />
                             </div>
 

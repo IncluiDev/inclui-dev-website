@@ -1,13 +1,15 @@
 import './style.css';
 import blocosCentro from '../../assets/chao-blocos.png';
 import lateralCard from '../../assets/lateralCard.png';
-import imgCurso1 from '../../assets/cursos/curso-java.png';
 import CursosCard from '../CursosCard';
 import { useEffect, useState } from 'react';
 import { WebClient } from '../../helpers/api/WebClient';
 
+import { useTranslation } from 'react-i18next'
+
 export default function Cursos() {
     const [cursos, setCursos] = useState([]);
+    const { t } = useTranslation()
 
     function getCursos() {
         WebClient.exchange("/curso/all", "GET")
@@ -25,7 +27,7 @@ export default function Cursos() {
     return (
         <div className="main">
             <div className="container-cursos">
-                <h1>Todos nossos cursos Java</h1>
+                <h1>{t("catalogo-titulo-navegacao")}</h1>
                 <nav className='menu-curso'>
                     <ul>
                         <li className="item-ativo">Java</li>
@@ -36,14 +38,6 @@ export default function Cursos() {
 
                 <div className='container-card'>
                     <div className='container-principal'>
-                        <CursosCard
-                            id = "teste"
-                            imgSrc={imgCurso1}
-                            courseName="Crie sua primeira aplicação web Java"
-                            courseTag={["Java", "OO", "Polimorfismo"]}
-                            descricaoCurso="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolor dolorem id? Illum aliquid magnam ducimus possimus delectus exercitationem iste illo nemo rerum consequuntur, repellendus quos! Facilis provident eos perspiciatis."
-                            progress="80"
-                        />
                         {
                             cursos.map(curso => (
                                 <CursosCard
@@ -53,7 +47,7 @@ export default function Cursos() {
                                     courseName={curso.nome}
                                     courseTag={curso.tags}
                                     descricaoCurso={curso.descricao}
-                                    progress="80"
+                                    progress="0"
                                 />
                             ))
                         }

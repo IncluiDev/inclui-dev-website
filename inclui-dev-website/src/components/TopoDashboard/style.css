@@ -1,0 +1,122 @@
+.topo-dashboard-container {
+    margin-top: 5rem;
+    margin-left: 18rem;
+    width: calc(100%-300px);
+}
+
+.topo-dashboard {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+/* .saudacao-user-container {
+    display: flex;
+} */
+
+.pessoaDashboard {
+    position: absolute;
+    top: 50px;
+    right: 725px;
+    width: 350px;
+    object-fit: contain;
+}
+
+.emailDashboard {
+    position: relative;
+    right: -380px;
+    top: -10px;
+
+}
+
+.saudacao-user-texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 900px;
+    height: 250px;
+    padding: 20px;
+    background-color: #FF725E;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding-left: 5%;
+    box-shadow: 5px 10px 116px -8px rgba(255,114,94,0.35);
+}
+
+.saudacao-user-texto h2 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.saudacao-user-texto p {
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.info-topo-container {
+    width: 30%;
+}
+
+.info-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-right: 5%;
+}
+
+.pesquisa-curso {
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+    background-color: #F4F4F4;
+    color: #464646;
+    border: 1px solid rgba(211, 211, 211, 0.585);
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 5px 10px 116px -8px rgba(0,0,0,0.39);
+}
+
+.cursos-dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    gap: 10px;
+}
+
+.cursos-dashboard h2 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.curso-completo {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    background-color: #63AB72;
+    width: 300px;
+    border-radius: 15px;
+    color: white;
+}
+
+.curso-progresso {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    background-color: #FF725E;
+    width: 300px;
+    border-radius: 15px;
+    color: white;
+}
+
+.notification-icon {
+    font-size: 40px;
+}
+
+.user-profile {
+    width: 100px;
+}
