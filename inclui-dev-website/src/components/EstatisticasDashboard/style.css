@@ -1,0 +1,35 @@
+.estatisticas-dashboard-container {
+    position: absolute;
+    margin-left: 63rem;
+    top: -200px;
+    width: 518px;
+}
+
+.estatisticas-dashboard-container h2 {
+    font-size: 34px;
+}
+
+.estatisticas-nav-lista {
+    margin-top: 4%;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.mes-nav {
+    padding: 15px 25px;
+    background-color: #F76456;
+    border-radius: 15px;
+    min-width: 100px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+.estatisticas, .planoEstatisticas {
+    margin-top: 5%;
+    width: 100%;
+    max-width: 518px;
+}

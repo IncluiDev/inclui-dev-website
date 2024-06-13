@@ -1,5 +1,6 @@
 import './style.css';
 import { useNavigate } from 'react-router-dom';
+import javaIcon from '../../assets/javaIcon.png'
 
 const CursosCard = (props) => {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ const CursosCard = (props) => {
 
     return (
         <div className="container-card-curso-principal" onClick={handleClick}>
-            <img src={props.imgSrc} alt={props.courseName} />
+            <img src={javaIcon} alt={props.courseName} />
 
             <div className="info-curso-card">
                 <div className="titulo-curso">

@@ -3,6 +3,7 @@ import './style.css';
 import jsCurso from '../../assets/jsCurso.png'
 import { MdOutlineWatchLater } from "react-icons/md";
 import { IoIosStar } from "react-icons/io";
+import EstatisticasDashboard from "../../components/EstatisticasDashboard";
 
 
 const CursosDashboard = () => {
@@ -66,6 +67,7 @@ const CursosDashboard = () => {
                 <button className='assistir-cursos'>ASSISTIR CURSO</button>
             </div>
         </aside>
+        <EstatisticasDashboard/>
       </section>
     );
   }
