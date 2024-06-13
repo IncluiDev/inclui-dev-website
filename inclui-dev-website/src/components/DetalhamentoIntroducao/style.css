@@ -1,6 +1,6 @@
 .container-detalhamento {
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     position: relative;
     top: 6rem;
     padding: 6rem 2rem;
@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     z-index: 0;
+    box-sizing: border-box;
 }
 
 .container-detalhamento::before {
@@ -20,7 +21,7 @@
     background-image: url("../../assets/background-curso.png");
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -2; 
+    z-index: -2;
 }
 
 .container-detalhamento::after {
@@ -30,31 +31,37 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); 
-    z-index: -1; 
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
 }
-
 
 .content-detalhamento {
     display: flex;
+    flex-direction: column;
     width: 100%;
+    max-width: 1200px;
     align-items: center;
     justify-content: center;
     color: #fff;
     position: relative;
     gap: 30px;
     z-index: 10;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .icon-curso img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 .titulo-curso-detalhamento {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
+    text-align: center;
 }
 
 .titulo-curso-detalhamento h2 {
@@ -71,22 +78,29 @@
     display: flex;
     gap: 10px;
     color: black;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container-tag .tag-curso {
     font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .detalhes-curso {
     display: flex;
-    justify-content: space-between;
-    width: 400px;
-    margin-right: 5%;
-    margin-left: 30%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
     padding: 30px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.877);
     color: rgba(0, 0, 0, 0.49);
+    margin-top: 20px;
+    box-sizing: border-box;
 }
 
 .lista-info-curso {
@@ -103,4 +117,18 @@
 
 .pessoa-com-celular img {
     width: 100px;
+}
+
+@media (max-width: 768px) {
+    .content-detalhamento {
+        padding: 0 10px;
+    }
+
+    .icon-curso img {
+        max-width: 250px;
+    }
+
+    .titulo-curso-detalhamento h1 {
+        font-size: 32px;
+    }
 }

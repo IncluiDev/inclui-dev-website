@@ -88,8 +88,8 @@
     }
 
     .custom-shape-divider-bottom-1693432336 {
-        top: -78px;
+        position: relative;
+        z-index: -1;
+        margin-top: 20px;
     }
-
-
 }

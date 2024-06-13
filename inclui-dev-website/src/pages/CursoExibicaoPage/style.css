@@ -21,7 +21,7 @@
 .navigation-curso {
   display: flex;
   gap: 10px;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -36,7 +36,7 @@
   overflow: none;
   border: none;
   cursor: pointer;
-  margin-left: 15px; /* relacao com o SwitchLanguage */
+  margin-left: 15px;
 }
 
 .button-sair {
@@ -90,4 +90,46 @@
 
 .rodape-curso {
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .header-curso {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-curso {
+    padding: 1rem;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navigation-curso {
+    justify-content: flex-start;
+  }
+
+  .button-proxima-aula {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .button-sair {
+    margin-top: 10px;
+  }
+
+  .curso-video {
+    margin-top: 50px;
+    height: 400px;
+  }
+
+  .descricao-imagem, .transcricao-descricao {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-curso {
+    padding: 0.5rem;
+  }
 }

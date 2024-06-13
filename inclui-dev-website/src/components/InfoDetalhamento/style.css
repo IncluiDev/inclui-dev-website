@@ -18,6 +18,7 @@
 .titulo-desc-detalhamento h3 {
     font-size: 35px;
     margin-bottom: 15px;
+    margin-top: 100px;
 }
 
 .titulo-desc-detalhamento p {
@@ -25,6 +26,7 @@
     color: rgba(0, 0, 0, 0.468);
     text-align: justify;
     font-size: 24px;
+    padding-top: 10px;
 }
 
 .tutor {
@@ -61,10 +63,6 @@
     left: 40px;
 }
 
-.tutor-nomeclaturas h4 {
-    font-size: 25px;
-}
-
 .tutor-nomeclaturas h4, .tutor-nomeclaturas span {
     font-weight: 700;
 }
@@ -98,10 +96,13 @@
     border-radius: 20px;
     border: 3px solid #b57edc59;
     box-shadow: -1px -1px 80px -19px #b57edc59;
+    display: block;
+    padding: 20px;
 }
 
 .aulasCurso h3 {
     font-size: 40px;
+    margin: auto;
 }
 
 .listaAulas {
@@ -126,10 +127,31 @@
 }
 
 .aulasIcon img {
-    position: relative;
     width: 150px;
-    left: -50px;
+    position: relative;
+    left: 0;
     top: 90px;
+}
+
+@media (min-width: 1024px) {
+    .aulasIcon img {
+        width: 200px;
+        top: 115px;
+        left: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aulasIcon img {
+        left: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .aulasIcon img {
+        left: 10px;
+    }
 }
 
 .li-content {
@@ -154,4 +176,116 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
+@media (max-width: 1024px) {
+    .infoDetalhamentoContainer {
+        flex-direction: column;
+        padding: 50px 3.5rem;
+        gap: 20px;
+    }
 
+    .tutor-titulo, .tutor-nome {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tutor-titulo, .tutor-nomeclaturas {
+        width: 100%;
+    }
+
+    .imgPessoaPC img, .tutorIcon img, .tutor-nome img {
+        width: 100%;
+        left: 0;
+    }
+
+    .titulo-desc-detalhamento h3 {
+        font-size: 28px;
+    }
+
+    .titulo-desc-detalhamento p, .tutor-nomeclaturas p {
+        font-size: 20px;
+    }
+
+    .aulasCurso h3 {
+        font-size: 30px;
+    }
+
+    .listaAulas li {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .infoDetalhamentoContainer {
+        padding: 20px 1.5rem;
+    }
+
+    .titulo-desc-detalhamento p {
+        font-size: 18px;
+    }
+
+    .tutor-nomeclaturas {
+        padding: 25px;
+        width: 90%;
+        margin-left: 130px;
+    }
+
+    .tutor-titulo {
+        margin-left: 130px;
+    }
+
+    .tutor-titulo h2{
+        margin-left: 100px;
+    }
+
+    .aulasCurso h3, .listaAulas li {
+        font-size: 18px;
+    }
+
+    .aulasIcon img {
+        width: 100px;
+    }
+
+    .imgPessoaPC img {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-desc-detalhamento h3 {
+        font-size: 24px;
+    }
+
+    .tutor-nomeclaturas {
+        padding: 25px;
+        width: 90%;
+        margin-left: 130px;
+    }
+
+    .tutor-titulo {
+        margin-left: 130px;
+    }
+
+    .tutor-titulo h2{
+        margin-left: 100px;
+    }
+
+    .tutor-nomeclaturas p, .description {
+        font-size: 16px;
+    }
+
+    .aulasCurso h3 {
+        font-size: 24px;
+    }
+
+    .listaAulas li {
+        font-size: 16px;
+    }
+
+    .aulasIcon img {
+        width: 80px;
+    }
+
+    .imgPessoaPC img {
+        margin-left: 10px;
+    }
+}
