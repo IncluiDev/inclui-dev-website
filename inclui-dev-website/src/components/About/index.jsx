@@ -4,7 +4,7 @@ import AboutCard from '../AboutCard';
 import CardUser from '../../assets/card-comunidade.png';
 import CardClass from '../../assets/card-estudo.png';
 import CardGames from '../../assets/card-jogos.png';
-import Dash2 from '../../assets/Dash2.png';
+import Dash from '../../assets/dash.png';
 import Users from '../../assets/comunidade.png';
 import Books from '../../assets/livros.png';
 import Games from '../../assets/jogos.png';
@@ -17,7 +17,7 @@ export default function About() {
 
     return (
         <section id="about" className='about'>
-            <img src={Dash2} className='dash' alt='dash'></img>
+            <img src={Dash} className='dash' alt='dash'></img>
 
             <div className='grid-content'>
                 <motion.div

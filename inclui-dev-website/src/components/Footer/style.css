@@ -26,7 +26,6 @@
 
 .footer-container li {
     margin: 1rem 0;
-    
     position: relative;
 }
 
@@ -54,8 +53,8 @@
 }
 
 .custom-shape-divider-bottom-1693432336 {
-    position: absolute;
-    top: -148px;
+    position: relative;
+    top: 10px;
     left: 0;
     width: 100%;
     overflow: hidden;
