@@ -1,4 +1,22 @@
 .tutorProfile img {
-    border-radius: 100%;
+    border-radius: 50%;
     border: 5px solid #63AB72;
+    width: 150px;
+    height: 150px;
+}
+
+@media (max-width: 768px) {
+    .tutorProfile img {
+        width: 100px;
+        height: 100px;
+        left: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tutorProfile img {
+        width: 80px;
+        height: 80px;
+        left: 260px;
+    }
 }

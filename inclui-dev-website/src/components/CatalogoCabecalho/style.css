@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: space-between;
     height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .container-info {
@@ -15,17 +18,24 @@
     position: relative;
     top: 18rem;
     width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .foto {
     width: 50%;
     color: #FFFFFF;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .foto img {
     width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    height: auto;
 }
 
 .container-foto {
@@ -37,14 +47,20 @@
 
 
 .fundo-container {
-    background-image: url(../../assets/cursos.png);
-    width: 800px;
-    height: 450px;
+    background-image: url(/src/assets/cursos.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    min-height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
     text-transform: uppercase;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .texto {
@@ -56,6 +72,8 @@
     text-align: justify;
     margin-right: 9%;
     margin-top: 2%;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .container-texto {
@@ -116,7 +134,39 @@
     color: #63AB72;
 }
 
-.blocos-catalogo {
-    align-items: flex-end;
+.blocos>img {
+    position: relative;
+    top: 270px;
 }
 
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blocos,
+    .blocosimg img {
+        display: none;
+    }
+
+    .foto {
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fundo-container {
+        width: 100%;
+    }
+
+    .texto {
+        margin-right: 0;
+        width: 80%;
+    }
+}
