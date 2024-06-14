@@ -10,6 +10,7 @@ import PaletaCard from '../../components/PaletaCard'
 import IdentidadeVisual from '../../components/IdentidadeVisual'
 import Equipe from '../../components/Equipe'
 import Planos from '../../components/Planos'
+import Visao from '../../components/Visao'
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
         <PaletaCard />
         <IdentidadeVisual />
         <Equipe />
+        <Visao />
         <Planos />
         <Newsletter />
       </main>

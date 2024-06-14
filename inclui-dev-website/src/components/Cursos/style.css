@@ -107,6 +107,7 @@
     flex-direction: column;
     gap: 100px;
     align-items: center;
+    margin-bottom: 6rem;
 }
 
 .container-principal img {

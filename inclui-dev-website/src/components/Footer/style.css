@@ -1,6 +1,6 @@
 .footer-container {
     padding: 6rem 2rem 2rem 3rem;
-    background-color: #ffffff;
+    background-color: #f1eeee;
     color: #392E2E;
     position: relative;
 }
@@ -53,26 +53,24 @@
 }
 
 .custom-shape-divider-bottom-1693432336 {
-    position: relative;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
     transform: rotateX(180deg);
 }
 
 .custom-shape-divider-bottom-1693432336 svg {
-    position: relative;
+    position: absolute;
+    z-index: 100;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
+    width: calc(100% + 80px);
+    top: 95px;
+    left: -50px;
+    height: 100px;
     transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1693432336 .shape-fill {
-    fill: #ffffff;
+    fill: #f1eeee;
 }
 
 

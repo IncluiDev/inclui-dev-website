@@ -59,10 +59,6 @@ const InfoDetalhamento = (props) => {
         </div>
         <DetalhamentoTutor professor={props.professor} />
       </div>
-
-      <div className='blocos1'>
-        <img src={blocosCentro} alt="blocosCentro" />
-      </div>
     </>
   );
 };

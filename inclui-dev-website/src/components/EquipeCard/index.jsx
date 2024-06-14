@@ -15,8 +15,11 @@ export default function EquipeCard(props) {
                 <p>{props.funcao}</p>
 
                 <div className="redes-sociais">
-                    <a href={props.github} target="_blank" rel="noopener noreferrer">
-                        <FaGithub color={"#FF725E"} id='githubIcon' className='icons' /></a>
+                    {props.github ? 
+                        (<a href={props.github} target="_blank" rel="noopener noreferrer">
+                        <FaGithub color={"#FF725E"} id='githubIcon' className='icons' /></a>)
+                        : ""
+                    }
                     <a href={props.linkedin} target="_blank" rel="noopener noreferrer">
                         <FaLinkedin color={"#4D8F9A"} id='linkedinIcon' className='icons'/></a>
                     <a href={props.instagram} target="_blank" rel="noopener noreferrer">

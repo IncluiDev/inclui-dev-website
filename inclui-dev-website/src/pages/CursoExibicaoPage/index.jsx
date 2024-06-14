@@ -1,7 +1,6 @@
 import './style.css';
 import { useNavigate } from 'react-router-dom';
 import descricaoBlocos from '../../assets/descricao-linha-blocos.png';
-import rodapeCurso from '../../assets/rodape-curso.png';
 import { FaArrowRight } from "react-icons/fa";
 import { FaRightFromBracket } from "react-icons/fa6";
 import Footer from '../../components/Footer';
@@ -100,8 +99,9 @@ export default function CursoExibicaoPage() {
                             <p>{aula.transcricao}</p>
                         </div>
                     </article>
-                    <Footer/>
                 </main>
+
+                <Footer/>
             </div>
         ) : (
             <Loader/>

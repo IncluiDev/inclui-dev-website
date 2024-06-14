@@ -1,3 +1,6 @@
+.curso-container main {
+  margin-bottom: 7rem;
+}
 .header-curso {
   width: 100%;
   display: flex;

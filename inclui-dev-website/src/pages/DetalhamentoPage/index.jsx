@@ -3,6 +3,7 @@ import DetalhamentoIntroducao from "../../components/DetalhamentoIntroducao";
 import Header from "../../components/Header";
 import InfoDetalhamento from "../../components/InfoDetalhamento";
 import Loader from '../../components/Loader';
+import Footer from "../../components/Footer";
 import { useEffect, useState } from 'react';
 import { URLGetter } from "../../helpers/component/URLGetter";
 import { WebClient } from '../../helpers/api/WebClient';
@@ -42,6 +43,8 @@ export default function DetalhamentoPage() {
                 descricao={curso.descricao}
                 professor={curso.professor}
               />
+
+              <Footer/>
             </>
           ) : (
             <Loader/>
