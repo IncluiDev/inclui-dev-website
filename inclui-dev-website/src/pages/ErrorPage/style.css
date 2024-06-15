@@ -1,0 +1,41 @@
+.error-container {
+  width: 100%;
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.error-container p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  width: 80%;
+  text-align: center;
+}
+
+.error-img {
+  width: 50%;
+  margin-top: 50px;
+}
+
+.button-error {
+  background-color: #CA1BB4;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 12px 35px;
+  overflow: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px
+}
+
+.icon-error {
+  font-size: 20px;
+}
