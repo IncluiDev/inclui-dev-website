@@ -1,6 +1,5 @@
 import './style.css';
 import blocosCentro from '../../assets/chao-blocos.png';
-import lateralCard from '../../assets/lateralCard.png';
 import CursosCard from '../CursosCard';
 import { useEffect, useState } from 'react';
 import { WebClient } from '../../helpers/api/WebClient';
@@ -30,8 +29,7 @@ export default function Cursos() {
                 <h1>{t("catalogo-titulo-navegacao")}</h1>
                 <nav className='menu-curso'>
                     <ul>
-                        <li className="item-ativo">Java</li>
-                        <li>Python</li>
+                        <li className="item-ativo">Cursos</li>
                         <li className='jogos-select'>Jogos</li>
                     </ul>
                 </nav>
