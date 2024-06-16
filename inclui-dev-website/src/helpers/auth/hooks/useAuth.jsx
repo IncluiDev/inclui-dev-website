@@ -1,36 +1,34 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { api } from '../../../lib/axios/axios';
+import { WebClient } from '../../../helpers/api/WebClient';
 
 export default function useAuth() {
   const [authenticated, setAuthenticated] = useState(false);
-  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-
-    if (token) {
-      api.defaults.headers.Authorization = `Bearer ${token}`;
+  function checkLogin() {
+    if (localStorage.getItem('token')) {
       setAuthenticated(true);
     } else {
       setAuthenticated(false);
-      // navigate("/login");
+      navigate("/login");
     }
-
-    setLoading(false);
-  }, [navigate]);
+  }
   
   async function handleLogin(email, senha) {
     try {
-      const { data: { token } } = await api.post('/auth', { email, senha });
-      localStorage.setItem('token', token); 
-      api.defaults.headers.Authorization = `Bearer ${token}`;
-      setAuthenticated(true);
-    } catch (error) {
-      console.error('Erro ao fazer login:', error);
+      await WebClient.exchange('/auth', "POST", { email, senha })
+      .then(response => response.json())
+      .then(response => {
+        localStorage.setItem('token', response.token); 
+        setAuthenticated(true)
+      })
+
+      navigate("/dashboard")
+    } catch(error) {
+      return false
     }
   }
     
-  return { authenticated, loading, handleLogin };
+  return { authenticated, handleLogin, checkLogin };
 }
