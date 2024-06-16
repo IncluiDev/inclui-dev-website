@@ -1,6 +1,4 @@
 .topo-dashboard-container {
-    margin-top: 5rem;
-    margin-left: 18rem;
     width: calc(100%-300px);
 }
 
@@ -11,15 +9,23 @@
     justify-content: space-evenly;
 }
 
-/* .saudacao-user-container {
+.saudacao-user-container {
     display: flex;
-} */
+    width: 900px;
+    height: 250px;
+    padding: 20px;
+    background-color: #FF725E;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding-left: 5%;
+    box-shadow: 5px 10px 116px -8px rgba(255,114,94,0.35);
+}
 
 .pessoaDashboard {
-    position: absolute;
-    top: 50px;
-    right: 725px;
-    width: 350px;
+    position: relative;
+    top: -40px;
+    width: 400px;
+    height: auto;
     object-fit: contain;
 }
 
@@ -34,14 +40,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 900px;
-    height: 250px;
-    padding: 20px;
-    background-color: #FF725E;
-    border-radius: 10px;
-    color: #FFFFFF;
-    padding-left: 5%;
-    box-shadow: 5px 10px 116px -8px rgba(255,114,94,0.35);
 }
 
 .saudacao-user-texto h2 {

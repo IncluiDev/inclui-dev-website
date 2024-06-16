@@ -1,4 +1,3 @@
-import React from 'react'
 import './style.css'
 import jsCurso from '../../assets/jsCurso.png'
 
@@ -20,7 +19,9 @@ const ContinuarAssistindo = (props) => {
             </div>
           </div>
         </div>
+
         <img src={jsCurso} alt="" className='curso-icon'/>
+        
         <div className='info-continuar-assistindo'>
           <h2>JS Para iniciantes</h2>
           <p>By <span className='nome-tutor'>Gustavo Guanabara</span></p>

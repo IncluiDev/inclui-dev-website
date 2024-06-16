@@ -1,3 +1,5 @@
+import './style.css'
+
 import ContinuarAssistindo from "../../components/ContinuarAssistindo";
 import CursosDashboard from "../../components/CursosDashboard";
 import Navbar from "../../components/NavbarDashoard";
@@ -8,9 +10,12 @@ export default function Dashboard() {
     return (
       <>
         <Navbar/>
-        <TopoDashboard/>
-        <ContinuarAssistindo/>
-        <CursosDashboard/>
+        
+        <main className='main-dashboard'>
+          <TopoDashboard/>
+          <ContinuarAssistindo/>
+          <CursosDashboard/>
+        </main>
       </>
     )
 }

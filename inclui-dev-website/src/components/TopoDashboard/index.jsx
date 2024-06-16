@@ -1,4 +1,3 @@
-import React from 'react'
 import "./style.css"
 import pessoaDashboard from '../../assets/pessoaDashboard.png'
 import userProfile from '../../assets/user-profile.png'
@@ -9,12 +8,14 @@ const TopoDashboard = () => {
     <header className='topo-dashboard-container'>
         <div className='topo-dashboard'>
             <div className='saudacao-user-container'>
-                <img src={pessoaDashboard} alt="Pessoa no Dashboard" className='pessoaDashboard'/>
                 <div className='saudacao-user-texto'>
                     <h1>Olá, Dev!</h1>
                     <p>Feliz em te ver novamente!</p>
                 </div>
+
+                <img src={pessoaDashboard} alt="Pessoa no Dashboard" className='pessoaDashboard'/>
             </div>
+            
             <aside className='info-topo-container'>
                 <div className='info-topo'>
                     <input type="search" placeholder='Pesquisar Curso' className='pesquisa-curso' aria-label="Pesquisar Curso"/>

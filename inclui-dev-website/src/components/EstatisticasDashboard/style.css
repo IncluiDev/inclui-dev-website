@@ -1,8 +1,6 @@
 .estatisticas-dashboard-container {
-    position: absolute;
-    margin-left: 63rem;
-    top: -200px;
-    width: 518px;
+    width: 520px;
+    margin-left: 160px;
 }
 
 .estatisticas-dashboard-container h2 {
@@ -10,7 +8,7 @@
 }
 
 .estatisticas-nav-lista {
-    margin-top: 4%;
+    margin-top: 60px;
     display: flex;
     gap: 20px;
     font-size: 18px;

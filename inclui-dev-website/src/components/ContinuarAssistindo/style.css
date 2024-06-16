@@ -1,8 +1,7 @@
 .continuar-assistindo-container {
-    position: relative;
-    margin-left: 25rem;
     margin-top: 2%;
     width: 900px;
+    margin-left: -500px;
 }
 
 .continuar-assistindo-container h1 {

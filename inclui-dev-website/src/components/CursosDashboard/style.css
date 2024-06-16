@@ -1,9 +1,15 @@
 .cursos-dashboard-container {
     position: relative;
-    margin-left: 25rem;
     margin-top: 2%;
+    margin-left: -200px;
     margin-bottom: 2%;
-    width: 900px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cursos-dashboard-container div {
+    width: 800px;
 }
 
 .cursos-dashboard-container h1 {
@@ -12,6 +18,7 @@
 }
 
 .cursos-dashboard-lista {
+    width: 100%;
     display: flex;
     font-size: 20px;
     gap: 60px;

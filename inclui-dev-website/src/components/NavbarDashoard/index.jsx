@@ -1,11 +1,12 @@
 import './style.css';
-import incluiDevLogo from '../../assets/incluiDevLogo.png';
+import incluiDevLogo from '../../assets/inclui-dev-logo.png';
 import navbarImg from '../../assets/navbarImg.png';
+
 import { MdDashboardCustomize } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-export default function Navbar(props) {
+export default function Navbar() {
     return (
         <aside className="aside-dashboard">
             <header className="header-dashboard">
@@ -34,7 +35,7 @@ export default function Navbar(props) {
             </nav>
 
             <a className="navLink botao-dashboard" href="/">
-                <span className="navText">Go Premium</span>
+                <span className="navText">Sair</span>
             </a>
         </aside>
     );

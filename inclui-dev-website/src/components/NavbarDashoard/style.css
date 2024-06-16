@@ -1,18 +1,16 @@
-/* style.css */
 .aside-dashboard {
   position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
-  width: 300px;
-  max-width: 60px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 2rem;
   box-shadow: 7px 0px 93px -5px rgba(231,175,118,0.3);
-  background-color: #fff; /* Adicione um fundo se necessário */
-  z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+  background-color: #fff; 
+  z-index: 1000;
 }
 
 .header-dashboard {
@@ -23,7 +21,7 @@
 }
 
 .header-dashboard img {
-  max-width: 100%;
+  width: 220px;
   height: auto;
 }
 
@@ -38,6 +36,7 @@
   align-items: center;
   text-decoration: none;
   color: inherit;
+  font-size: 25px;
 }
 
 .navText {
@@ -67,7 +66,6 @@
 
 @media (min-width: 700px) {
   .aside-dashboard {
-      max-width: 300px;
       padding: 2rem;
   }
 
