@@ -1,0 +1,61 @@
+.lgpd-container {
+  width: 100%;
+  padding: 150px 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.lgpd-container h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.lgpd-container h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: left;
+}
+
+.lgpd-container p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: justify;
+}
+
+.lgpd-container h3 {
+  width: 100%;
+  text-align: left;
+  font-weight: large;
+}
+
+.lgpd-img {
+  width: 50%;
+  margin-top: 50px;
+}
+
+.button-error {
+  background-color: #CA1BB4;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 12px 35px;
+  overflow: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px
+}
+
+.icon-error {
+  font-size: 20px;
+}

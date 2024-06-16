@@ -11,6 +11,7 @@ import IdentidadeVisual from '../../components/IdentidadeVisual'
 import Equipe from '../../components/Equipe'
 import Planos from '../../components/Planos'
 import Visao from '../../components/Visao'
+import LGPD from '../../components/LGPD'
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
 
       <main>        
         <Home />
+        <LGPD />
         <About />
         <AboutProject />
         <PaletaCard />

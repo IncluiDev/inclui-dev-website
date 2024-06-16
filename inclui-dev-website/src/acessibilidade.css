@@ -1,5 +1,16 @@
-h1:hover, h2:hover, h3:hover, p:hover {
+/*
+h1:hover,
+h2:hover,
+h3:hover,
+p:hover {
     transition: 1s all ease-in-out;
-    text-decoration:underline;    
+    text-decoration: underline;
     cursor: pointer;
+}
+*/
+
+::selection {
+    background: #CA1BB4;
+    color: #fff;
+    font-weight: bold;
 }
