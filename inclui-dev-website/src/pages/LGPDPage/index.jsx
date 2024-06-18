@@ -8,7 +8,7 @@ import { IoMdReturnLeft } from "react-icons/io";
 
 import { useTranslation } from 'react-i18next'
 
-export default function LGPPage() {
+export default function LGPDPage() {
     const navigate = useNavigate();
     const { t } = useTranslation()
 

@@ -14,7 +14,7 @@ import CadastroResponsavelPage from '../../pages/CadastroResponsavelPage';
 import Dashboard from '../../pages/Dashboard';
 import NewsletterAdmPage from '../../pages/NewsletterAdmPage';
 import ErrorPage from '../../pages/ErrorPage';
-import LGPPage from '../../pages/LGPPage';
+import LGPDPage from '../../pages/LGPDPage';
 
 export default function ManagerRoutes() {
     const { authenticated } = useContext(Context);
@@ -35,7 +35,7 @@ export default function ManagerRoutes() {
           <Route path="/curso" element={<CursoExibicaoPage/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/error" element={<ErrorPage/>}/>
-          <Route path="/lgpd" element={<LGPPage/>}/>
+          <Route path="/lgpd" element={<LGPDPage/>}/>
           <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
     );

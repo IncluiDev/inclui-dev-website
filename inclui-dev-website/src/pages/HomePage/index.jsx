@@ -12,6 +12,7 @@ import Equipe from '../../components/Equipe'
 import Planos from '../../components/Planos'
 import Visao from '../../components/Visao'
 import LGPD from '../../components/LGPD'
+import Parceiros from '../../components/Parceiros'
 
 export default function HomePage() {
   return (
@@ -28,6 +29,7 @@ export default function HomePage() {
         <Equipe />
         <Visao />
         <Planos />
+        <Parceiros />
         <Newsletter />
       </main>
 
