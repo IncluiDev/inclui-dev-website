@@ -9,9 +9,9 @@
 .estatisticas-dashboard-container h2 {
     font-size: 34px;
     text-align: center;
-    margin: -3rem;
+    margin: -2.5rem;
     position: absolute;
-   
+    width: 100%;
 }
 
 .estatisticas-nav {
@@ -100,4 +100,5 @@
     color: white;
     position: relative;
     top: -1rem;
+    cursor: pointer;
 }
