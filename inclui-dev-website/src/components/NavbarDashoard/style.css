@@ -3,11 +3,10 @@
   left: 0;
   top: 0;
   height: 100vh;
-  width: 400px;
+  width: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 2rem;
+  justify-content: space-between;
   box-shadow: 7px 0px 93px -5px rgba(231,175,118,0.3);
   background-color: #fff; 
   z-index: 1000;
@@ -15,20 +14,25 @@
 
 .header-dashboard {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 2rem;
+ 
 }
 
 .header-dashboard img {
   width: 220px;
   height: auto;
+  
 }
 
 .nav-dashboard {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  justify-content: center;
+
+
 }
 
 .navLink {
@@ -36,7 +40,8 @@
   align-items: center;
   text-decoration: none;
   color: inherit;
-  font-size: 25px;
+  font-size: 1.3rem;
+ 
 }
 
 .navText {

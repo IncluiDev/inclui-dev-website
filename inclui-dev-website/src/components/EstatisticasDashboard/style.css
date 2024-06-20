@@ -1,18 +1,35 @@
 .estatisticas-dashboard-container {
-    width: 520px;
-    margin-left: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15rem;
 }
 
 .estatisticas-dashboard-container h2 {
     font-size: 34px;
+    text-align: center;
+    margin: -3rem;
+    position: absolute;
+   
+}
+
+.estatisticas-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .estatisticas-nav-lista {
-    margin-top: 60px;
     display: flex;
     gap: 20px;
     font-size: 18px;
     align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; 
 }
 
 .mes-nav {
@@ -26,8 +43,61 @@
     font-weight: bolder;
 }
 
-.estatisticas, .planoEstatisticas {
-    margin-top: 5%;
+.estatisticas-imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     width: 100%;
-    max-width: 518px;
+}
+
+.estatisticas {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card-premium {
+    background-color: #F76456;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 3.5rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    
+}
+
+.premiumImg-Dash {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.premiumImg {
+    width: 350px; 
+    height: auto;
+}
+
+.button-dashboard{
+    background-color: transparent;
+    width: 40%;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    height: 4em;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    color: white;
+    position: relative;
+    top: -1rem;
 }

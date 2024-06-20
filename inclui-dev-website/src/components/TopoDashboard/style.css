@@ -1,5 +1,17 @@
 .topo-dashboard-container {
-    width: calc(100%-300px);
+    width: 77%;
+    position: relative;
+}
+
+.bolhas-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/bolhas.png') no-repeat center center;
+    background-size: cover;
+    z-index: 0;
 }
 
 .topo-dashboard {
@@ -7,39 +19,43 @@
     width: 100%;
     align-items: flex-start;
     justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
+}
+
+.pessoaImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.pessoaDashboard {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
 }
 
 .saudacao-user-container {
     display: flex;
     width: 900px;
     height: 250px;
-    padding: 20px;
+    padding-left: 50px;
     background-color: #FF725E;
     border-radius: 10px;
     color: #FFFFFF;
-    padding-left: 5%;
     box-shadow: 5px 10px 116px -8px rgba(255,114,94,0.35);
-}
-
-.pessoaDashboard {
+    justify-content: space-between;
     position: relative;
-    top: -40px;
-    width: 400px;
-    height: auto;
-    object-fit: contain;
-}
-
-.emailDashboard {
-    position: relative;
-    right: -380px;
-    top: -10px;
-
 }
 
 .saudacao-user-texto {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .saudacao-user-texto h2 {
