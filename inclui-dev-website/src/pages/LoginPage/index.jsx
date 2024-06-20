@@ -9,13 +9,11 @@ import blocoMais from "../../assets/blocoMais.png";
 import blocoMaisVerde from "../../assets/MaisVerde.svg";
 import TiposLogin from "../../components/TiposLogin";
 import SwitchLanguage from '../../components/SwitchLanguage';
-import { useContext, useState } from "react";
-import { Context } from "../../helpers/auth/AuthContext";
+import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import Notification from '../../components/Notification/Notification';
 
 export default function LoginPage() {
-  const { handleLogin } = useContext(Context);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loginStatus, setLoginStatus] = useState(""); 
@@ -40,7 +38,7 @@ export default function LoginPage() {
     }
 
     try {
-      await handleLogin(email, password);
+      //await handleLogin(email, password);
       setLoginStatus("success");
     } catch (error) {
       setLoginStatus("error");
