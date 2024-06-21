@@ -1,0 +1,47 @@
+.container-cadastro {
+    width: 600px;
+}
+
+.input-area {
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 5px;
+}
+
+.input-cadastro-professor {
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 2.2em;
+    line-height: 80px;
+    border-radius: 20px;
+    border: 8px solid #FF725E;
+    background-color: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+
+.label-line {
+    position: absolute;
+    font-size: 1.6em;
+    color: #FF725E;
+    padding: 5px 30px;
+    margin: 0 20px;
+    background-color: white;
+    transition: 0.2s ease;
+}
+
+.input-cadastro-professor:focus, .input-cadastro-professor:valid {
+    color: #CA1BB4;
+    border: 8px solid #CA1BB4;
+}
+
+.input-cadastro-professor:focus + .label-line, 
+.input-cadastro-professor:valid + .label-line {
+    color: #CA1BB4;
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+}
