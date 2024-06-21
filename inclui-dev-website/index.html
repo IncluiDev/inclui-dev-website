@@ -37,9 +37,12 @@
       s.async = true;
       s.onload = function () {
         assistive.init({
-          vPosition: "center",
+          vPosition: "bottom",
+          hPosition: "right",
+          hOffset: 12,
           bodyColor: "146ff8",
-          btnShape: "rounded"
+          btnShape: "rounded", 
+          btnSize: "small"
         });
       };
       h.appendChild(s);
