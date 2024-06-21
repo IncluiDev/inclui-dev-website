@@ -11,8 +11,12 @@ import CursoExibicaoPage from "../../pages/CursoExibicaoPage";
 import CadastroResponsavelPage from '../../pages/CadastroResponsavelPage';
 import Dashboard from '../../pages/Dashboard';
 import NewsletterAdmPage from '../../pages/NewsletterAdmPage';
+<<<<<<< Updated upstream
 import ErrorPage from '../../pages/ErrorPage';
 import LGPDPage from '../../pages/LGPDPage';
+=======
+import CadastroProfessor from '../../pages/CadastroProfessor';
+>>>>>>> Stashed changes
 
 export default function ManagerRoutes() {
     return (
@@ -33,6 +37,7 @@ export default function ManagerRoutes() {
           <Route path="/error" element={<ErrorPage/>}/>
           <Route path="/lgpd" element={<LGPDPage/>}/>
           <Route path="*" element={<Navigate to="/home" replace />} />
+          <Route path="/professor" element={<CadastroProfessor/>}/>
         </Routes>
     );
 }
