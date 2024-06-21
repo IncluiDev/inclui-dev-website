@@ -29,15 +29,6 @@ const CursosCard = (props) => {
                     <h4>Descrição Curso</h4>
                     <p>{props.descricaoCurso}</p>
                 </div>
-                <div className="porcentagem-curso">
-                    <h4>Progresso</h4>
-
-                    <div id="progress-container">
-                        <div id="progress-bar" style={{ width: `${props.progress}%` }}>
-                        </div>
-                        <p>{props.progress}%</p>
-                    </div>
-                </div>
             </div>
         </div>
     );

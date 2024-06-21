@@ -13,28 +13,32 @@ import SwitchLanguage from '../../components/SwitchLanguage'
 
 import { useTranslation } from 'react-i18next'
 
-import { curso } from "../../helpers/gambiarra/gambiarra"
-
 export default function CursoExibicaoPage() {
     const navigate = useNavigate();
     const [aula, setAula] = useState(null);
+    const [loading, setLoading] = useState(true); // Estado de carregamento
     const numeroAula = URLGetter.getAtribut("aula");
     const cursoId = URLGetter.getIdentification();
     const { t } = useTranslation()
 
     useEffect(() => {
+        setLoading(true); // Iniciar carregamento
         WebClient.exchange(`/aula/all?curso=${cursoId}`, "GET")
             .then(response => response.json())
             .then(data => {
-                let aula = data[numeroAula]
-                aula ? setAula(aula) : navigate(`/detalhamento?id=${cursoId}`)
+                const aulaAtual = data[numeroAula];
+                
+                if (aulaAtual) {
+                    setAula(aulaAtual);
+                } else {
+                    navigate(`/detalhamento?id=${cursoId}`);
+                }
             })
             .catch(error => {
-                console.error('Error fetching class:', error);
-                //navigate("/catalogo");
-            });
-
-            setAula(curso)
+                console.error("Erro ao buscar os dados da aula:", error);
+                navigate(`/detalhamento?id=${cursoId}`);
+            })
+            .finally(() => setLoading(false)); // Finalizar carregamento
     }, [numeroAula, cursoId, navigate]);
 
     function handleClick() {
@@ -42,8 +46,11 @@ export default function CursoExibicaoPage() {
     }
 
     function nextClass() {
-        navigate(`/detalhamento?id=${cursoId}`);
-        //navigate(`/curso?id=${cursoId}&aula=${Number(numeroAula) + 1}`);
+        navigate(`/curso?id=${cursoId}&aula=${Number(numeroAula) + 1}`);
+    }
+
+    if (loading) {
+        return <Loader />;
     }
 
     return (
@@ -51,12 +58,13 @@ export default function CursoExibicaoPage() {
             <div className='curso-container'>
                 <header className='header-curso'>
                     <h2>
-                        <span className='enumeracao-curso'>01.</span>
+                        <span className='enumeracao-curso'>{Number(numeroAula) + 1}.</span>
                         {aula.nome}
                     </h2>
 
                     <nav className='navigation-curso'>
                         <SwitchLanguage/>
+
                         <button className='button-proxima-aula' onClick={nextClass}>
                             {t("curso-button-proxima-aula")}
                             <FaArrowRight className='icon-curso' />

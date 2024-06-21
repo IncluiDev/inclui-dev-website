@@ -1,6 +1,5 @@
 import './style.css';
 import { FaChevronDown } from 'react-icons/fa';
-import blocosCentro from '../../assets/chao-blocos.png';
 import livrosOculos from '../../assets/livrosOculos.png';
 import DetalhamentoTutor from '../DetalhamentoTutor';
 import { useEffect, useState } from 'react';
@@ -45,12 +44,12 @@ const InfoDetalhamento = (props) => {
                 Array.isArray(aulas) && aulas.map((aula, index) => (
                   <li key={index}>
                     <div className="li-content">
-                      {aula.nome}
+                      {aula.nome || "teste"}
                       <button onClick={() => toggleDescription(index)}>
                         <FaChevronDown />
                       </button>
                     </div>
-                    {showDescriptions[index] && <p className="description">{aula.descricao || ""}</p>}
+                    {showDescriptions[index] && <p className="description">{aula.descricao || "teste"}</p>}
                   </li>
                 ))
               }

@@ -8,6 +8,7 @@
     align-items: flex-start;
     gap: 50px;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .titulo-desc-detalhamento {
@@ -68,6 +69,10 @@
     font-weight: 700;
 }
 
+.tutor-nomeclaturas h4 {
+    font-size: 23px;
+}
+
 .tutor-nomeclaturas p {
     font-size: 18px;
 }
@@ -99,6 +104,7 @@
     box-shadow: -1px -1px 80px -19px #b57edc59;
     display: block;
     padding: 20px;
+    margin-bottom: 3rem;
 }
 
 .aulasCurso h3 {
@@ -169,6 +175,7 @@
     margin: 0;
     border: none;
     cursor: pointer;
+    font-size: 25px;
 }
 
 .description {

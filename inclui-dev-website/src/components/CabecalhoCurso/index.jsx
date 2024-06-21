@@ -23,6 +23,7 @@ const CabecalhoCurso = (props) => {
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.5 }}
       />
+      
       <div className='container-cabecalho-curso'>
         <button className='continuar-curso' onClick={handleClick}>
           {t("detalhamento-button-continuar-curso")} <FaPlay />
