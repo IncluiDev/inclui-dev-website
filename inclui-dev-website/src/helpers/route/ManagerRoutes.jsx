@@ -1,6 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { useContext } from 'react';
-import { Context } from '../auth/AuthContext';
 
 import PreferenciasPage from "../../pages/PreferenciasPage";
 import HomePage from "../../pages/HomePage";
@@ -17,8 +15,6 @@ import ErrorPage from '../../pages/ErrorPage';
 import LGPDPage from '../../pages/LGPDPage';
 
 export default function ManagerRoutes() {
-    const { authenticated } = useContext(Context);
-
     return (
         <Routes>
           <Route path="/" element={<PreferenciasPage/>}/>

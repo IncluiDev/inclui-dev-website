@@ -8,13 +8,32 @@ import { useTranslation } from 'react-i18next'
 export default function Newsletter() {
     const { t } = useTranslation()
 
-    async function newsletterAPI() {
-       event.preventDefault()
-    }
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    
+        const payload = {
+          email: event.target.email.value,
+        };
+    
+        fetch("http://localhost:8085/usuario", {
+          method: "POST",
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Credentials': true,
+            'Access-Control-Allow-Origin': '*'
+          },
+          body: JSON.stringify(payload),
+        })
+        .then(response => response.json())
+        .catch(error => {
+          console.error('Error:', error);
+        });
+      };
 
     return(
         <section className="newsletter">
-            <form onSubmit={newsletterAPI} className="newsletter-flex">
+            <form onSubmit={handleSubmit} className="newsletter-flex">
                 <div className='content-newsletter'>
                     <h1 className="title">
                     {t("newsletter-titulo-01")} <span className="strong-newsletter">{t("newsletter-titulo-02")}</span>
@@ -23,8 +42,9 @@ export default function Newsletter() {
                     <p>{t("newsletter-subtitulo")}</p>
 
                     <div className="flex-input">
-                        <EnvelopeSimple size={32} color="#CA1BB4" className="position-input-icon" weight="bold" /> <input id="email" name="" type="email" placeholder={t("newsletter-placeholder")} required /> <br />
-                         <input type="submit" value={t("newsletter-inscrever")}/>
+                        <EnvelopeSimple size={32} color="#CA1BB4" className="position-input-icon" weight="bold" /> 
+                        <input id="email" name="" type="email" placeholder={t("newsletter-placeholder")} required /> <br />
+                        <input type="submit" value={t("newsletter-inscrever")}/>
                     </div>
                 </div>
                 

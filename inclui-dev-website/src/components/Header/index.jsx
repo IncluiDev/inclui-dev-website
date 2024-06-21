@@ -55,7 +55,7 @@ export default function Header() {
             <a href="/catalogo" className={selectedItem === 4 ? 'selected' : ''} onClick={() => handleItemClick(4)}>{t("header-cursos")}</a>
           </li>
           <li>
-            <a href="/login" className={selectedItem === 5 ? 'selected' : ''} onClick={() => handleItemClick(5)}>{t("header-perfil")}</a>
+            <a href="/dashboard" className={selectedItem === 5 ? 'selected' : ''} onClick={() => handleItemClick(5)}>{t("header-perfil")}</a>
           </li>
           <li>
             <SwitchLanguage />
@@ -89,7 +89,7 @@ export default function Header() {
             <a href="/catalogo" onClick={() => handleItemClick(4)}>{t("header-cursos")}</a>
           </li>
           <li>
-            <a href="/login" onClick={() => handleItemClick(5)}>{t("header-perfil")}</a>
+            <a href="/dashboard" onClick={() => handleItemClick(5)}>{t("header-perfil")}</a>
           </li>
           <li>
             <SwitchLanguage />

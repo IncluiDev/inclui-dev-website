@@ -1,4 +1,3 @@
-import React from 'react';
 import './style.css';
 import estatisticas from '../../assets/estatisticas.png';
 import premiumImg from '../../assets/premiumImg.png';

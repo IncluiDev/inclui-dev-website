@@ -25,7 +25,7 @@ export default function Footer() {
                             <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/home#equipe">{t("header-equipe")}</a></li>
                             <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/home#planos">{t("header-planos")}</a></li>
                             <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/catalogo">{t("header-cursos")}</a></li>
-                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/login">{t("header-perfil")}</a></li>
+                            <li><ArrowRight className='footer-icon' size={20} color="#392E2E" weight="bold" /><a href="/dashboard">{t("header-perfil")}</a></li>
                         </ul>
                     </nav> 
                 </div>

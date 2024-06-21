@@ -15,6 +15,7 @@
 .cursos-dashboard-container h1 {
     font-size: 36px;
     font-weight: bold;
+    width: 100%;
 }
 
 .cursos-dashboard-lista {
@@ -42,18 +43,17 @@
     padding-bottom: 2%;
     display: flex;
     gap: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
     border-bottom: 3px solid lightgray;
 }
 
 .curso-info {
     display: flex;
-    gap: 100px;
-    justify-content: space-between;
-}
-
-.curso-info-desc {
-    display: flex;
     gap: 30px;
+    justify-content: center;
     align-items: center;
 }
 

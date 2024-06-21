@@ -21,7 +21,7 @@ export default function Navbar() {
                 </a>
                 <a className="navLink" href="/tarifa">
                     <span className="navText">
-                        <FaUser /> Perfil Usuário
+                        <FaUser /> Perfil
                     </span>
                 </a>
                 <a className="navLink" href="/newsletterDashboard">

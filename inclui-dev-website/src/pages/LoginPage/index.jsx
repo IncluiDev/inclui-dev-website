@@ -11,12 +11,16 @@ import TiposLogin from "../../components/TiposLogin";
 import SwitchLanguage from '../../components/SwitchLanguage';
 import { useState } from "react";
 import { useTranslation } from 'react-i18next';
+import { useAuth } from "../../helpers/auth/hooks/useAuth";
+import { useNavigate } from 'react-router-dom';
 import Notification from '../../components/Notification/Notification';
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loginStatus, setLoginStatus] = useState(""); 
+  const { handleLogin } = useAuth()
+  const navigate = useNavigate();
   const { t } = useTranslation();
 
   const validateEmail = (email) => {
@@ -37,10 +41,10 @@ export default function LoginPage() {
       return;
     }
 
-    try {
-      //await handleLogin(email, password);
+    if (await handleLogin(email, password)) {
       setLoginStatus("success");
-    } catch (error) {
+      navigate("/dashboard");
+    } else {
       setLoginStatus("error");
     }
 

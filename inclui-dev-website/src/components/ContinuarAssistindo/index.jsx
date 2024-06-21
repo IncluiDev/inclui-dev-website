@@ -5,11 +5,15 @@ const ContinuarAssistindo = (props) => {
   return (
     <section className='continuar-assistindo-container'>
       <h1>Continuar Assistindo</h1>
+
       <aside className='curso-continuar-assistindo'>
-        <img src={jsCurso} alt="" className='curso-icon'/>
+
         <div className='info-continuar-assistindo'>
+          <img src={jsCurso} alt="" className='curso-icon'/>
+          
           <h2>JS Para iniciantes</h2>
           <p>By <span className='nome-tutor'>Gustavo Guanabara</span></p>
+
           <div className="porcentagem-curso">
             <h4>Progresso</h4>
             <div id="progress-container">

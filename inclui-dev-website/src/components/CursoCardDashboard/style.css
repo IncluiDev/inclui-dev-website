@@ -1,0 +1,130 @@
+.container-card-curso-principal {
+    width: 90%;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    border: 5px solid #CA1BB4;
+    box-shadow: 5px 5px 30px -9px rgba(70, 69, 69, 0.418);
+}
+
+.container-card-curso-principal img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.info-curso-card { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.titulo-curso {
+    flex-grow: 1; 
+}
+
+.tags-curso {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.tag-curso {
+    font-size: 15px;
+    padding: 5px 15px;
+    background-color: #CA1BB4;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.porcentagem-curso {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: auto; 
+    width: 100%;
+}
+
+#progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.info-progresso {
+    display: flex;
+    gap: 20px;
+}
+
+#progress-bar {
+    width: 80%; 
+    height: 100%;
+    background-color: #CA1BB4;
+    text-align: center;
+    line-height: 5px;
+    color: white;
+}
+
+.descricao-curso {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.descricao-curso p {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.container-card-curso-principal {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-card-curso-principal:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+}
+
+@media (max-width: 800px) {
+    .container-card-curso-principal {
+        margin-top: 30px;
+    }
+
+    .container-card-curso-principal img {
+        width: 200px;
+        height: 200px;
+        margin-right: 5%;
+    }
+
+    .tag-curso {
+        font-size: 8px;
+    }
+
+    .titulo-curso h1 {
+        font-size: 20px;
+    }
+
+    .descricao-curso h4 {
+        display: none;
+    }
+    
+    .descricao-curso p {
+        display: none;
+    }
+}

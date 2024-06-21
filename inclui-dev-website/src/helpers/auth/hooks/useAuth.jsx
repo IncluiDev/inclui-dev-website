@@ -1,34 +1,45 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { WebClient } from '../../../helpers/api/WebClient';
 
-export default function useAuth() {
-  const [authenticated, setAuthenticated] = useState(false);
-  const navigate = useNavigate();
+export default class Auth {
+  static authenticated = false;
 
-  function checkLogin() {
-    if (localStorage.getItem('token')) {
-      setAuthenticated(true);
+  static checkLogin() {
+    return localStorage.getItem('token') ? true : false;
+  }
+
+  static async handleLogin(email, senha) {
+    const response = await WebClient.exchange('/auth', "POST", { email, senha });
+    const data = await response.json();
+
+    if (data.token) {
+      localStorage.setItem('token', data.token); 
+      this.authenticated = true;
+      this.findUser(email);
     } else {
-      setAuthenticated(false);
-      navigate("/login");
+      this.authenticated = false;
     }
-  }
-  
-  async function handleLogin(email, senha) {
-    try {
-      await WebClient.exchange('/auth', "POST", { email, senha })
-      .then(response => response.json())
-      .then(response => {
-        localStorage.setItem('token', response.token); 
-        setAuthenticated(true)
-      })
 
-      navigate("/dashboard")
-    } catch(error) {
-      return false
-    }
+    return this.authenticated;
   }
+
+  static async findUser(email) {
+    const response = await WebClient.exchange(`/usuario/record?email=${email}`, "GET");
     
-  return { authenticated, handleLogin, checkLogin };
+    if(response.ok) {
+      const data = await response.json();
+      localStorage.setItem('usuario', JSON.stringify(data));
+    } 
+  }
+
+  static getUser() {
+    return JSON.parse(localStorage.getItem('usuario'));
+  }
+}
+
+export function useAuth() {
+  return {
+    checkLogin: () => Auth.checkLogin(),
+    handleLogin: (email, senha) => Auth.handleLogin(email, senha),
+    getUser: () => Auth.getUser()
+  };
 }

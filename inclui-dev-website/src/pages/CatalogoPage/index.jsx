@@ -7,7 +7,7 @@ import Footer from '../../components/Footer'
 export default function CatalogoPage() {
     return (
       <div className="catalogo-page">
-        <Header/>
+        <Header />
 
         <main>
           <CatalogoCabecalho />
