@@ -17,14 +17,13 @@ export class Progresso {
     }
 
     static async setProgresso(curso, progresso) {
-        const data = await WebClient.exchange(`/progresso`, "PUT", {
+        return await WebClient.exchange(`/progresso`, "PUT", {
             "usuario" : this.usuario,
             "educativo" : curso,
             "progresso": progresso
         })
             .then(response => response.json())
-
-        return (data)
+            .catch(error => console.error('Error saving progress:', error))
     }
 
     static async check(curso) {
@@ -35,13 +34,12 @@ export class Progresso {
     }
 
     static async saveProgresso(curso) {
-        const data = await WebClient.exchange(`/progresso`, "POST", {
+        return await WebClient.exchange(`/progresso`, "POST", {
             "usuario" : this.usuario,
             "educativo" : curso,
             "modalidade": "CURSO",
             "progresso": 0
         }).then(response => response.json())
-
-        return (data)
+        .catch(error => console.error('Error saving progress:', error))
     }
 }
