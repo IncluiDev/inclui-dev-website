@@ -11,12 +11,9 @@ import CursoExibicaoPage from "../../pages/CursoExibicaoPage";
 import CadastroResponsavelPage from '../../pages/CadastroResponsavelPage';
 import Dashboard from '../../pages/Dashboard';
 import NewsletterAdmPage from '../../pages/NewsletterAdmPage';
-<<<<<<< Updated upstream
 import ErrorPage from '../../pages/ErrorPage';
 import LGPDPage from '../../pages/LGPDPage';
-=======
 import CadastroProfessor from '../../pages/CadastroProfessor';
->>>>>>> Stashed changes
 
 export default function ManagerRoutes() {
     return (

@@ -13,23 +13,31 @@ import SwitchLanguage from '../../components/SwitchLanguage'
 
 import { useTranslation } from 'react-i18next'
 
+import { Progresso } from '../../helpers/service/Progresso';
+
 export default function CursoExibicaoPage() {
     const navigate = useNavigate();
     const [aula, setAula] = useState(null);
-    const [loading, setLoading] = useState(true); // Estado de carregamento
+    const [loading, setLoading] = useState(true); 
     const numeroAula = URLGetter.getAtribut("aula");
     const cursoId = URLGetter.getIdentification();
     const { t } = useTranslation()
 
+    async function setProgressoCurso() {
+      await Progresso.setProgresso(cursoId, Number(numeroAula) + 1);
+    }
+
     useEffect(() => {
-        setLoading(true); // Iniciar carregamento
+        setLoading(true); 
+        
         WebClient.exchange(`/aula/all?curso=${cursoId}`, "GET")
             .then(response => response.json())
             .then(data => {
                 const aulaAtual = data[numeroAula];
-                
+
                 if (aulaAtual) {
                     setAula(aulaAtual);
+                    setProgressoCurso()
                 } else {
                     navigate(`/detalhamento?id=${cursoId}`);
                 }
@@ -38,7 +46,7 @@ export default function CursoExibicaoPage() {
                 console.error("Erro ao buscar os dados da aula:", error);
                 navigate(`/detalhamento?id=${cursoId}`);
             })
-            .finally(() => setLoading(false)); // Finalizar carregamento
+            .finally(() => setLoading(false));
     }, [numeroAula, cursoId, navigate]);
 
     function handleClick() {
@@ -46,6 +54,7 @@ export default function CursoExibicaoPage() {
     }
 
     function nextClass() {
+        setLoading(true);
         navigate(`/curso?id=${cursoId}&aula=${Number(numeroAula) + 1}`);
     }
 

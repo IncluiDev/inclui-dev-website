@@ -5,11 +5,16 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
+import { Progresso } from '../../helpers/service/Progresso';
+
 const CabecalhoCurso = (props) => {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
-  const handleClick = () => {
+  async function handleClick() {
+    if(!await Progresso.check(props.id)) 
+      await Progresso.saveProgresso(props.id);
+
     navigate(`/curso?id=${props.id}&aula=0`);
   };
 
