@@ -5,13 +5,9 @@ const { getUser } = useAuth();
 
 export class Progresso {
     static async getProgresso(id) {
-        try {
-            const response = await WebClient.exchange(`/progresso?id=${id}`, "GET");
-            return await response.json();
-        } catch (error) {
-            console.error('Error fetching progress:', error);
-            throw error;
-        }
+        return await WebClient.exchange(`/progresso?id=${id}`, "GET")
+            .then(response => response.json())
+            .catch(error => console.error('Error fetching progress:', error))
     }
 
     static async setProgresso(curso, progresso) {

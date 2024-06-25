@@ -1,5 +1,5 @@
 import Header from "../../components/Header"
-import Cursos from '../../components/Cursos'
+import Catalogo from '../../components/Catalogo'
 import CatalogoCabecalho from "../../components/CatalogoCabecalho"
 import './style.css'
 import Footer from '../../components/Footer'
@@ -11,7 +11,8 @@ export default function CatalogoPage() {
 
         <main>
           <CatalogoCabecalho />
-          <Cursos/>
+
+          <Catalogo/>
         </main>
         <Footer />
       </div>

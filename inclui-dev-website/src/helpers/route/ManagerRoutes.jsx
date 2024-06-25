@@ -14,6 +14,7 @@ import NewsletterAdmPage from '../../pages/NewsletterAdmPage';
 import ErrorPage from '../../pages/ErrorPage';
 import LGPDPage from '../../pages/LGPDPage';
 import CadastroProfessor from '../../pages/CadastroProfessor';
+import MazeRunnerPage from '../../pages/MazeRunnerPage';
 
 export default function ManagerRoutes() {
     return (
@@ -26,15 +27,18 @@ export default function ManagerRoutes() {
           <Route path="/cadastro" element={<CadastroPage/>}/>
           <Route path="/responsavel" element={<CadastroResponsavelPage/>}/>
           <Route path="/recuperacao" element={<RecuperacaoPage/>}/>
+          
+          <Route path="/professor" element={<CadastroProfessor/>}/>
 
-          <Route path="/newsletterDashboard" element={<NewsletterAdmPage/>}/>
+          <Route path="/mazerunner" element={<MazeRunnerPage/>}/>
+
+          <Route path="/newsletter" element={<NewsletterAdmPage/>}/>
           <Route path="/detalhamento" element={<DetalhamentoPage/>}/>
           <Route path="/curso" element={<CursoExibicaoPage/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/error" element={<ErrorPage/>}/>
           <Route path="/lgpd" element={<LGPDPage/>}/>
           <Route path="*" element={<Navigate to="/home" replace />} />
-          <Route path="/professor" element={<CadastroProfessor/>}/>
         </Routes>
     );
 }
