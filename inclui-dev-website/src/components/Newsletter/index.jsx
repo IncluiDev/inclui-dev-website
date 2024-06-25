@@ -15,7 +15,7 @@ export default function Newsletter() {
           email: event.target.email.value,
         };
     
-        fetch("http://localhost:8085/usuario", {
+        fetch("http://inclui-dev-email-api-production.up.railway.app/usuario", {
           method: "POST",
           headers: {
             'Accept': 'application/json',
