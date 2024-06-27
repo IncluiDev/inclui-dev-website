@@ -1,9 +1,7 @@
 .Equipe {
     display: flex;
     flex-direction: column;
-    height: auto;
     align-items: center;
-    justify-content: space-evenly;
     padding: 4rem;
     padding-top: 0;
 }
@@ -12,14 +10,18 @@
     margin-top: 30px;
 }
 
-.members-one, .members-two {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.equipe-wrapper {
     width: 100%;
+    max-width: 1400px;
 }
 
+.members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    flex-wrap: wrap; 
+}
 .CenterBlocos {
     width: 150%;
 }
@@ -30,49 +32,14 @@
     align-items: flex-end;
 }
 
-@media (max-width: 1700px){
-
-        .EquipeCard {
-            width: 35%;
-        }
-}
-
 @media (max-width: 1200px) {
-    .EquipeCard {
-        width: 40%;
-    }
-}
-
-@media (max-width: 992px) {
-    .EquipeCard {
-        width: 45%;
+    .members {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }
 
 @media (max-width: 768px) {
-    .EquipeCard {
-        width: 100%;
-    }
-
-    .container-img-card img {
-        width: 75%;
-    }
-
-    .card-below {
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .EquipeCard {
-        padding: 1rem;
-    }
-
-    .container-img-card img {
-        width: 100%;
-    }
-
-    .card-below {
-        padding: 1rem;
+    .members {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
