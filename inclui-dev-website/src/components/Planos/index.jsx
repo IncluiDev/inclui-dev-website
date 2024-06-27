@@ -15,7 +15,7 @@ export default function Planos() {
 
     const planosData = [
         {
-            title: t("planos-titulo-gratis"),
+            title: t("planos-titulo-junior"),
             image: planoGratis,
             details: [
                 { icon: FaCheck, text: t("planos-tutoriais"), color: '#CA1BB4' },
@@ -26,7 +26,7 @@ export default function Planos() {
             ],
         },
         {
-            title: t("planos-titulo-mensal"),
+            title: t("planos-titulo-pleno"),
             image: planoMensal,
             details: [
                 { icon: FaCheck, text: t("planos-tutoriais"), color: '#CA1BB4' },
@@ -37,7 +37,7 @@ export default function Planos() {
             ],
         },
         {
-            title: t("planos-titulo-anual"),
+            title: t("planos-titulo-senior"),
             image: planoAnual,
             details: [
                 { icon: FaCheck, text: t("planos-tutoriais"), color: '#CA1BB4' },

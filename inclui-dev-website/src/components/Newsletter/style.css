@@ -19,6 +19,7 @@
     justify-content: space-between;
     width: 100%;
     justify-content: center;
+    
 }
 
 .content-newsletter p {
@@ -41,6 +42,7 @@
     display: flex;
     flex-direction: column;
     width: 700px;
+    gap: 1rem;
 }
 
 .strong-newsletter {
@@ -52,7 +54,7 @@
 
 .position-input-icon {
     position: relative;
-    top: 56px;
+    top: 75px;
     left: 29px;
 }
 
@@ -64,8 +66,9 @@
     font-size: 1rem;
     color: #4D4D4D;
     border-radius: 10px;
-
+    background-color: #f5f5f5;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.058);
+   
 }
 
 .newsletter div input[type="email"]:focus {
