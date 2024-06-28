@@ -13,6 +13,7 @@ import Planos from '../../components/Planos'
 import Visao from '../../components/Visao'
 import LGPD from '../../components/LGPD'
 import Parceiros from '../../components/Parceiros'
+import Chat from '../../components/Chat'
 
 export default function HomePage() {
   return (
@@ -31,6 +32,7 @@ export default function HomePage() {
         <Planos />
         <Parceiros />
         <Newsletter />
+        <Chat />
       </main>
 
       <Footer />
