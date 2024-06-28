@@ -5,7 +5,17 @@
 </p>
 
 #
-### FUNCIONALIDADES
+### DIFERENCIAIS
+
+- Cursos autorais, com didática simples e intuitiva.
+- Jogos e dinâmicas lúdicas, relacionadas à programação.
+- Plataforma acessível e responsiva para celular e desktop.
+- Utilização de boas práticas de desenvolvimento (como helpers).
+- Autenticação de acesso, ou seja, determinadas funcionalidades ficam dedicadas a grupos específicos de usuários.
+- Chat para auxiliar em dúvidas com o uso de inteligência artificial.
+
+#
+### ACESSIBILIDADE
 
 - [i18n](https://react.i18next.com) como recurso de tradução de texto para 10 diferentes linguas.
 - [VLibras](https://vlibras.gov.br/doc/widget/introduction/presentation.html) como recurso de tradução de texto no formato de sinais.
