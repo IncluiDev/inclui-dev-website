@@ -7,8 +7,9 @@
 #
 ### FUNCIONALIDADES
 
-- [i18n](https://react.i18next.com) como recurso de tradução de texto para diferentes linguas.
+- [i18n](https://react.i18next.com) como recurso de tradução de texto para 10 diferentes linguas.
 - [VLibras](https://vlibras.gov.br/doc/widget/introduction/presentation.html) como recurso de tradução de texto no formato de sinais.
+- [Assistive](https://assistive.com.br) como recurso de acessibilidade digital complementar.
 
 #
 ### REQUISITOS
@@ -168,7 +169,7 @@ E aperte a tecla `Enter`
 ### HOSPEDAGEM
 
 ```
-http://###
+https://incluidev.vercel.app
 ```
 
 <p align="center">
