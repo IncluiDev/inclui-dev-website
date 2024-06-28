@@ -12,8 +12,10 @@ const CabecalhoCurso = (props) => {
   const { t } = useTranslation();
 
   async function handleClick() {
-    if(!await Progresso.check(props.id)) 
-      await Progresso.saveProgresso(props.id);
+    try{
+      if(!await Progresso.check(props.id)) 
+        await Progresso.saveProgresso(props.id);
+    } catch(ignored) {}
 
     navigate(`/curso?id=${props.id}&aula=0`);
   };

@@ -20,7 +20,7 @@ export default function Planos() {
             details: [
                 { icon: FaCheck, text: t("planos-tutoriais"), color: '#CA1BB4' },
                 { icon: FaCheck, text: t("planos-jogos-limitado"), color: '#CA1BB4' },
-                { icon: FaCheck, text: t("planos-cursos-limitado"), color: '#CA1BB4' },
+                { icon: FaXmark, text: t("planos-cursos"), color: '#F76456' },
                 { icon: FaXmark, text: t("planos-aulas"), color: '#F76456' },
                 { icon: FaXmark, text: t("planos-exclusivo"), color: '#F76456' },
             ],
@@ -33,7 +33,7 @@ export default function Planos() {
                 { icon: FaCheck, text: t("planos-jogos"), color: '#CA1BB4' },
                 { icon: FaCheck, text: t("planos-cursos"), color: '#CA1BB4' },
                 { icon: FaCheck, text: t("planos-aulas"), color: '#CA1BB4' },
-                { icon: FaCheck, text: t("planos-exclusivo"), color: '#CA1BB4' },
+                { icon: FaXmark, text: t("planos-exclusivo"), color: '#F76456' },
             ],
         },
         {

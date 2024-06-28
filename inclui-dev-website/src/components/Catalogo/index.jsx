@@ -73,7 +73,6 @@ export default function Catalogo() {
                     <div className='grid'>
                         <GameCard img={mazeImg} nome="Maze Runner" autor="Kayk Messias" redirect="/mazerunner"/>
                         <GameCard img={quizImg} nome="Quiz" autor="Henry Modesto" redirect="/home"/>
-                        <GameCard img={quizImg} nome="Quiz" autor="Adriele" redirect="/home"/>
                     </div>
                 </div>
 

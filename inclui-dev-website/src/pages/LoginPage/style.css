@@ -22,6 +22,11 @@ img[src*="imgLogin.svg"] {
   margin-left: -22px;
 }
 
+#login-container input {
+  overflow: hidden;
+  border: none;
+}
+
 .left-side {
   position: absolute;
   left: 0%;
@@ -134,10 +139,12 @@ form {
 
 #sign-up-btn {
   color: #F76456;
+  font-size: 19px;
 }
 
 #forgot-password-link {
   color: #F76456;
+  font-size: 19px;
 }
 
 .btn-login {
@@ -170,6 +177,7 @@ form {
 
 #back-to-home {
   color: #F76456;
+  font-size: 19px;
 }
 
 .panels-container {
