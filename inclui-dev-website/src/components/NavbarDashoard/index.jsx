@@ -1,42 +1,78 @@
-import './style.css';
-import incluiDevLogo from '../../assets/inclui-dev-logo.png';
-import navbarImg from '../../assets/navbarImg.png';
+import { useState } from 'react';
+import './style.css'
+import avatar from '../../assets/equipe/IGOR.png'
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faChartLine, 
+  faUser, 
+  faBell, 
+  faBox, 
+  faImage, 
+  faGear, 
+  faChevronRight, 
+  faRightFromBracket 
+} from '@fortawesome/free-solid-svg-icons';
 
-import { MdDashboardCustomize } from "react-icons/md";
-import { FaUser } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+const NavbarDashboard = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-export default function Navbar() {
-    return (
-        <aside className="aside-dashboard">
-            <header className="header-dashboard">
-                <img src={incluiDevLogo} alt="IncluiDev Logo" />
-            </header>
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
 
-            <nav className="nav-dashboard">
-                <a className="navLink" href="/dashboard">
-                    <span className="navText">
-                        <MdDashboardCustomize /> Dashboard
-                    </span>
-                </a>
-                <a className="navLink" href="/tarifa">
-                    <span className="navText">
-                        <FaUser /> Perfil
-                    </span>
-                </a>
-                <a className="navLink" href="/newsletterDashboard">
-                    <span className="navText">
-                        <MdEmail /> Newsletter
-                    </span>
-                </a>
-                <a className="navbar-img-container" href="">
-                    <img src={navbarImg} alt="Navbar Image" />
-                </a>
-            </nav>
+  return (
+    <nav id="sidebar" className={sidebarOpen ? 'open-sidebar' : ''}>
+      <div id="sidebar_content">
+        <div id="user">
+          <img src={avatar} id="user_avatar" alt="Avatar" />
+        </div>
 
-            <a className="navLink botao-dashboard" href="/">
-                <span className="navText">Sair</span>
+        <ul id="side_items">
+          <li className="side-item active">
+            <a href="#">
+              <FontAwesomeIcon icon={faChartLine} />
+              <span className="item-description">
+                Dashboard
+              </span>
             </a>
-        </aside>
-    );
-}
+          </li>
+
+          <li className="side-item">
+            <a href="#">
+              <FontAwesomeIcon icon={faUser} />
+              <span className="item-description">
+                Perfil
+              </span>
+            </a>
+          </li>
+
+          <li className="side-item">
+            <a href="#">
+              <FontAwesomeIcon icon={faBell} />
+              <span className="item-description">
+                Newsletter
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <button id="open_btn" onClick={toggleSidebar}>
+          <FontAwesomeIcon id="open_btn_icon" icon={faChevronRight} />
+        </button>
+      </div>
+
+      <div id="logout">
+        <button id="logout_btn">
+          <FontAwesomeIcon icon={faRightFromBracket} className='icon-exit'/>
+
+          <span className="item-description">
+            Sair
+          </span>
+        </button>
+      </div>
+    </nav>
+  );
+};
+
+export default NavbarDashboard;

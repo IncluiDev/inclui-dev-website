@@ -39,12 +39,9 @@ const NewsletterDashboard = () => {
 
           <div className="input-container">
             <input className="textarea-field" placeholder='Digite o assunto do e-mail' name='assunto' id='assunto' type="text" required />
-            <MdSubject className="icon" />
           </div>
-
           <div className="input-container">
-            <textarea className="textarea-field" placeholder='Digite a mensagem do e-mail' name='texto' id='texto' type="text" required />
-            <MdMessage className="icon" />
+            <textarea className="textarea-field2" placeholder='Digite a mensagem do e-mail' name='texto' id='texto' type="text" required />
           </div>
 
           <button className="submit-button" type='submit'>Enviar</button>

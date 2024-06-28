@@ -1,8 +1,30 @@
-.main-dashboard {
-    width: 100%;
-    margin-top: 5rem;
-    margin-left: 150px;
+/* src/pages/Dashboard/style.css */
+
+.dashboard-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+    width: 100%;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+  }
+  
+  .main-dashboard-container-inicial {
+    display: flex;
+    width: 90%;
+    margin-left: 82px;
+    flex-direction: column;
+    flex: 1; /* Para ocupar o restante da altura disponível */
+    align-items: flex-start;
+  }
+
+  .continuar-assistindo-section {
+    padding: 20px;
+  }
+
+  .card-container-dashboard {
+    display: flex;
+    width: 60%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  

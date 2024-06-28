@@ -1,6 +1,8 @@
+/* style.css (continuação) */
 .topo-dashboard-container {
-    width: 77%;
-    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .bolhas-background {
@@ -16,118 +18,110 @@
 
 .topo-dashboard {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    align-items: flex-start;
-    justify-content: space-evenly;
     position: relative;
     z-index: 1;
+    gap: 20px;
 }
 
 .pessoaImg {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
 }
 
 .pessoaDashboard {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-   
+    width: 80%;
+    max-width: 400px;
 }
 
 .saudacao-user-container {
     display: flex;
-    width: 900px;
-    height: 250px;
-    padding-left: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-height: 255px;
     background-color: #FF725E;
     border-radius: 10px;
     color: #FFFFFF;
-    box-shadow: 5px 10px 116px -8px rgba(255,114,94,0.35);
-    justify-content: space-between;
+    box-shadow: 5px 10px 116px -8px rgba(255, 114, 94, 0.35);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
     position: relative;
-}
-
-.saudacao-user-texto {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     z-index: 1;
 }
 
-.saudacao-user-texto h2 {
-    font-size: 36px;
+.saudacao-user-texto {
+    z-index: 1;
+}
+
+.saudacao-user-texto h1 {
+    font-size: 24px;
     font-weight: bolder;
 }
 
 .saudacao-user-texto p {
-    font-size: 28px;
+    font-size: 18px;
     font-weight: lighter;
 }
 
 .info-topo-container {
-    width: 30%;
+    width: 100%;
 }
 
 .info-topo {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    padding-right: 5%;
 }
 
 .pesquisa-curso {
     padding: 20px;
     text-align: center;
     border-radius: 5px;
-    width: 300px;
+    width: 80%;
     background-color: #F4F4F4;
     color: #464646;
     border: 1px solid rgba(211, 211, 211, 0.585);
     font-size: 16px;
     font-weight: bold;
-    box-shadow: 5px 10px 116px -8px rgba(0,0,0,0.39);
+    box-shadow: 5px 10px 116px -8px rgba(0, 0, 0, 0.39);
 }
 
 .cursos-dashboard {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10%;
+    align-items: center;
     gap: 10px;
+    width: 100%;
 }
 
 .cursos-dashboard h2 {
-    font-size: 40px;
+    font-size: 24px;
     font-weight: bolder;
 }
 
-.curso-completo {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    background-color: #63AB72;
-    width: 100%;
-    border-radius: 15px;
-    color: white;
-}
-
+.curso-completo,
 .curso-progresso {
     display: flex;
     padding: 20px;
     gap: 20px;
     align-items: center;
     justify-content: center;
-    background-color: #FF725E;
-    width: 100%;
+    background-color: #63AB72;
+    width: 80%;
     border-radius: 15px;
     color: white;
+}
+
+.curso-progresso {
+    background-color: #FF725E;
 }
 
 .notification-icon {
@@ -136,4 +130,34 @@
 
 .user-profile {
     width: 100px;
+}
+
+@media (min-width: 1000px) {
+    .topo-dashboard {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .saudacao-user-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 20px 50px;
+    }
+
+    .pessoaImg {
+        justify-content: flex-end;
+    }
+
+    .info-topo-container {
+        width: 30%;
+    }
+
+    .pesquisa-curso {
+        width: 300px;
+    }
+
+    .cursos-dashboard h2 {
+        font-size: 40px;
+    }
 }

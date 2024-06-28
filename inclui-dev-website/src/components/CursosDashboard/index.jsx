@@ -24,7 +24,7 @@ const CursosDashboard = () => {
     return (
       <section className='cursos-dashboard-container'>
         <div>
-          <h1>Cursos</h1>
+          <h1 className='titulo-dashboard'>Cursos</h1>
 
         {
             cursos.map(curso => (
@@ -32,8 +32,6 @@ const CursosDashboard = () => {
             ))
         }
         </div>
-      
-        <EstatisticasDashboard/>
       </section>
     );
   }

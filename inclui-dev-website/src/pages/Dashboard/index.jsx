@@ -1,43 +1,59 @@
 import './style.css';
-import ContinuarAssistindo from "../../components/ContinuarAssistindo";
-import CursosDashboard from "../../components/CursosDashboard";
-import Navbar from "../../components/NavbarDashoard";
-import TopoDashboard from "../../components/TopoDashboard";
-import { useAuth } from "../../helpers/auth/hooks/useAuth";
-import { Navigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import NavbarDashboard from '../../components/NavbarDashoard';
+import TopoDashboard from '../../components/TopoDashboard';
+import ContinuarAssistindo from '../../components/ContinuarAssistindo'
+import CursosDashboard from '../../components/CursosDashboard'
+import { useAuth } from '../../helpers/auth/hooks/useAuth';
 import { WebClient } from '../../helpers/api/WebClient';
+import { Navigate } from 'react-router-dom';
+import EstatisticasDashboard from '../../components/EstatisticasDashboard';
 
-export default function Dashboard() {
-    const { checkLogin, getUser } = useAuth();
-    const [user, setUser] = useState(getUser());
-    const [progresso, setProgresso] = useState([]);
+const Dashboard = () => {
+  const { checkLogin, getUser } = useAuth();
+  const [user, setUser] = useState(getUser());
+  const [progresso, setProgresso] = useState([]);
 
-    if (!checkLogin()) {
-        return <Navigate to="/login" />;
-    }
+  // useEffect(() => {
+  //   if (!checkLogin()) {
+  //     return;
+  //   }
 
-    function getProgresso() {
-        WebClient.exchange(`/progresso?usuario=${user?.id}`, "GET")
-          .then(response => response.json())
-          .then(data => setProgresso(data))
-          .catch(() => console.error('Error fetching progress'));
-    }
+  //   getProgresso();
+  // }, [checkLogin]);
 
-    useEffect(() => {
-        getProgresso();
-        console.log(progresso)
-    }, [user]); 
+  // function getProgresso() {
+  //   WebClient.exchange(`/progresso?usuario=${user?.id}`, 'GET')
+  //     .then(response => response.json())
+  //     .then(data => setProgresso(data))
+  //     .catch(() => console.error('Error fetching progress'));
+  // }
 
-    return (
-      <>
-        <Navbar/>
+  // if (!checkLogin()) {
+  //   return <Navigate to="/login" />;
+  // }
 
-        <main className='main-dashboard'>
-          <TopoDashboard nome={user?.nome} progresso={progresso.length} />
-          <ContinuarAssistindo />
-          <CursosDashboard/>
-        </main>
-      </>
-    );
-}
+  return (
+    <div className="dashboard-container">
+      <NavbarDashboard />
+      
+      <main className='main-dashboard-container-inicial'>
+        <TopoDashboard />
+        <EstatisticasDashboard/>
+        {/* <section className='continuar-assistindo-section'>
+          <h1 className='titulo-dashboard'>Continuar Assistindo</h1>
+          <div className='card-container-dashboard'>
+            <ContinuarAssistindo/>
+            <ContinuarAssistindo/>
+            <ContinuarAssistindo/>
+            <ContinuarAssistindo/>
+          </div>
+          <aside className='estatisticas'></aside>
+        </section> */}
+        <CursosDashboard/>
+      </main>
+    </div>
+  );
+};
+
+export default Dashboard;
