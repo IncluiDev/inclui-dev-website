@@ -21,8 +21,9 @@ export default function CadastroResponsavelPage() {
     perfil: "RESPONSAVEL",
     dataNascimento: "",
     senha: "",
-    emailAdolescente: ""
+    usuario: ""
   });
+
   const { t } = useTranslation()
 
   const handleChange = (e) => {
@@ -36,7 +37,7 @@ export default function CadastroResponsavelPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    WebClient.exchange("/usuario", "POST", formData)
+    WebClient.exchange("/responsavel", "POST", formData)
       .then(() => console.log("Success"))
       .catch(() => console.log("Error"))
   };
@@ -102,35 +103,14 @@ export default function CadastroResponsavelPage() {
               />
             </div>
 
-            <div id="inputLogin" className="input-field">
-              <FaLock className="icon" />
-              <input
-                id="senha"
-                type="password"
-                name="senha"
-                placeholder={t("cadastro-responsavel-input-senha")}
-                value={formData.senha}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="input-field">
-              <FaEye className="icon" />
-              <input
-                id="confirmPassword"
-                type="password"
-                placeholder={t("cadastro-responsavel-input-senha-verificacao")}
-              />
-            </div>
-
             <div className="input-field">
               <FaEnvelope className="icon" />
               <input
                 type="email"
-                id="email-adolescente"
-                name="email-adolescente"
+                id="usuario"
+                name="usuario"
                 placeholder={t("cadastro-responsavel-input-email-adolescente")}
-                value={formData.emailAdolescente}
+                value={formData.usuario}
                 onChange={handleChange}
               />
             </div>
