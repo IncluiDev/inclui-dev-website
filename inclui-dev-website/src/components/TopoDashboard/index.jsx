@@ -28,7 +28,7 @@ const TopoDashboard = (props) => {
               <h2>{props.progresso || 0}</h2>
               <p>Cursos Progresso</p>
             </div>
-            <div className='curso-progresso'>
+            <div className='curso-completo'>
               <h2>{props.progresso || 0}</h2>
               <p>Jogos Completos</p>
             </div>

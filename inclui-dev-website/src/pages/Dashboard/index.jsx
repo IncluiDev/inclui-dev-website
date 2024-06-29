@@ -39,6 +39,7 @@ const Dashboard = () => {
       
       <main className='main-dashboard-container-inicial'>
         <TopoDashboard />
+        <CursosDashboard/>
         <EstatisticasDashboard/>
         {/* <section className='continuar-assistindo-section'>
           <h1 className='titulo-dashboard'>Continuar Assistindo</h1>
@@ -50,7 +51,6 @@ const Dashboard = () => {
           </div>
           <aside className='estatisticas'></aside>
         </section> */}
-        <CursosDashboard/>
       </main>
     </div>
   );

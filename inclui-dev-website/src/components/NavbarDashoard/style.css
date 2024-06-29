@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #4D8F9A;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 77px -28px rgba(202,27,180,0.39);    
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
     position: fixed;
     transition: all .5s;
     min-width: 82px;
-    max-width: 82px;
+    max-width: 200px;
     z-index: 1000;
 }
 
@@ -28,7 +29,7 @@
     height: 50px;
     object-fit: cover;
     border-radius: 20px;
-    border: 1px solid white;
+    background-color: white;
 }
 
 #user_infos {
@@ -38,7 +39,7 @@
 
 #user_infos span:last-child {
     color: #6b6b6b;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 #side_items {
@@ -54,12 +55,12 @@
     cursor: pointer;
 }
 
-.side-item.active {
-    background-color: #4D8F9A;
+.side-item:hover {
+    background-color: #ca1bb34e;
 }
 
 .icon-exit {
-    color: #fff;
+    color: #CA1BB4;
 }
 
 .side-item a {
@@ -67,12 +68,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #CA1BB4;
 }
 
-.side-item.active a {
+/* .side-item.active a {
     color: #e3e9f7;
-}
+} */
 
 .side-item a i {
     display: flex;
@@ -83,14 +84,14 @@
 }
 
 #logout {
-    border-top: 1px solid #e3e9f7;
+    border-top: 1px solid #CA1BB4;
     padding: 12px;
 }
 
 #logout_btn {
     border: none;
     padding: 12px;
-    font-size: 14px;
+    font-size: 18px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -103,12 +104,12 @@
 #open_btn {
     position: absolute;
     top: 30px;
-    right: -10px;
-    background-color: #4D8F9A;
+    right: -25px;
+    background-color: #CA1BB4;
     color: #e3e9f7;
     border-radius: 100%;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     border: none;
     cursor: pointer;
 }
@@ -126,10 +127,10 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 14px;
+    font-size: 18px;
     transition: width .6s;
     height: 0px;
-    color: white;
+    color: #CA1BB4;
 }
 
 #sidebar.open-sidebar {

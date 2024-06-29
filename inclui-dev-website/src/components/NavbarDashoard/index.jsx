@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './style.css'
-import avatar from '../../assets/equipe/IGOR.png'
+import avatar from '../../assets/logo-dashboard.png'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -63,10 +63,9 @@ const NavbarDashboard = () => {
       <div id="logout">
         <button id="logout_btn">
           <FontAwesomeIcon icon={faRightFromBracket} className='icon-exit'/>
-
-          <span className="item-description">
-            Sair
-          </span>
+          <a href="/home" className='item-description'>
+              Sair
+          </a>
         </button>
       </div>
     </nav>

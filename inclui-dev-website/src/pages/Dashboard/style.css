@@ -10,7 +10,7 @@
   .main-dashboard-container-inicial {
     display: flex;
     width: 90%;
-    margin-left: 82px;
+    margin-left: 102px;
     flex-direction: column;
     flex: 1; /* Para ocupar o restante da altura disponível */
     align-items: flex-start;
