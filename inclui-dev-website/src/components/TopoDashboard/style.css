@@ -1,8 +1,11 @@
-/* style.css (continuação) */
 .topo-dashboard-container {
     width: 100%;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
+    margin: 0 auto; 
+    max-width: 1100px; 
+    padding: 35px 30px 15px ; 
 }
 
 .bolhas-background {
@@ -18,12 +21,9 @@
 
 .topo-dashboard {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between; 
     z-index: 1;
-    gap: 20px;
 }
 
 .pessoaImg {
@@ -42,17 +42,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    max-height: 255px;
+    width: 65%;
+    max-height: 265px;
     background-color: #FF725E;
     border-radius: 10px;
     color: #FFFFFF;
     box-shadow: 5px 10px 116px -8px rgba(255, 114, 94, 0.35);
-    padding: 20px;
     text-align: center;
     box-sizing: border-box;
     position: relative;
     z-index: 1;
+    padding: 20px; 
 }
 
 .saudacao-user-texto {
@@ -60,46 +60,14 @@
 }
 
 .saudacao-user-texto h1 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bolder;
 }
 
 .saudacao-user-texto p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: lighter;
-}
-
-.info-topo-container {
-    width: 100%;
-}
-
-.info-topo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.pesquisa-curso {
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    width: 80%;
-    background-color: #F4F4F4;
-    color: #464646;
-    border: 1px solid rgba(211, 211, 211, 0.585);
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 5px 10px 116px -8px rgba(0, 0, 0, 0.39);
-}
-
-.cursos-dashboard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
+   
 }
 
 .cursos-dashboard h2 {
@@ -107,15 +75,26 @@
     font-weight: bolder;
 }
 
+
+
+.cursos-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+}
+
 .curso-completo,
 .curso-progresso {
     display: flex;
-    padding: 20px;
-    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+    
     align-items: center;
     justify-content: center;
     background-color: #63AB72;
-    width: 80%;
     border-radius: 15px;
     color: white;
 }
@@ -133,10 +112,10 @@
 }
 
 @media (min-width: 1000px) {
-    .topo-dashboard {
-        flex-direction: row;
-        justify-content: space-between;
+    .info-topo-container {
+        grid-column: 2 / 3; 
     }
+
 
     .saudacao-user-container {
         flex-direction: row;

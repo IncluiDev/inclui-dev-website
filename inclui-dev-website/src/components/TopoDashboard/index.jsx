@@ -3,7 +3,7 @@ import pessoaDashboard from '../../assets/pessoaDashboard.png'
 import userProfile from '../../assets/user-profile.png'
 import { MdOutlineNotificationsActive } from "react-icons/md";
 
-const TopoDashboard = ( props ) => {
+const TopoDashboard = (props) => {
   return (
     <header className='topo-dashboard-container'>
       <div className='topo-dashboard'>
@@ -14,19 +14,27 @@ const TopoDashboard = ( props ) => {
             <p>Feliz em te ver novamente!</p>
           </div>
           <div className="pessoaImg">
-            <img src={pessoaDashboard} alt="Pessoa no Dashboard" className='pessoaDashboard'/>
+            <img src={pessoaDashboard} alt="Pessoa no Dashboard" className='pessoaDashboard' />
           </div>
         </div>
 
-        <aside className='info-topo-container'> 
+        <aside className='info-topo-container'>
           <section className='cursos-dashboard'>
             <div className='curso-completo'>
               <h2>0</h2>
-              <p>Cursos completos</p>
+              <p>Cursos Completos</p>
             </div>
             <div className='curso-progresso'>
               <h2>{props.progresso || 0}</h2>
-              <p>Cursos em progresso</p>
+              <p>Cursos Progresso</p>
+            </div>
+            <div className='curso-progresso'>
+              <h2>{props.progresso || 0}</h2>
+              <p>Jogos Completos</p>
+            </div>
+            <div className='curso-progresso'>
+              <h2>{props.progresso || 0}</h2>
+              <p>Jogos Progresso</p>
             </div>
           </section>
         </aside>
