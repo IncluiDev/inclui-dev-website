@@ -5,7 +5,6 @@ import logo from "../../assets/inclui-dev-logo.png";
 import { FaUser } from "react-icons/fa6";
 import { FaEnvelope, FaLock, FaCalendarAlt, FaEye } from "react-icons/fa";
 
-import { api } from "../../lib/axios/axios";
 import imgCadastro from "../../assets/imgCadastro.svg";
 import blocosRodape from "../../assets/blocosCentro.png";
 import blocoMais from "../../assets/blocoMais.png";

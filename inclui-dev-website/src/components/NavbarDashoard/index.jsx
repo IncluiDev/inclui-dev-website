@@ -7,9 +7,6 @@ import {
   faChartLine, 
   faUser, 
   faBell, 
-  faBox, 
-  faImage, 
-  faGear, 
   faChevronRight, 
   faRightFromBracket 
 } from '@fortawesome/free-solid-svg-icons';
@@ -30,8 +27,9 @@ const NavbarDashboard = () => {
 
         <ul id="side_items">
           <li className="side-item active">
-            <a href="#">
+            <a href="/dashboard">
               <FontAwesomeIcon icon={faChartLine} />
+
               <span className="item-description">
                 Dashboard
               </span>
@@ -48,7 +46,7 @@ const NavbarDashboard = () => {
           </li>
 
           <li className="side-item">
-            <a href="#">
+            <a href="/newsletter">
               <FontAwesomeIcon icon={faBell} />
               <span className="item-description">
                 Newsletter

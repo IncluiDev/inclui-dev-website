@@ -91,8 +91,14 @@ export default function Chat() {
             sessão?
           </p>
           <div className="finish_chat_modal--actions-wrapper">
-            <button className="finish_chat_modal--cancel">Cancelar</button>
-            <button className="finish_chat_modal--confirm">Finalizar agora</button>
+            <button className="finish_chat_modal--cancel" onClick={handleFinishChatVisibility}>Cancelar</button>
+            <button className="finish_chat_modal--confirm" onClick={
+              () => {
+                setMessages([]);
+                toggleChatVisibility()
+                handleFinishChatVisibility()
+              }
+              }>Finalizar agora</button>
           </div>
         </div>
 
