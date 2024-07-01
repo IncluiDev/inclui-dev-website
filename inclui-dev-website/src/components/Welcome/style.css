@@ -1,0 +1,103 @@
+.welcome {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 4rem 10rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  background-image: url('../../img/fundoIncluiDev.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: -10rem;
+  background-color: #fd8170;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+  padding: 10px;
+  border-radius: 30px;
+  
+  z-index: 1;
+}
+
+.back-button:hover {
+  background-color: #ff6347; 
+}
+
+.card-welcome {
+  text-align: center; 
+  padding: 2rem; 
+}
+
+.welcome-title,
+.welcome-text {
+  margin-bottom: 1rem;
+}
+
+.welcome-text {
+  color: #4D8F9A;
+}
+
+.welcome-content {
+  margin-bottom: 1rem;
+}
+
+.quizImg {
+  width: 600px;
+}
+
+@media (max-width: 1200px) {
+  .welcome {
+    padding: 4rem 8rem;
+  }
+
+  .quizImg {
+    width: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome {
+    padding: 4rem 6rem;
+  }
+
+  .quizImg {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    padding: 3rem 4rem;
+  }
+
+  .quizImg {
+    width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome {
+    padding: 2rem 2rem;
+  }
+
+  .quizImg {
+    width: 100%;
+  }
+
+  .welcome-title,
+  .welcome-text {
+    font-size: 1rem; 
+  }
+}

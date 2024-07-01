@@ -1,0 +1,41 @@
+.option-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.option {
+  background-color: #ffbcb3;
+  border-radius: 30px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option:hover {
+  background-color: #fd8170;
+}
+
+.option p {
+  margin-bottom: 0;
+}
+
+.correct {
+  background-color: #63AB72;
+  font-weight: bold;
+}
+
+.wrong {
+  background-color: #ffbcb3;
+  opacity: 0.5;
+}
+
+.hide {
+  display: none;
+}

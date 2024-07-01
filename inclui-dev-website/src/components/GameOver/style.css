@@ -1,0 +1,33 @@
+.gameover {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 900px;
+  background-image: url('../../img/fundoIncluiDev.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gameover h2,
+.gameover p {
+  margin-bottom: 1rem;
+}
+
+.gameover p {
+  color: #fd8170;
+  font-size: 2rem;
+}
+
+.gameover img {
+  margin: 2rem auto;
+  height: 200px;
+}
+
+.gameover button {
+  width: 50%;
+  margin: 0 auto;
+}
