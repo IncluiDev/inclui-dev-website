@@ -26,10 +26,9 @@
 }
 
 #user_avatar {
-    width: 50px;
+    width: 80%;
     height: 50px;
-    object-fit: cover;
-    border-radius: 20px;
+    object-fit: contain;
     background-color: white;
 }
 

@@ -28,9 +28,9 @@ const Dashboard = () => {
       .catch(() => console.error('Error fetching progress'));
   }
 
-  if (!checkLogin()) {
-    return <Navigate to="/login" />;
-  }
+  // if (!checkLogin()) {
+  //   return <Navigate to="/login" />;
+  // }
 
   return (
     <div className="dashboard-container">

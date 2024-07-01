@@ -2,7 +2,8 @@ import { useState } from 'react';
 import './style.css'
 import { useAuth } from '../../helpers/auth/hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
-import avatar from '../../assets/logo-dashboard.png'
+import logoOpen from '../../assets/inclui-dev-logo.png';  // Imagem para o sidebar aberto
+import logoClosed from '../../assets/logo-dashboard.png';  // Imagem para o sidebar fechado
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faChartLine, 
@@ -30,35 +31,28 @@ const NavbarDashboard = () => {
     <nav id="sidebar" className={sidebarOpen ? 'open-sidebar' : ''}>
       <div id="sidebar_content">
         <div id="user">
-          <img src={avatar} id="user_avatar" alt="Avatar" />
+          <img src={sidebarOpen ? logoOpen : logoClosed} id="user_avatar" alt="Avatar" />
         </div>
 
         <ul id="side_items">
           <li className="side-item active">
             <a href="/dashboard">
               <FontAwesomeIcon icon={faChartLine} />
-
-              <span className="item-description">
-                Dashboard
-              </span>
+              <span className="item-description">Dashboard</span>
             </a>
           </li>
 
           <li className="side-item">
             <a href="#">
               <FontAwesomeIcon icon={faUser} />
-              <span className="item-description">
-                Perfil
-              </span>
+              <span className="item-description">Perfil</span>
             </a>
           </li>
 
           <li className="side-item">
             <a href="/newsletter">
               <FontAwesomeIcon icon={faBell} />
-              <span className="item-description">
-                Newsletter
-              </span>
+              <span className="item-description">Newsletter</span>
             </a>
           </li>
         </ul>
@@ -71,9 +65,7 @@ const NavbarDashboard = () => {
       <div id="logout" onClick={logout}>
         <button id="logout_btn">
           <FontAwesomeIcon icon={faRightFromBracket} className='icon-exit'/>
-          <a className='item-description'>
-              Sair
-          </a>
+          <a className='item-description'>Sair</a>
         </button>
       </div>
     </nav>
