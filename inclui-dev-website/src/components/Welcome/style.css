@@ -45,6 +45,10 @@
   margin-bottom: 1rem;
 }
 
+.welcome-button{
+  color: white;
+}
+
 .welcome-text {
   color: #4D8F9A;
 }
