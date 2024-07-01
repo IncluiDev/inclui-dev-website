@@ -1,7 +1,5 @@
 import './style.css'
 import pessoaDashboard from '../../assets/pessoaDashboard.png'
-import userProfile from '../../assets/user-profile.png'
-import { MdOutlineNotificationsActive } from "react-icons/md";
 
 const TopoDashboard = (props) => {
   return (
@@ -20,21 +18,17 @@ const TopoDashboard = (props) => {
 
         <aside className='info-topo-container'>
           <section className='cursos-dashboard'>
-            <div className='curso-completo'>
-              <h2>0</h2>
-              <p>Cursos Completos</p>
-            </div>
             <div className='curso-progresso'>
               <h2>{props.progresso || 0}</h2>
-              <p>Cursos Progresso</p>
+              <p>Cursos em progresso</p>
             </div>
             <div className='curso-completo'>
-              <h2>{props.progresso || 0}</h2>
-              <p>Jogos Completos</p>
+              <h2>{props.completo || 0}</h2>
+              <p>Cursos completados</p>
             </div>
-            <div className='curso-progresso'>
+            <div className='curso-fazer'>
               <h2>{props.progresso || 0}</h2>
-              <p>Jogos Progresso</p>
+              <p>Cursos a fazer</p>
             </div>
           </section>
         </aside>

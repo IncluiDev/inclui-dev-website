@@ -19,8 +19,13 @@ const NewsletterDashboard = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    setFormData({
+      texto: "",
+      assunto: "",
+    });
+
     try {
-      const response = await fetch("http://localhost:8085/newsletter", {
+      await fetch("https://inclui-dev-email-api-production.up.railway.app/newsletter", {
         method: "POST",
         headers: {
           'Accept': 'application/json',
@@ -29,14 +34,6 @@ const NewsletterDashboard = () => {
         },
         body: JSON.stringify(formData),
       });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const result = await response.json();
-      console.log('Success:', result);
-
     } catch (error) {
       console.error('Error:', error);
     }

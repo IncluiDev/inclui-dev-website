@@ -75,11 +75,10 @@
     font-weight: bolder;
 }
 
-
-
 .cursos-dashboard {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     gap: 10px;
     width: 100%;
@@ -87,11 +86,13 @@
 }
 
 .curso-completo,
-.curso-progresso {
+.curso-progresso,
+.curso-fazer {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    
+    gap: 10px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     background-color: #63AB72;
@@ -101,6 +102,10 @@
 
 .curso-progresso {
     background-color: #FF725E;
+}
+
+.curso-fazer {
+    background-color: #4D8F9A;
 }
 
 .notification-icon {

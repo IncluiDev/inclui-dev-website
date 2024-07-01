@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #FFFFFF;
+    background-color: #fff;
     box-shadow: 10px 10px 77px -28px rgba(202,27,180,0.39);    
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
@@ -11,6 +11,7 @@
     min-width: 82px;
     max-width: 200px;
     z-index: 1000;
+    gap: 14px;
 }
 
 #sidebar_content {
@@ -71,10 +72,6 @@
     color: #CA1BB4;
 }
 
-/* .side-item.active a {
-    color: #e3e9f7;
-} */
-
 .side-item a i {
     display: flex;
     align-items: center;
@@ -84,7 +81,6 @@
 }
 
 #logout {
-    border-top: 1px solid #CA1BB4;
     padding: 12px;
 }
 
@@ -106,7 +102,7 @@
     top: 30px;
     right: -25px;
     background-color: #CA1BB4;
-    color: #e3e9f7;
+    color: #fff;
     border-radius: 100%;
     width: 40px;
     height: 40px;

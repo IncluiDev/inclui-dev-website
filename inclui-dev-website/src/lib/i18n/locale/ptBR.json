@@ -111,6 +111,8 @@
         "recuperacao-titulo": "Recuperação de Senha",
         "recuperacao-legenda": "Por favor, insira seu e-mail cadastrado para recuperar sua senha.",
         "recuperacao-input-email": "E-mail",
+        "recuperacao-input-codigo": "Código de recuperação",
+        "recuperacao-input-senha": "Digita a nova senha",
         "recuperacao-button-enviar": "Enviar",
         "recuperacao-button-login": "Conecte-se",
 

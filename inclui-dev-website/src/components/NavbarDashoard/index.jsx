@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './style.css'
+import { useAuth } from '../../helpers/auth/hooks/useAuth';
+import { useNavigate } from 'react-router-dom';
 import avatar from '../../assets/logo-dashboard.png'
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faChartLine, 
@@ -13,10 +14,17 @@ import {
 
 const NavbarDashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const navigate = useNavigate();
+  const { handleLogout } = useAuth()
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
+
+  const logout = () => {
+    handleLogout();
+    navigate("/home");
+  }
 
   return (
     <nav id="sidebar" className={sidebarOpen ? 'open-sidebar' : ''}>
@@ -60,10 +68,10 @@ const NavbarDashboard = () => {
         </button>
       </div>
 
-      <div id="logout">
+      <div id="logout" onClick={logout}>
         <button id="logout_btn">
           <FontAwesomeIcon icon={faRightFromBracket} className='icon-exit'/>
-          <a href="/home" className='item-description'>
+          <a className='item-description'>
               Sair
           </a>
         </button>

@@ -2,7 +2,7 @@
     width: 97%;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 70px;
 }
 
 .cursos-dashboard-container div {
@@ -23,6 +23,10 @@
     align-items: center;
     color: black;
     margin: 0;
+}
+
+.curso-nome {
+    font-size: 16px;
 }
 
 .ativo {
@@ -51,6 +55,7 @@
     gap: 30px;
     justify-content: center;
     align-items: center;
+    width: 500px;
 }
 
 .assistir-cursos {
@@ -73,3 +78,6 @@
     transition: 1s;
 }
 
+.curso-info-desc {
+    text-align: center;
+}

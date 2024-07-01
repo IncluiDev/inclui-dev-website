@@ -1,6 +1,6 @@
 export class WebClient {
-    static baseURL = 'https://inclui-dev-api-production.up.railway.app';
-    //static baseURL = 'http://localhost:8080';
+    // static baseURL = 'https://inclui-dev-api-production.up.railway.app';
+    static baseURL = 'http://localhost:8080';
     
     static async exchange(endPoint, method, body) {
         return await fetch(

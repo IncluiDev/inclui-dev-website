@@ -2,7 +2,6 @@ import './style.css';
 
 import { useEffect, useState } from 'react';
 import { WebClient } from '../../helpers/api/WebClient';
-import EstatisticasDashboard from "../../components/EstatisticasDashboard";
 import CursoCardDashboard from "../../components/CursoCardDashboard"
 
 const CursosDashboard = () => {  

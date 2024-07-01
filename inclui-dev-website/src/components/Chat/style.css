@@ -3,13 +3,14 @@
   display: none;
   flex-direction: column;
   left: 10px;
-  top: 100px;
+  bottom: 20px;
   background-color: #b12f9f;
   color: white;
   padding: 2rem 2rem;
   border-radius: 10px;
   width: 100%;
   max-width: 500px;
+  cursor: pointer;
   height: 80vh;
   z-index: 1000;
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.177);
@@ -226,10 +227,9 @@
 }
 
 .chat-open {
-  padding: 10px 20px;
   border-radius: 8px;
   position: fixed;
-  bottom: 20px;
+  bottom: -80%;
   left: 20px;
   cursor: pointer;
   transition: 0.2s;

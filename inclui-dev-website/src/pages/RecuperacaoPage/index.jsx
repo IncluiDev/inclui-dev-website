@@ -1,5 +1,5 @@
 import "./style.css";
-import { FaEnvelope } from "react-icons/fa";
+import { useState } from "react";
 import logo from "../../assets/inclui-dev-logo.png";
 import imgRecuperarSenha from "../../assets/imgRecuperarSenha.svg";
 import blocosRodape from "../../assets/blocosCentro.png";
@@ -7,9 +7,16 @@ import blocoMais from "../../assets/blocoMais.png";
 import blocoMaisAzul from "../../assets/MaisAzul.svg";
 import SwitchLanguage from '../../components/SwitchLanguage'
 import { useTranslation } from 'react-i18next'
+import FormRecuperacaoEmail from "../../components/FormRecuperacaoEmail";
+import FormRecuperacao from "../../components/FormRecuperacao";
 
 export default function RecuperacaoPage() {
   const { t } = useTranslation()
+  const [emailRecuperado, setEmailRecuperado] = useState(false);
+
+  const handleRecuperacaoEmail = () => {
+    setEmailRecuperado(true);
+  };
 
   return (
     <div className="container" id="recuperacao-container">
@@ -27,32 +34,12 @@ export default function RecuperacaoPage() {
         <p>{t("recuperacao-side-descricao")}</p>
         <img src={imgRecuperarSenha} alt="Uma mulher fazendo autenticação" />
       </div>
+
       <div className="password-recovery-container">
-        <form action="#" className="password-recovery-form">
-          <h2 className="title">{t("recuperacao-titulo")}</h2>
-          <p className="description">
-            {t("recuperacao-legenda")}
-          </p>
-
-          <div className="input-field">
-            <FaEnvelope className="icon" />
-            <input
-              type="email"
-              id="recoveryEmail"
-              placeholder={t("recuperacao-input-email")}
-              required
-            />
-          </div>
-
-          <input
-            type="submit"
-            value={t("recuperacao-button-enviar")}
-            className="btn-recuperacao solid"
-          />
-          <a href="/login" id="back-to-login">
-            {t("recuperacao-button-login")}
-          </a>
-        </form>
+        {emailRecuperado ? 
+          <FormRecuperacao/> :
+          <FormRecuperacaoEmail onRecuperacaoEmail={handleRecuperacaoEmail} /> 
+        }
       </div>
     </div>
   );

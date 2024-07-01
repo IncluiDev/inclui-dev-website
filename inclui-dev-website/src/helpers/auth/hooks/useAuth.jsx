@@ -34,12 +34,19 @@ export default class Auth {
   static getUser() {
     return JSON.parse(localStorage.getItem('usuario'));
   }
+
+  static handleLogout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('usuario');
+    this.authenticated = false;
+  }
 }
 
 export function useAuth() {
   return {
     checkLogin: () => Auth.checkLogin(),
     handleLogin: (email, senha) => Auth.handleLogin(email, senha),
-    getUser: () => Auth.getUser()
+    getUser: () => Auth.getUser(),
+    handleLogout: () => Auth.handleLogout()
   };
 }
