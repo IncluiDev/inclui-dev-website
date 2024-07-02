@@ -1,4 +1,4 @@
-import { QuizContext } from "../../context/quiz";
+import { QuizContext } from "../../context/QuizProvider";
 import "./style.css";
 
 const Option = ({ option, selectOption, answer, hide }) => (

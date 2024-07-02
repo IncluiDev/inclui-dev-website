@@ -1,6 +1,6 @@
 import './style.css'
 
-import { QuizContext } from "../../context/Quiz";
+import { QuizContext } from "../../context/QuizProvider";
 import GameOver from "../../components/GameOver";
 import PickCategory from "../../components/PickCategory";
 import Question from "../../components/Question";

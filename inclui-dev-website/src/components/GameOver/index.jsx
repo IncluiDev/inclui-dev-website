@@ -1,4 +1,4 @@
-import { QuizContext } from "../../context/quiz";
+import { QuizContext } from "../../context/QuizProvider";
 import WellDone from "../../assets/welldone.svg";
 import "./style.css";
 

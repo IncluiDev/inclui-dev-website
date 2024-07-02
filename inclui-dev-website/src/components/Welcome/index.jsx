@@ -1,4 +1,4 @@
-import { QuizContext } from "../../context/quiz";
+import { QuizContext } from "../../context/QuizProvider";
 import "./style.css";
 import Quiz from "../../assets/quizShow.svg";
 import fundoIncluiDev from '../../assets/fundoIncluiDev.png';

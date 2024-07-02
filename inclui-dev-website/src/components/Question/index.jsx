@@ -1,4 +1,4 @@
-import { QuizContext } from "../../context/quiz";
+import { QuizContext } from "../../context/QuizProvider";
 import questionImg from "../../assets/questionImg.svg";
 import Option from "../Option";
 

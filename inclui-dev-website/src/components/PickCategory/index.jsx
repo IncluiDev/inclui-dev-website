@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { QuizContext } from "../../context/quiz";
+import { QuizContext } from "../../context/QuizProvider";
 import Category from "../../assets/category.svg";
 import "./style.css";
 
