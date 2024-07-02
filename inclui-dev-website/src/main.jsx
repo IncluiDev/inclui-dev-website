@@ -6,8 +6,6 @@ import './lib/i18n/i18n.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <QuizProvider>
       <App />
-    </QuizProvider>
   </React.StrictMode>
 )

@@ -72,7 +72,7 @@ export default function Catalogo() {
                 <div className='container-card' style={{display: jogosOpen ? 'block' : 'none'}}>
                     <div className='grid'>
                         <GameCard img={mazeImg} nome="Maze Runner" autor="Kayk Messias" redirect="/mazerunner"/>
-                        <GameCard img={quizImg} nome="Quiz" autor="Henry Modesto" redirect="/quiz"/>
+                        <GameCard img={quizImg} nome="Quiz" autor="Henry Modesto" redirect="/home"/>
                     </div>
                 </div>
 
