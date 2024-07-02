@@ -229,7 +229,7 @@
 .chat-open {
   border-radius: 8px;
   position: fixed;
-  bottom: -80%;
+  bottom: 20px;
   left: 20px;
   cursor: pointer;
   transition: 0.2s;

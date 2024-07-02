@@ -17,7 +17,7 @@ const Welcome = () => (
           <h2 className="welcome-title">Seja bem-vindo</h2>
           <div className="welcome-content">
             <p className="welcome-text">Clique no botão abaixo para começar:</p>
-            <button onClick={() => dispatch({ type: "CHANGE_STAGE" })}>
+            <button className="welcome-button" onClick={() => dispatch({ type: "CHANGE_STAGE" })}>
               Iniciar
             </button>
           </div>

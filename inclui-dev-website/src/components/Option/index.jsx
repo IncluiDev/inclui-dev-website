@@ -4,11 +4,11 @@ import "./style.css";
 const Option = ({ option, selectOption, answer, hide }) => (
   <QuizContext.Consumer>
     {([quizState, dispatch]) => (
-      <div className="option-container">
+      <div className="opcao-container">
         <div
           onClick={() => selectOption()}
           className={`
-            option
+            opcao
             ${quizState.answerSelected && option === answer ? "correct" : ""}
             ${quizState.answerSelected && option !== answer ? "wrong" : ""}
             ${hide ? "hide" : ""}
