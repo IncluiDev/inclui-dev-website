@@ -42,12 +42,6 @@ const NavbarDashboard = () => {
             </a>
           </li>
 
-          <li className="side-item">
-            <a href="#">
-              <FontAwesomeIcon icon={faUser} />
-              <span className="item-description">Perfil</span>
-            </a>
-          </li>
 
           <li className="side-item">
             <a href="/newsletter">

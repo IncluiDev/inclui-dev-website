@@ -9,11 +9,11 @@
     font-weight: bold;
 }
 
-.curso-icon {
-    width: 100%;
+/* .curso-icon {
+    width: 200px;
     max-width: 60px;
     height: 60px;
-}
+} */
 
 .curso-continuar-assistindo {
     display: flex;

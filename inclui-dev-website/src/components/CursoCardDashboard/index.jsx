@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { WebClient } from '../../helpers/api/WebClient';
 import { MdOutlineWatchLater } from "react-icons/md";
 import livros from '../../assets/livros-curso.png'
+import './style.css'
 
 export default function CursoCardDashboard({ curso }) {
     const [tutor, setTutor] = useState("");
@@ -22,8 +23,7 @@ export default function CursoCardDashboard({ curso }) {
 
     return (
         <article className='cursos-container'>
-            <img src={livros} alt="" className='curso-icon'/>
-
+            <img src={livros} alt=""  className='curso-icon-dashboard'/>
             <div className='curso-info'>
                 <div>
                     <h3 className='curso-nome'>{curso.nome}</h3>
